@@ -6,8 +6,8 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', defer: true, 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= javascript_pack_tag 'application', defer: true %>
   </head>
 
   <body>
@@ -22,16 +22,14 @@
       </div>
       <nav id='main-nav' class='navbar'>
         <ul class='navbar-links'>
-          <li><a class='active' href="#">Etusivu</a></li>
-          <li><a href="#">Ilmoittautuminen</a></li>
-          <li><a href="#">Tapahtumakalenteri</a></li>
-          <li><a href="#">Uutiset</a></li>
-          <li><a href="#">Seuraennätykset</a></li>
-          <li><a href="#">Edustusurheilijat</a></li>
+          <li><%= active_link_to 'Etusivu', root_path, active: [static: :index] %></li>
+          <li><%= active_link_to 'Edustusurheilijat', athletes_path %></li>
         </ul>
       </nav>
     </header>
 
-    <%= yield %>
+    <main>
+      <%= yield %>
+    </main>
   </body>
 </html>
