@@ -1,0 +1,267 @@
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+}
+
+.header-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.header-logo {
+  width: 44px;
+  margin-left: 8px;
+}
+
+.header-title {
+  font-size: 1.5rem;
+}
+
+.header-subbar {
+  background-color: var(--primary-opaque);
+  color: var(--on-primary);
+  text-shadow: var(--on-primary-shadow);
+  text-align: center;
+  padding: 5px;
+
+  h2 {
+    margin-bottom: 0;
+    font-size: 1.35rem;
+  }
+}
+
+.hamburger {
+  width: 32px;
+  height: 25px;
+  cursor: pointer;
+  margin-right: 8px;
+  margin-left: 20px;
+}
+
+.hamburger-bar {
+  position: relative;
+  background-color: var(--on-background);
+  border-radius: 3px;
+  width: 100%;
+  height: 5px;
+  margin-top: 10px;
+}
+
+.hamburger-bar::before,
+.hamburger-bar::after {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 5px;
+  background-color: var(--on-background);
+  border-radius: 3px;
+  transition: 250ms;
+}
+
+.hamburger-bar::before {
+  left: 0;
+  top: -10px;
+}
+
+.hamburger-bar::after {
+  left: 0;
+  bottom: -10px;
+}
+
+.hamburger.active {
+  .hamburger-bar {
+    background-color: transparent;
+  }
+
+  .hamburger-bar::before {
+    transform: rotate(405deg);
+    top: 0;
+  }
+
+  .hamburger-bar::after {
+    transform: rotate(-405deg);
+    bottom: 0;
+  }
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: calc(-100% + 48px);
+  transition: left 250ms;
+  width: calc(100% - 48px);
+  height: 100vh;
+  background-color: var(--primary-variant);
+  color: var(--on-primary);
+  text-shadow: var(--on-primary-shadow);
+}
+
+.navbar.visible {
+  left: 0;
+}
+
+.navbar-links {
+  font-family: $cursive;
+  text-transform: uppercase;
+  text-align: center;
+
+  a {
+    display: block;
+    height: 59px;
+    border-bottom: 1px solid var(--on-primary);
+    cursor: pointer;
+    line-height: 59px;
+  }
+
+  a:hover,
+  a:active {
+    background-color: var(--primary);
+  }
+
+  a.active {
+    background-color: var(--surface);
+    color: var(--on-surface);
+    text-shadow: none;
+  }
+}
+
+.jumbotron {
+  position: relative;
+  margin-top: 60px;
+  width: 100%;
+  height: calc(50vh - 60px);
+  background: image_url('./frontpage.jpg') center top/cover;
+
+  button {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (min-width: $tablet-breakpoint) {
+  .jumbotron {
+    height: calc(100vh - 60px);
+    background-position: center 25%;
+
+    button {
+      bottom: 35%;
+    }
+  }
+}
+
+@media screen and (min-width: $laptop-breakpoint) {
+  .header-bar {
+    height: 80px;
+    justify-content: center;
+  }
+
+  .header-logo {
+    width: 60px;
+    margin: 10px;
+  }
+
+  .header-title {
+    font-size: 2rem;
+    margin-right: 80px;
+  }
+
+  .header-subbar {
+    h2 {
+      font-size: 1.5rem;
+      padding: 5px;
+    }
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .navbar {
+    all: unset;
+  }
+
+  .navbar-links {
+    display: flex;
+    justify-content: center;
+    color: var(--on-primary);
+    background-color: var(--primary-variant-opaque);
+    font-size: 0.8rem;
+
+    a {
+      all: unset;
+      box-sizing: border-box;
+      display: block;
+      margin: 0 0.5em;
+      cursor: pointer;
+      padding: 1.2em 0.5em 1em 0.5em;
+      opacity: 0.85;
+    }
+
+    a:hover,
+    a:active,
+    a.active {
+      position: relative;
+      background-color: transparent;
+      color: var(--on-primary);
+      opacity: 1;
+    }
+
+    a:hover::after {
+      display: block;
+      content: '';
+      background-color: var(--on-primary);
+      position: relative;
+      top: 0.4em;
+      height: 1px;
+      width: 100%;
+    }
+
+    a:hover::before {
+      position: absolute;
+      left: calc(50% - 3px);
+      bottom: calc(0.6em + 0.5px);
+      display: block;
+      content: '';
+      background-color: var(--on-primary);
+      height: 5px;
+      width: 5px;
+      transform-origin: left bottom;
+      transform: rotate(45deg);
+    }
+
+    a.active::after {
+      display: block;
+      content: '';
+      background-color: var(--on-primary);
+      position: relative;
+      top: 0.4em;
+      height: 1px;
+      width: 100%;
+    }
+
+    a.active::before {
+      position: absolute;
+      left: calc(50% - 3px);
+      bottom: calc(0.6em + 0.5px);
+      display: block;
+      content: '';
+      background-color: var(--on-primary);
+      height: 5px;
+      width: 5px;
+      transform-origin: left bottom;
+      transform: rotate(45deg);
+    }
+  }
+
+  .jumbotron {
+    margin-top: 80px;
+    height: calc(100vh - 80px);
+  }
+}

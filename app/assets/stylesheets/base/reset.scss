@@ -1,0 +1,20 @@
+body,
+header,
+div,
+h1,
+h2,
+h3,
+p,
+button,
+ul,
+li {
+  all: unset;
+  box-sizing: border-box;
+  display: block;
+}
+
+span,
+a {
+  all: unset;
+  display: inline;
+}

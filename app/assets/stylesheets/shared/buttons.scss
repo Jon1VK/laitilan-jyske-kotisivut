@@ -1,0 +1,23 @@
+button {
+  text-transform: uppercase;
+  background-color: var(--primary-variant);
+  box-shadow: var(--box-shadow);
+  color: var(--on-primary);
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  text-align: center;
+  border-radius: 0.25em;
+  padding: 0.75em 3em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--primary);
+  margin-bottom: 0.2em;
+}
+
+button:active {
+  background-color: var(--primary-variant);
+  margin-bottom: 0;
+}

@@ -1,16 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>LaitilanJyskeKotisivut</title>
+    <title>Laitilan Jyske - Yleisurheilu</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', defer: true, 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <header class='header'>
+      <div class='header-bar container'>
+        <%= image_tag '/images/logo.svg', alt: 'Laitilan Jyskeen logo', class: 'header-logo' %>
+        <h1 class='header-title'>Laitilan Jyske</h1>
+        <div id='hamburger' class='hamburger'><div class='hamburger-bar'></div></div>
+      </div>
+      <div class='header-subbar'>
+        <h2>Yleisurheilujaosto</h2>
+      </div>
+      <nav id='main-nav' class='navbar'>
+        <ul class='navbar-links'>
+          <li><a class='active' href="#">Etusivu</a></li>
+          <li><a href="#">Ilmoittautuminen</a></li>
+          <li><a href="#">Tapahtumakalenteri</a></li>
+          <li><a href="#">Uutiset</a></li>
+          <li><a href="#">Seuraennätykset</a></li>
+          <li><a href="#">Edustusurheilijat</a></li>
+        </ul>
+      </nav>
+    </header>
+
     <%= yield %>
   </body>
 </html>

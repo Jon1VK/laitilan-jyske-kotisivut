@@ -1,0 +1,22 @@
+:root {
+  --primary: hsl(358, 85%, 52%);
+  --primary-variant: hsl(358, 85%, 37%);
+  --primary-opaque: hsla(358, 85%, 52%, 0.85);
+  --primary-variant-opaque: hsla(358, 85%, 37%, 0.85);
+
+  --secondary: hsl(24, 11%, 91%);
+  --secondary-variant: hsl(24, 11%, 76%);
+
+  --background: hsl(0, 0%, 100%);
+  --surface: hsl(0, 0%, 100%);
+  --error: hsl(349, 100%, 35%);
+
+  --on-primary: hsl(0, 0%, 100%);
+  --on-secondary: hsl(0, 0%, 0%);
+  --on-background: hsl(0, 0%, 0%);
+  --on-surface: hsl(0, 0%, 0%);
+  --on-error: hsl(0, 0%, 100%);
+
+  --on-primary-shadow: 0.05em 0.05em 0.2em hsl(0, 0%, 15%);
+  --box-shadow: 0.1em 0.1em 0.3em hsl(0, 0%, 15%);
+}

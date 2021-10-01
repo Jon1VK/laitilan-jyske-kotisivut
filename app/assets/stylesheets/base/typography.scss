@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Graduate&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+
+$cursive: 'Graduate', cursive;
+$sans-serif: 'Lato', sans-serif;
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 100%;
+  font-family: $sans-serif;
+}
+
+h1 {
+  font-family: $cursive;
+  font-size: 2rem;
+}
+
+h2 {
+  font-family: $cursive;
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-family: $cursive;
+  font-size: 1.25rem;
+}
+
+.subtitle {
+  font-family: $cursive;
+  font-size: 0.875rem;
+}
+
+.small {
+  font-size: 0.875rem;
+}
+
+.overline {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: $tablet-breakpoint) {
+  html {
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: $laptop-breakpoint) {
+  html {
+    font-size: 18px;
+  }
+}
