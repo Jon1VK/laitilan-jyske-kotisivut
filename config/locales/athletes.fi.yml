@@ -1,0 +1,94 @@
+fi:
+  activerecord:
+    attributes:
+      athlete:
+        confirmation_sent_at: Vahvistus lähetetty
+        confirmation_token: Vahvistuskoodi
+        confirmed_at: Vahvistettu
+        created_at: Luotu
+        current_password: Nykyinen salasana
+        current_sign_in_at: Nykyinen kirjautuminen
+        current_sign_in_ip: Nykyisen kirjautumisen IP
+        email: Sähköposti
+        encrypted_password: Salattu salasana
+        failed_attempts: Epäonnistuneita yrityksiä
+        last_sign_in_at: Viimeinen kirjautuminen
+        last_sign_in_ip: Viimeisen kirjautumisen IP
+        locked_at: Lukittu
+        password: Salasana
+        password_confirmation: Salasanan vahvistus
+        remember_created_at: Muista minut luotu
+        remember_me: Muista minut
+        reset_password_sent_at: Salasanan nollaamistunniste lähetetty
+        reset_password_token: Salasanan nollaamistunniste
+        sign_in_count: Sisäänkirjautumisia
+        unconfirmed_email: Vahvistamaton sähköposti
+        unlock_token: Lukituksen poistotunniste
+        updated_at: Päivitetty
+    models:
+      athlete: Edustusurheilija
+  athletes:
+    confirmations:
+      confirmed: Sähköpostiosoitteesi on nyt vahvistettu.
+      new:
+        resend_confirmation_instructions: Uudelleenlähetä vahvistusohjeet
+      send_instructions: Saat hetken kuluttua sähköpostiisi ohjeet sähköpostiosoitteesi vahvistamiseen.
+      send_paranoid_instructions: Mikäli sähköpostiosoitteesi on tallennettu järjestelmäämme, lähetämme sinulle ohjeet sähköpostiosoitteesi vahvistamiseksi muutaman minuutin kuluessa.
+    failure:
+      already_authenticated: Olet jo kirjautunut sisään.
+      inactive: Tunnustasi ei ole vielä aktivoitu.
+      invalid: Väärä %{authentication_keys} tai salasana.
+      last_attempt: Käyttäjätunnuksesi lukitaan seuraavan epäonnistuneen kirjautumisen jälkeen.
+      locked: Tunnuksesi on lukittu.
+      not_found_in_database: Väärä %{authentication_keys} tai salasana.
+      timeout: Istuntosi on vanhentunut, ole hyvä ja kirjaudu sisään jatkaaksesi.
+      unauthenticated: Sinun pitää kirjautua sisään tai rekisteröityä ennen kuin voit jatkaa.
+      unconfirmed: Sinun täytyy vahvistaa sähköpostiosoitteesi ennen kuin voit jatkaa.
+    mailer:
+      password_change:
+        greeting: Hei %{recipient}!
+        message: Tämä on ilmoitus salasananne vaihtumisesta.
+        subject: Salasana vaihdettu
+      reset_password_instructions:
+        action: Vaihda salasanani
+        greeting: Hei, %{recipient}!
+        instruction: Joku on pyytänyt käyttäjätunnuksesi salasanan vaihtoa. Tämä voidaan suorittaa painamalla linkkiä alla.
+        instruction_2: Jos et pyytänyt tätä, voit jättää tämän sähköpostin huomiotta.
+        instruction_3: Salasanaasi ei vaihdeta ennen kuin painat yllä olevaa linkkiä ja syötät uuden salasanan.
+        subject: Ohjeet salasanan vaihtoon
+    passwords:
+      edit:
+        change_my_password: Vaihda salasanani
+        change_your_password: Vaihda salasanasi
+        confirm_new_password: Vahvista uusi salasana
+        new_password: Uusi salasana
+      new:
+        forgot_your_password: Unohditko salasanasi?
+        send_me_reset_password_instructions: Lähetä salasanan vaihto-ohjeet
+        sign_in: Väärä hälytys, siirry kirjautumissivulle!
+      no_token: Et voi päästä tälle sivulle tulematta salasanannollaussähköpostin kautta. Mikäli tulet salasanannollaussähköpostiviestistä, varmista että syötit koko verkko-osoitteen osoiteriville.
+      send_instructions: Saat hetken kuluttua sähköpostiisi ohjeet salasanan vaihtoon.
+      send_paranoid_instructions: Mikäli sähköpostiosoitteesi on tallennettu järjestelmäämme, lähetämme salasananpalautuslinkin sähköpostiisi muutaman minuutin kuluessa.
+      updated: Salasanasi on nyt vaihdettu. Olet kirjautuneena sisälle.
+      updated_not_active: Salasanasi on vaihdettu.
+    sessions:
+      already_signed_out: Kirjauduttu ulos onnistuneesti.
+      new:
+        sign_in: Kirjaudu sisään
+        forgot_your_password: Unohditko salasanasi?
+      signed_in: Sisäänkirjautuminen onnistui.
+      signed_out: Uloskirjautuminen onnistui.
+    shared:
+      minimum_password_length:
+        one: '(vähimmäispituus on %{count} merkki)'
+        other: '(vähimmäispituus on %{count} merkkiä)'
+  errors:
+    messages:
+      already_confirmed: on jo vahvistettu, yritä kirjautua sisään uudelleen
+      confirmation_period_expired: pitää vahvistaa %{period} kuluessa, ole hyvä ja pyydä uusi
+      expired: on vanhentunut, pyydä uutta.
+      not_found: ei löytynyt
+      not_locked: ei ollut lukittu
+      not_saved:
+        one: '1 virhe esti %{resource} tallentamisen:'
+        other: '%{count} virhettä esti %{resource} tallentamisen:'
