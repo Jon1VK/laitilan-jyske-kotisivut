@@ -26,9 +26,12 @@
           <li><%= active_link_to 'Edustusurheilijat', athletes_path %></li>
         </ul>
       </nav>
+      <%= yield :jumbotron %>
     </header>
 
-    <main>
+
+
+    <main class='container'>
       <%= yield %>
     </main>
   </body>

@@ -13,11 +13,11 @@
 
 .header-logo {
   width: 44px;
-  margin-left: 8px;
 }
 
 .header-title {
   font-size: 1.5rem;
+  margin-bottom: 0;
 }
 
 .header-subbar {
@@ -37,9 +37,8 @@
 .hamburger {
   width: 32px;
   height: 25px;
+  margin-left: 12px;
   cursor: pointer;
-  margin-right: 8px;
-  margin-left: 20px;
 }
 
 .hamburger-bar {
@@ -94,7 +93,7 @@
   top: 0;
   left: calc(-100% + 48px);
   transition: left 250ms;
-  width: calc(100% - 48px);
+  width: calc(90% - 32px);
   height: 100vh;
   background-color: var(--primary-variant);
   color: var(--on-primary);
@@ -111,6 +110,7 @@
   text-align: center;
 
   a {
+    all: unset;
     display: block;
     height: 59px;
     border-bottom: 1px solid var(--on-primary);
@@ -119,7 +119,8 @@
   }
 
   a:hover,
-  a:active {
+  a:active,
+  a:focus {
     background-color: var(--primary);
   }
 
@@ -173,6 +174,7 @@
 
     a {
       all: unset;
+      letter-spacing: 0.04em;
       box-sizing: border-box;
       display: block;
       margin: 0 0.5em;
@@ -183,6 +185,7 @@
 
     a:hover,
     a:active,
+    a:focus,
     a.active {
       position: relative;
       background-color: transparent;
@@ -190,29 +193,9 @@
       opacity: 1;
     }
 
-    a:hover::after {
-      display: block;
-      content: '';
-      background-color: var(--on-primary);
-      position: relative;
-      top: 0.4em;
-      height: 1px;
-      width: 100%;
-    }
-
-    a:hover::before {
-      position: absolute;
-      left: calc(50% - 3px);
-      bottom: calc(0.6em + 0.5px);
-      display: block;
-      content: '';
-      background-color: var(--on-primary);
-      height: 5px;
-      width: 5px;
-      transform-origin: left bottom;
-      transform: rotate(45deg);
-    }
-
+    a:hover::after,
+    a:active::after,
+    a:focus::after,
     a.active::after {
       display: block;
       content: '';
@@ -223,6 +206,9 @@
       width: 100%;
     }
 
+    a:hover::before,
+    a:active::before,
+    a:focus::before,
     a.active::before {
       position: absolute;
       left: calc(50% - 3px);

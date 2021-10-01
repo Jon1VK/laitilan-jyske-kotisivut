@@ -1,4 +1,6 @@
-button {
+button,
+.btn,
+input[type='submit'] {
   text-transform: uppercase;
   background-color: var(--primary-variant);
   box-shadow: var(--box-shadow);
@@ -9,15 +11,19 @@ button {
   text-align: center;
   border-radius: 0.25em;
   padding: 0.75em 3em;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
   cursor: pointer;
 }
 
-button:hover {
+button:hover,
+.btn:hover,
+input[type='submit']:hover {
   background-color: var(--primary);
-  margin-bottom: 0.2em;
 }
 
-button:active {
+button:active,
+.btn:active,
+input[type='submit']:active {
   background-color: var(--primary-variant);
-  margin-bottom: 0;
 }

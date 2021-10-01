@@ -1,0 +1,10 @@
+a {
+  color: var(--primary-variant);
+  cursor: pointer;
+}
+
+a:hover,
+a:active,
+a:focus {
+  text-decoration: underline;
+}
