@@ -21,18 +21,11 @@ class DeviseCreateAthletes < ActiveRecord::Migration[6.1]
       ## Rememberable
       t.datetime :remember_created_at
 
-      ## Lockable
-      t.integer  :failed_attempts, default: 0, null: false # Only if lock strategy is :failed_attempts
-      t.string   :unlock_token # Only if unlock strategy is :email or :both
-      t.datetime :locked_at
-
-
       t.timestamps null: false
     end
 
     add_index :athletes, :email,                unique: true
     add_index :athletes, :reset_password_token, unique: true
-    add_index :athletes, :unlock_token,         unique: true
     add_index :athletes, :slug,                 unique: true
   end
 end

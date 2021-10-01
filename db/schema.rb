@@ -63,15 +63,11 @@ ActiveRecord::Schema.define(version: 2021_10_01_110709) do
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
-    t.integer "failed_attempts", default: 0, null: false
-    t.string "unlock_token"
-    t.datetime "locked_at"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["email"], name: "index_athletes_on_email", unique: true
     t.index ["reset_password_token"], name: "index_athletes_on_reset_password_token", unique: true
     t.index ["slug"], name: "index_athletes_on_slug", unique: true
-    t.index ["unlock_token"], name: "index_athletes_on_unlock_token", unique: true
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
