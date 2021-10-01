@@ -29,6 +29,15 @@ gem 'bootsnap', '>= 1.4.4', require: false
 # Use devise for authentication
 gem "devise", "~> 4.8"
 
+# Annotate db schema in model files
+gem "annotate", "~> 3.1"
+
+# Human friendly urls
+gem "friendly_id", "~> 5.4"
+
+# Adds active class to active links
+gem "active_link_to", "~> 1.0"
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
