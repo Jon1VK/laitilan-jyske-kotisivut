@@ -1,0 +1,33 @@
+fi:
+  activerecord:
+    attributes:
+      user:
+        email: Sähköposti
+        password: Salasana
+        current_password: Nykyinen salasana
+        encrypted_password: Salattu salasana
+        password_confirmation: Salasanan vahvistus
+        remember_created_at: Muista minut luotu
+        remember_me: Muista minut
+        reset_password_sent_at: Salasanan nollaamistunniste lähetetty
+        reset_password_token: Salasanan nollaamistunniste
+        created_at: Luotu
+        updated_at: Päivitetty
+      athlete:
+        firstname: Etunimi
+        lastname: Sukunimi
+        fullname: Nimi
+        email: Sähköposti
+        password: Salasana
+        current_password: Nykyinen salasana
+        encrypted_password: Salattu salasana
+        password_confirmation: Salasanan vahvistus
+        remember_created_at: Muista minut luotu
+        remember_me: Muista minut
+        reset_password_sent_at: Salasanan nollaamistunniste lähetetty
+        reset_password_token: Salasanan nollaamistunniste
+        created_at: Luotu
+        updated_at: Päivitetty
+    models:
+      user: Seurakäyttäjä
+      athlete: Edustusurheilija

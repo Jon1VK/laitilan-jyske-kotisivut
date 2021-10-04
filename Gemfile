@@ -63,7 +63,11 @@ group :development do
   gem "pry-rails", "~> 0.3.9"
 
   # Open emails in browser
-  gem "letter_opener", "~> 1.7"
+  gem "letter_opener_web", "~> 1.4"
+  gem "rexml", "~> 3.2"
+
+  # Add admin dashboard
+  gem "administrate", "~> 0.16.0"
 end
 
 group :test do
