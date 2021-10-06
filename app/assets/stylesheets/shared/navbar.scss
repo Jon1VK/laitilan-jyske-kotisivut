@@ -1,0 +1,115 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: calc(-95% + 44px);
+  transition: left 250ms;
+  width: calc(95% - 44px);
+  height: 100vh;
+  background-color: var(--primary-variant);
+  color: var(--on-primary);
+  text-shadow: var(--on-primary-shadow);
+}
+
+.navbar.visible {
+  left: 0;
+  box-shadow: var(--box-shadow);
+}
+
+.navbar-links {
+  list-style: none;
+  font-family: $cursive;
+  text-transform: uppercase;
+  text-align: center;
+
+  a {
+    all: unset;
+    display: block;
+    height: 59px;
+    border-bottom: 1px solid var(--on-primary);
+    cursor: pointer;
+    line-height: 59px;
+  }
+
+  a:hover,
+  a:active,
+  a:focus {
+    background-color: var(--primary);
+  }
+
+  a.active {
+    background-color: var(--surface);
+    color: var(--on-surface);
+    text-shadow: none;
+
+    + .user-hamburger {
+      color: var(--on-surface);
+    }
+  }
+}
+
+@media screen and (min-width: $laptop-breakpoint) {
+  .navbar {
+    all: unset;
+    text-align: center;
+    display: block;
+    color: var(--on-primary);
+    background-color: var(--primary-variant-opaque);
+  }
+
+  .navbar-links {
+    display: flex;
+    height: 45px;
+    justify-content: center;
+    font-size: 0.8rem;
+
+    a {
+      all: unset;
+      letter-spacing: 0.04em;
+      box-sizing: border-box;
+      display: block;
+      margin: 0 0.5em;
+      cursor: pointer;
+      padding: 1em 0.5em;
+      opacity: 0.85;
+    }
+
+    a:hover,
+    a:active,
+    a:focus,
+    a.active {
+      position: relative;
+      background-color: transparent;
+      color: var(--on-primary);
+      opacity: 1;
+    }
+
+    a:hover::after,
+    a:active::after,
+    a:focus::after,
+    a.active::after {
+      display: block;
+      content: '';
+      background-color: var(--on-primary);
+      position: relative;
+      top: 0.4em;
+      height: 1px;
+      width: 100%;
+    }
+
+    a:hover::before,
+    a:active::before,
+    a:focus::before,
+    a.active::before {
+      position: absolute;
+      left: calc(50% - 3px);
+      bottom: calc(0.6em + 0.5px);
+      display: block;
+      content: '';
+      background-color: var(--on-primary);
+      height: 5px;
+      width: 5px;
+      transform-origin: left bottom;
+      transform: rotate(45deg);
+    }
+  }
+}

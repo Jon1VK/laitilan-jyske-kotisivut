@@ -11,6 +11,7 @@ class AthleteDashboard < Administrate::BaseDashboard
     firstname: Field::String,
     lastname: Field::String,
     email: Field::String,
+    password: Field::Password,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }.freeze
@@ -32,8 +33,6 @@ class AthleteDashboard < Administrate::BaseDashboard
     firstname
     lastname
     email
-    created_at
-    updated_at
   ].freeze
 
   # FORM_ATTRIBUTES
@@ -43,6 +42,7 @@ class AthleteDashboard < Administrate::BaseDashboard
     firstname
     lastname
     email
+    password
   ].freeze
 
   # COLLECTION_FILTERS

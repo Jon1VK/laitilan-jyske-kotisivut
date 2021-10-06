@@ -1,0 +1,12 @@
+.notice {
+  text-align: center;
+  font-size: 0.875rem;
+  padding: 1em;
+  background-color: var(--secondary-variant);
+  color: var(--on-secondary);
+}
+
+.alert {
+  background-color: var(--error);
+  color: var(--on-error);
+}

@@ -9,6 +9,7 @@ button,
 ul,
 li,
 main,
+img,
 input[type='submit'] {
   all: unset;
   box-sizing: border-box;
@@ -19,4 +20,13 @@ span,
 a {
   all: unset;
   display: inline;
+}
+
+li {
+  display: list-item;
+}
+
+img {
+  display: block;
+  width: 100%;
 }

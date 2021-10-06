@@ -12,6 +12,7 @@
  *
  *= require_self
  */
+@import 'trix/dist/trix';
 
 @import './base/reset';
 @import './base/colors';
@@ -19,12 +20,7 @@
 @import './base/typography';
 
 // Shared styling for all pages
-// * Header
-// * Footer
 @import './shared/*';
 
-// Basic page layout
-@import './layout/*';
-
-// Enable rich text editing
-@import './actiontext.scss';
+// Basic styles for independent pages
+@import './pages/*';

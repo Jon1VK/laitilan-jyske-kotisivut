@@ -18,5 +18,8 @@ module LaitilanJyskeKotisivut
     #
     config.time_zone = "Helsinki"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    # Use libvips as action storage image processor
+    config.active_storage.variant_processor = :vips
   end
 end

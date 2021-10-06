@@ -42,6 +42,9 @@ gem "active_link_to", "~> 1.0"
 gem "rails-i18n", "~> 6.0"
 gem "devise-i18n", "~> 1.10"
 
+# Add admin dashboard
+gem "administrate", "~> 0.16.0"
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -65,9 +68,6 @@ group :development do
   # Open emails in browser
   gem "letter_opener_web", "~> 1.4"
   gem "rexml", "~> 3.2"
-
-  # Add admin dashboard
-  gem "administrate", "~> 0.16.0"
 end
 
 group :test do

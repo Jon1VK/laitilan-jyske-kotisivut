@@ -1,1 +1,9 @@
-<h2>Hello from athletes#index</h2>
+<h1>Edustusurheilijat</h1>
+
+<p>Laitilan Jyskettä edustaa joukko 14-vuotiaita ja vanhempia tavoitteellisesti urheilevia edustusurheilijoita. Osa heistä on Suomen kansallisen tason huippuja ja osa vasta urheilu-uraansa aloittavia nuoria. Voit tutustua Jyskeen edustusurheilijoihin heidän henkilökohtaisten sivujen kautta.</p>
+
+<ul>
+  <% @athletes.each do |athlete| %>
+    <p><%= link_to athlete.fullname, athlete_path(athlete) %></p>
+  <% end %>
+</ul>

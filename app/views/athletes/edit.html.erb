@@ -1,0 +1,12 @@
+<h2 class='maintitle'><%= @athlete.fullname %></h2>
+
+<%= form_with model: @athlete do |form| %>
+  <div class="field">
+    <%= form.label :event, "Päälaji" %>
+    <%= form.text_field :event %>
+  </div>
+  <div class="field">
+    <%= form.rich_text_area :content %>
+  </div>
+  <input type="submit" value="Tallenna">
+<% end %>

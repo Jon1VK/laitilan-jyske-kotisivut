@@ -9,7 +9,8 @@
   }
 
   form {
-    width: 20rem;
+    width: clamp(90%, 20rem, 100%);
+    max-width: 20rem;
     display: flex;
     flex-direction: column;
     align-items: stretch;
