@@ -1,6 +1,14 @@
-<div>
-  <h1 class='maintitle'><%= @athlete.fullname %></h1>
-  <span class='subtitle'><%= @athlete.event %></span>
-</div>
+<h1>Edustusurheilijat</h1>
+<div class='grid'>
+  <ul class='athletes-list'>
+    <% Athlete.all.each do |athlete| %>
+      <li><%= active_link_to athlete.fullname, athlete_path(athlete) %></li>
+    <% end %>
+  </ul>
 
-<div><%= @athlete.content %></div>
+  <article class='athlete-info'>
+    <h1 class='maintitle'><%= @athlete.fullname %></h1>
+    <span class='subtitle'><%= @athlete.event %></span>
+    <div><%= @athlete.content %></div>
+  </article>
+</div>

@@ -4,10 +4,7 @@
 // that code so it'll be compiled.
 
 import * as ActiveStorage from '@rails/activestorage';
-import { initHamburgerNav } from './static/hamburger_nav';
-
-require('trix');
-require('@rails/actiontext');
+import { initHamburgerNav } from '../static/hamburger_nav';
 
 ActiveStorage.start();
 initHamburgerNav();

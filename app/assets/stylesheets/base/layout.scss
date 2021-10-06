@@ -13,3 +13,9 @@ body {
 main.container {
   margin: 2rem auto;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  gap: 1rem;
+}

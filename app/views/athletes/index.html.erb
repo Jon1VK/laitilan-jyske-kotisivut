@@ -1,9 +1,18 @@
 <h1>Edustusurheilijat</h1>
+<div class='grid'>
+  <div class='athletes-info'>
+    <p>Laitilan Jyskettä edustaa joukko 14-vuotiaita ja vanhempia tavoitteellisesti urheilevia edustusurheilijoita. Osa heistä on Suomen kansallisen tason huippuja ja osa vasta urheilu-uraansa aloittavia nuoria. Voit tutustua Jyskeen edustusurheilijoihin heidän henkilökohtaisten sivujen kautta.</p>
+    <h2>Edustusurheilijoita tukemassa</h2>
+    <figure class='athletes-sponsor'>
+      <a href="https://www.lahitapiola.fi/henkilo" target="_blank">
+        <%= image_tag '/images/lahitapiola.png', alt: 'LähiTapiolan logo' %>
+      </a>
+    </figure>
+  </div>
 
-<p>Laitilan Jyskettä edustaa joukko 14-vuotiaita ja vanhempia tavoitteellisesti urheilevia edustusurheilijoita. Osa heistä on Suomen kansallisen tason huippuja ja osa vasta urheilu-uraansa aloittavia nuoria. Voit tutustua Jyskeen edustusurheilijoihin heidän henkilökohtaisten sivujen kautta.</p>
-
-<ul>
-  <% @athletes.each do |athlete| %>
-    <p><%= link_to athlete.fullname, athlete_path(athlete) %></p>
-  <% end %>
-</ul>
+  <ul class='athletes-list'>
+    <% @athletes.each do |athlete| %>
+      <li><%= active_link_to athlete.fullname, athlete_path(athlete) %></li>
+    <% end %>
+  </ul>
+</div>

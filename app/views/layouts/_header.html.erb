@@ -1,6 +1,8 @@
 <header class='header'>
   <div class='header-bar container'>
-    <%= image_tag '/images/logo.svg', alt: 'Laitilan Jyskeen logo', class: 'header-logo' %>
+    <a href="<%= root_url %>">
+      <%= image_tag '/images/logo.svg', alt: 'Laitilan Jyskeen logo', class: 'header-logo' %>
+    </a>
     <h1 class='header-title'>Laitilan Jyske</h1>
     <div id='hamburger' class='hamburger'>
       <div class='hamburger-bar'></div>
@@ -20,7 +22,7 @@
         <% end %>
       </li>
       <li>
-        <%= active_link_to 'Edustusurheilijat', athletes_path, active: :exact %>
+        <%= active_link_to 'Edustusurheilijat', athletes_path %>
       </li>
     </ul>
   </nav>

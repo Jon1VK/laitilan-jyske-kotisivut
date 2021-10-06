@@ -1,0 +1,55 @@
+.athletes-list {
+  grid-row: 1;
+  grid-column: 1 / 13;
+  list-style: none;
+
+  li:first-child {
+    border-top: 1px solid var(--primary-variant);
+  }
+
+  li {
+    border-bottom: 1px solid var(--primary-variant);
+  }
+
+  a {
+    font-family: $cursive;
+    font-size: 0.875rem;
+    display: block;
+    padding: 0.5em;
+  }
+
+  a.active {
+    background-color: var(--primary-variant);
+    color: var(--on-primary);
+    text-shadow: var(--on-primary-shadow);
+  }
+}
+
+.athletes-sponsor {
+  display: inline-block;
+  margin: 0;
+
+  img {
+    width: auto;
+    height: 80px;
+  }
+}
+
+.athletes-info,
+.athlete-info {
+  grid-column: 1 / 13;
+}
+
+@media screen and (min-width: $laptop-breakpoint) {
+  .athletes-list {
+    grid-row: 1;
+    grid-column: 1 / 4;
+  }
+
+  .athletes-info,
+  .athlete-info {
+    grid-column: 4 / 13;
+    padding-left: 1rem;
+    border-left: 1px solid var(--on-background);
+  }
+}

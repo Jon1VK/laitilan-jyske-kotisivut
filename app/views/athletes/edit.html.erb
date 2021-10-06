@@ -1,4 +1,8 @@
-<h2 class='maintitle'><%= @athlete.fullname %></h2>
+<% content_for :javascript_pack_tags do %>
+  <%= javascript_pack_tag 'action_text' %>
+<% end %>
+
+<h1 class='maintitle'><%= @athlete.fullname %></h1>
 
 <%= form_with model: @athlete do |form| %>
   <div class="field">

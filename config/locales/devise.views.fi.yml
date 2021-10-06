@@ -4,7 +4,7 @@ fi:
       already_authenticated: Olet jo kirjautunut sisään.
       invalid: Väärä %{authentication_keys} tai salasana.
       not_found_in_database: Väärä %{authentication_keys} tai salasana.
-      unauthenticated: Sinun pitää kirjautua sisään tai rekisteröityä ennen kuin voit jatkaa.
+      unauthenticated: Sinun pitää kirjautua sisään ennen kuin voit jatkaa.
     mailer:
       password_change:
         greeting: Hei %{recipient}!
@@ -27,7 +27,7 @@ fi:
         forgot_your_password: Unohditko salasanasi?
         send_me_reset_password_instructions: Lähetä salasanan vaihto-ohjeet
         sign_in: Väärä hälytys! Siirry kirjautumissivulle.
-      no_token: Et voi päästä tälle sivulle tulematta salasanannollaussähköpostin kautta. Mikäli tulet salasanannollaussähköpostiviestistä, varmista että syötit koko verkko-osoitteen osoiteriville.
+      no_token: Et voi päästä tälle sivulle tulematta salasanannollaus-sähköpostin kautta. Mikäli tulet salasanannollaus-sähköpostiviestistä, varmista että syötit koko verkko-osoitteen osoiteriville.
       send_instructions: Saat hetken kuluttua sähköpostiisi ohjeet salasanan vaihtoon.
       send_paranoid_instructions: Mikäli sähköpostiosoitteesi on tallennettu järjestelmäämme, lähetämme salasananpalautuslinkin sähköpostiisi muutaman minuutin kuluessa.
       updated: Salasanasi on nyt vaihdettu. Olet kirjautuneena sisälle.
