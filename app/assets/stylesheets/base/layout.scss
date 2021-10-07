@@ -16,6 +16,19 @@ main.container {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(12, [col-start] 1fr);
+  grid-template-columns: repeat(12, 1fr);
   gap: 1rem;
+}
+
+.aside {
+  grid-row: 1;
+  grid-column: 1 / 13;
+  list-style: none;
+}
+
+@media screen and (min-width: $laptop-breakpoint) {
+  .aside {
+    grid-row: 1;
+    grid-column: 1 / 4;
+  }
 }

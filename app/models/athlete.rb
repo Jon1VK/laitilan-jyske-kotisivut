@@ -22,6 +22,8 @@
 #  index_athletes_on_slug                  (slug) UNIQUE
 #
 class Athlete < ApplicationRecord
+  default_scope { order(:firstname, :lastname) }
+
   # Authentication implementation with devise
   devise :database_authenticatable, :recoverable, :rememberable, :validatable
   

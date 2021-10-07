@@ -5,6 +5,8 @@
 
 import * as ActiveStorage from '@rails/activestorage';
 import { initHamburgerNav } from '../static/hamburger_nav';
+import { initDropDowns } from '../static/dropdown';
 
 ActiveStorage.start();
 initHamburgerNav();
+initDropDowns();

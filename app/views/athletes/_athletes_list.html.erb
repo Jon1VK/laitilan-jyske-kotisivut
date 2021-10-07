@@ -1,0 +1,8 @@
+<h2 id='dropdown-button' class='dropdown-button'>Urheilijat</h2>
+<div id='dropdown' class='dropdown'>
+  <ul class='athletes-list'>
+    <% athletes.each do |athlete| %>
+      <li><%= active_link_to athlete.fullname, athlete_path(athlete) %></li>
+    <% end %>
+  </ul>
+</div>

@@ -1,14 +1,9 @@
 .athletes-list {
-  grid-row: 1;
-  grid-column: 1 / 13;
-  list-style: none;
-
   li {
     display: block;
-    border-bottom: 1px solid var(--primary-variant);
   }
 
-  li:first-child {
+  li:first-child a {
     border-top: 1px solid var(--primary-variant);
   }
 
@@ -16,7 +11,8 @@
     font-family: $cursive;
     font-size: 0.875rem;
     display: block;
-    padding: 0.5rem;
+    padding: 0.5em;
+    border-bottom: 1px solid var(--primary-variant);
   }
 
   a.active {
@@ -42,11 +38,6 @@
 }
 
 @media screen and (min-width: $laptop-breakpoint) {
-  .athletes-list {
-    grid-row: 1;
-    grid-column: 1 / 4;
-  }
-
   .athletes-info,
   .athlete-info {
     grid-column: 4 / 13;
