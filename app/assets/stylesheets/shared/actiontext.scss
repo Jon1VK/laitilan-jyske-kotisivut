@@ -46,7 +46,7 @@
 
       > action-text-attachment,
       > .attachment {
-        padding: 0 0.5em !important;
+        padding: 0 0.5em 0 0 !important;
         float: none !important;
       }
     }
@@ -60,6 +60,20 @@
       > .attachment {
         flex: 1 0 33% !important;
         max-width: 33% !important;
+      }
+
+      > action-text-attachment {
+        img {
+          transition: 250ms;
+          transform: scale(1);
+        }
+
+        img:hover {
+          position: relative;
+          transform-origin: center bottom;
+          transform: scale(2);
+          z-index: 99;
+        }
       }
     }
   }
