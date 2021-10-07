@@ -14,21 +14,18 @@ main.container {
   margin: 2rem auto;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 1rem;
-}
-
-.aside {
-  grid-row: 1;
-  grid-column: 1 / 13;
-  list-style: none;
-}
-
 @media screen and (min-width: $laptop-breakpoint) {
-  .aside {
-    grid-row: 1;
-    grid-column: 1 / 4;
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+  }
+
+  @for $i from 1 to 13 {
+    @for $j from $i + 1 to 14 {
+      .col-#{$i}-#{$j} {
+        grid-column: #{$i} / #{$j};
+      }
+    }
   }
 }
