@@ -1,11 +1,6 @@
 <%= turbo_frame_tag 'athlete' do %>
-  <% content_for :javascript_pack_tags do %>
-    <%= javascript_pack_tag 'action_text' %>
-  <% end %>
-
-  <h1 class='maintitle'><%= @athlete.fullname %></h1>
-
-  <%= form_with model: @athlete do |form| %>
+  <%= form_with model: @athlete, data: { turbo: true } do |form| %>
+    <%= form.submit 'Tallenna' %>
     <div class="field">
       <%= form.label :event, "Päälaji" %>
       <%= form.text_field :event %>
@@ -13,6 +8,5 @@
     <div class="field">
       <%= form.rich_text_area :content %>
     </div>
-    <input type="submit" value="Tallenna">
   <% end %>
 <% end %>

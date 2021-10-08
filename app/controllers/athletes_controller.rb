@@ -19,7 +19,7 @@ class AthletesController < ApplicationController
   # PATCH/PUT /athletes/joni-vainio-kaila
   def update
     if @athlete.update(athlete_params)
-      redirect_to @athlete, notice: "Tietosi päivitettiin onnistuneesti."
+      redirect_to @athlete
     else
       render :edit, status: :unprocessable_entity
     end

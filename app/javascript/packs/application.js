@@ -4,9 +4,13 @@
 // that code so it'll be compiled.
 
 import * as ActiveStorage from '@rails/activestorage';
+import { Turbo } from '@hotwired/turbo-rails';
 import { initHamburgerNav } from '../static/hamburger_nav';
 import { initDropDowns } from '../static/dropdown';
 
 ActiveStorage.start();
+
+Turbo.session.drive = false;
+
 initHamburgerNav();
 initDropDowns();

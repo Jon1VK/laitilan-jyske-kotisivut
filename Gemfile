@@ -16,59 +16,55 @@ gem 'webpacker', '~> 5.0'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
-# gem 'redis', '~> 4.0'
+gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 gem 'bcrypt', '~> 3.1.7'
-
 # Use Active Storage variant
 gem 'image_processing', '~> 1.2'
-
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
-
 # Use devise for authentication
 gem "devise", "~> 4.8"
-
 # Annotate db schema in model files
 gem "annotate", "~> 3.1"
-
 # Human friendly urls
 gem "friendly_id", "~> 5.4"
-
 # Adds active class to active links
 gem "active_link_to", "~> 1.0"
-
 # Add translations for strings
 gem "rails-i18n", "~> 6.0"
 gem "devise-i18n", "~> 1.10"
-
 # Add admin dashboard
 gem "administrate", "~> 0.16.0"
+# Use Amazon S3
+gem "aws-sdk-s3", "~> 1.103"
+# Send and receive async updates through html 
+gem "turbo-rails", "~> 0.8.1"
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
+
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 4.1.0'
-  
+
   gem 'listen', '~> 3.3'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-
   # Better error pages for development
   gem "better_errors", "~> 2.9"
   gem "binding_of_caller", "~> 1.0"
-
   # Better console for development
   gem "pry-rails", "~> 0.3.9"
-
   # Open emails in browser
   gem "letter_opener_web", "~> 1.4"
   gem "rexml", "~> 3.2"
 end
+
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
@@ -78,7 +74,6 @@ group :test do
   gem 'webdrivers'
 end
 
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
-gem "aws-sdk-s3", "~> 1.103"

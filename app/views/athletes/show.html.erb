@@ -1,3 +1,7 @@
+<% content_for :javascript_pack_tags do %>
+  <%= javascript_pack_tag 'action_text' %>
+<% end %>
+
 <div class='grid athletes-show'>
   <aside class='col-1-4 aside'>
     <h2 id='dropdown-button' class='dropdown-button'>Urheilijasivut</h2>
@@ -7,13 +11,14 @@
   </aside>
 
   <article class='col-4-13'>
+    <h1 class='maintitle'><%= @athlete.fullname %></h1>
     <%= turbo_frame_tag 'athlete' do %>
-        <div>
-          <h1 class='maintitle'><%= @athlete.fullname %></h1>
-          <span class='subtitle'><%= @athlete.event %></span>
-        </div>
-        <div><%= @athlete.content %></div>
-        <%= link_to "Muokkaa", edit_athlete_path(@athlete) %>
+      <% if athlete_signed_in? && current_athlete == @athlete %>
+        <%= link_to "Muokkaa", edit_athlete_path(@athlete), class: 'btn', data: { turbo: true } %>
+      <% end %>
+      <span class='subtitle'><%= @athlete.event %></span>
+      <div><%= @athlete.content %></div>
+      <script>convertPreformattedTablesToHTML()</script>
     <% end %>
   </article>
 </div>

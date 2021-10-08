@@ -24,13 +24,15 @@
   }
 }
 
-.athletes-sponsor {
-  display: inline-block;
-  margin: 0;
+.athletes-sponsor img {
+  width: auto;
+  margin: 0 auto;
+  height: 80px;
+}
 
-  img {
-    width: auto;
-    height: 80px;
+@media screen and (min-width: $tablet-breakpoint) {
+  .athletes-sponsor img {
+    margin: 0;
   }
 }
 

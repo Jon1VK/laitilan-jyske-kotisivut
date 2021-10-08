@@ -2,6 +2,10 @@
 // <action-text-attachment> element we wrap around attachments. Otherwise,
 // images in galleries will be squished by the max-width: 33%; rule.
 trix-toolbar {
+  .trix-button--icon {
+    width: 2.25em;
+  }
+
   .trix-button--icon-float-left::before {
     background-image: image_url('./left-alignment.svg');
     top: 8%;
@@ -20,26 +24,36 @@ trix-toolbar {
 
   h1 {
     font-family: $cursive;
-    font-size: 1.5rem;
-    margin-top: 1.25em;
-    margin-bottom: 0.25em;
+    font-size: 1.75em;
+    margin: 1em 0 0.75em 0;
+  }
+
+  h1:first-child {
+    margin-top: 0;
   }
 
   sub {
     all: unset;
+    display: block;
   }
 
   sup {
     all: unset;
+    display: block;
   }
 
   action-text-attachment,
-  div > .attachment {
+  .attachment--preview {
+    display: inline-block;
     flex: 1 0 100% !important;
     width: 100% !important;
     max-width: 100% !important;
     padding: 0 !important;
-    padding-bottom: 0.25em !important;
+    margin-bottom: 1rem !important;
+
+    .attachment__caption {
+      margin-top: 0.5rem;
+    }
   }
 
   action-text-attachment {
@@ -64,6 +78,13 @@ trix-toolbar {
       width: 50%;
       float: right;
       padding-left: 1.25rem;
+    }
+
+    sub::after,
+    sup::after {
+      display: block;
+      content: '';
+      height: 0px;
     }
 
     .attachment-gallery {
@@ -91,14 +112,16 @@ trix-toolbar {
 
       > action-text-attachment {
         img {
-          transition: 250ms;
+          transition: 500ms;
           transform: scale(1);
+          background-color: var(--background);
         }
 
         img:hover {
           position: relative;
           transform-origin: center bottom;
-          transform: scale(2);
+          transform: scale(1.5);
+          box-shadow: var(--box-shadow);
           z-index: 99;
         }
       }
