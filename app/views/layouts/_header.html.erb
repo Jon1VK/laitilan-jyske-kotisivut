@@ -22,7 +22,7 @@
         <% end %>
       </li>
       <li>
-        <%= active_link_to 'Edustusurheilijat', athletes_path, active: :exact %>
+        <%= active_link_to 'Edustusurheilijat', athletes_path, active: :exact, data: { turbo_cache: 'clear' } %>
       </li>
     </ul>
   </nav>

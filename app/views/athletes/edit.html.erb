@@ -1,12 +1,22 @@
-<%= turbo_frame_tag 'athlete' do %>
-  <%= form_with model: @athlete, data: { turbo: true } do |form| %>
-    <%= form.submit 'Tallenna' %>
-    <div class="field">
-      <%= form.label :event, "Päälaji" %>
-      <%= form.text_field :event %>
+<div class='grid athletes'>
+  <aside class='col-1-4 aside'>
+    <h2 id='dropdown-button' class='dropdown-button'>Urheilijat</h2>
+    <div id='dropdown' class='dropdown'>
+      <%= render partial: 'athletes_list', locals: { athletes: Athlete.all } %>
     </div>
-    <div class="field">
-      <%= form.rich_text_area :content %>
-    </div>
+  </aside>
+
+  <%= turbo_frame_tag 'athlete', class: 'col-4-13' do %>
+    <h1 class='maintitle'><%= @athlete.fullname %></h1>
+    <%= form_with model: @athlete do |form| %>
+      <%= form.submit 'Tallenna', class: 'btn' %>
+      <div class="field">
+        <%= form.label :event, "Päälaji" %>
+        <%= form.text_field :event %>
+      </div>
+      <div class="field">
+        <%= form.rich_text_area :content %>
+      </div>
+    <% end %>
   <% end %>
-<% end %>
+</div>

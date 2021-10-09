@@ -21,7 +21,8 @@
   text-transform: uppercase;
   text-align: center;
 
-  a {
+  a,
+  form {
     all: unset;
     display: block;
     height: 59px;
@@ -31,8 +32,11 @@
   }
 
   a:hover,
+  form:hover,
   a:active,
-  a:focus {
+  form:active,
+  a:focus,
+  form:focus {
     background-color: var(--primary);
   }
 
@@ -62,7 +66,8 @@
     justify-content: center;
     font-size: 0.8rem;
 
-    a {
+    a,
+    form {
       all: unset;
       letter-spacing: 0.04em;
       box-sizing: border-box;
@@ -74,8 +79,11 @@
     }
 
     a:hover,
+    form:hover,
     a:active,
+    form:active,
     a:focus,
+    form:focus,
     a.active {
       position: relative;
       background-color: transparent;
@@ -84,8 +92,11 @@
     }
 
     a:hover::after,
+    form:hover::after,
     a:active::after,
+    form:active::after,
     a:focus::after,
+    form:focus::after,
     a.active::after {
       display: block;
       content: '';
@@ -97,8 +108,11 @@
     }
 
     a:hover::before,
+    form:hover::before,
     a:active::before,
+    form:active::before,
     a:focus::before,
+    form:focus::before,
     a.active::before {
       position: absolute;
       left: calc(50% - 3px);

@@ -28,4 +28,12 @@ main.container {
       }
     }
   }
+
+  @for $i from 1 to 4 {
+    @for $j from $i + 1 to 5 {
+      .row-#{$i}-#{$j} {
+        grid-row: #{$i} / #{$j};
+      }
+    }
+  }
 }

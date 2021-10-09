@@ -1,3 +1,7 @@
+.athletes .aside {
+  padding-bottom: 1rem;
+}
+
 .athletes-list {
   margin-bottom: 1rem;
 
@@ -25,9 +29,9 @@
 }
 
 .athletes-sponsor img {
-  width: auto;
+  max-width: 300px;
+  max-height: 80px;
   margin: 0 auto;
-  height: 80px;
 }
 
 @media screen and (min-width: $tablet-breakpoint) {
@@ -37,13 +41,8 @@
 }
 
 @media screen and (min-width: $laptop-breakpoint) {
-  .athletes-index .aside,
-  .athletes-show .aside {
+  .athletes .aside {
     padding-right: 1rem;
     border-right: 1px solid var(--on-background);
-  }
-
-  .athletes-index .aside {
-    grid-row: 1 / 3;
   }
 }

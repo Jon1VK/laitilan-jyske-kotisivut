@@ -13,13 +13,21 @@
 }
 
 .user-navbar-links {
-  a {
+  a,
+  form {
     border-bottom: 1px solid var(--on-secondary);
+
+    input {
+      display: inline;
+    }
   }
 
   a:hover,
   a:active,
-  a:focus {
+  a:focus,
+  form:hover,
+  form:active,
+  form:focus {
     background-color: var(--secondary-variant);
   }
 
@@ -43,28 +51,38 @@
   }
 
   .user-navbar-links {
-    a {
+    a,
+    form {
       border: none;
     }
 
     a:hover,
+    form:hover,
     a:active,
+    form:active,
     a:focus,
+    form:focus,
     a.active {
       color: var(--on-secondary);
       background: none;
     }
 
     a:hover::after,
+    form:hover::after,
     a:active::after,
+    form:active::after,
     a:focus::after,
+    form:focus::after,
     a.active::after {
       background-color: var(--on-secondary);
     }
 
     a:hover::before,
+    form:hover::before,
     a:active::before,
+    form:active::before,
     a:focus::before,
+    form:focus::before,
     a.active::before {
       background-color: var(--on-secondary);
     }

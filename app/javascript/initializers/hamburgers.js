@@ -1,4 +1,4 @@
-export const initHamburgerNav = () => {
+export function init() {
   const mainHamburger = document.getElementById('hamburger');
   const userHamburger = document.getElementById('user-hamburger');
   const mainNav = document.getElementById('main-nav');
@@ -20,4 +20,19 @@ export const initHamburgerNav = () => {
       userHamburger.classList.toggle('active');
     });
   }
-};
+}
+
+export function close() {
+  const mainHamburger = document.getElementById('hamburger');
+  const userHamburger = document.getElementById('user-hamburger');
+  const mainNav = document.getElementById('main-nav');
+  const userNav = document.getElementById('user-nav');
+
+  mainHamburger.classList.remove('active');
+  mainNav.classList.remove('visible');
+
+  if (userNav) {
+    userHamburger.classList.remove('active');
+    userNav.classList.remove('visible');
+  }
+}

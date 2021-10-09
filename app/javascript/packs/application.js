@@ -5,12 +5,33 @@
 
 import * as ActiveStorage from '@rails/activestorage';
 import { Turbo } from '@hotwired/turbo-rails';
-import { initHamburgerNav } from '../static/hamburger_nav';
-import { initDropDowns } from '../static/dropdown';
+import '@rails/actiontext';
+import '../initializers/trix';
+import * as Hamburgers from '../initializers/hamburgers';
+import * as Dropdowns from '../initializers/dropdowns';
+import * as PreformatConverter from '../initializers/preformat_converter';
 
 ActiveStorage.start();
 
-Turbo.session.drive = false;
+function init() {
+  Hamburgers.init();
+  Dropdowns.init();
+  PreformatConverter.convert();
+}
 
-initHamburgerNav();
-initDropDowns();
+function clean() {
+  Hamburgers.close();
+  Dropdowns.close();
+}
+
+document.addEventListener('turbo:load', () => {
+  init();
+});
+
+document.addEventListener('turbo:submit-end', () => {
+  Turbo.clearCache();
+});
+
+document.addEventListener('turbo:before-cache', () => {
+  clean();
+});

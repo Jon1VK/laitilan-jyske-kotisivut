@@ -7,7 +7,7 @@
   <h2 class='maintitle'><%= t('.sign_in') %></h2>
   <span class='subtitle'><%= t(".#{resource_name}") %></span>
 
-  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name), data: { turbo: false }) do |f| %>
     <div class="field">
       <%= f.label :email %>
       <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
@@ -27,6 +27,6 @@
       <%= link_to t(".forgot_your_password"), new_password_path(resource_name), class: 'small' %>
     </div>
 
-    <%= f.submit t('.sign_in') %>
+    <%= f.submit t('.sign_in'), class: 'btn' %>
   <% end %>
 </div>

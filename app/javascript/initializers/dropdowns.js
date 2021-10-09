@@ -1,4 +1,4 @@
-export const initDropDowns = () => {
+export function init() {
   const dropdownButton = document.getElementById('dropdown-button');
   const dropdown = document.getElementById('dropdown');
 
@@ -8,4 +8,14 @@ export const initDropDowns = () => {
       dropdownButton.classList.toggle('active');
     });
   }
-};
+}
+
+export function close() {
+  const dropdownButton = document.getElementById('dropdown-button');
+  const dropdown = document.getElementById('dropdown');
+
+  if (dropdownButton) {
+    dropdown.classList.remove('visible');
+    dropdownButton.classList.remove('active');
+  }
+}

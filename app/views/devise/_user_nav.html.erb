@@ -2,15 +2,16 @@
   <nav id='user-nav' class='navbar user-navbar'>
     <h3>Hei <%= current_athlete.fullname %></h3>
     <ul class='navbar-links user-navbar-links'>
-      <li><%= active_link_to "Omat sivut", athlete_path(current_athlete), active: :exact %></li>
-      <li><%= link_to "Kirjaudu ulos", destroy_athlete_session_url %></li>
+      <li><%= active_link_to "Omat sivut", athlete_path(current_athlete) %></li>
+      <li><%= button_to 'Kirjaudu ulos', destroy_athlete_session_url, method: :delete %></li>
     </ul>
   </nav>
 <% elsif user_signed_in? %>
   <nav id='user-nav' class='navbar user-navbar'>  
     <h3>Hei <%= current_user.email %></h3>
     <ul class='navbar-links user-navbar-links'>
-      <li><%= link_to "Kirjaudu ulos", destroy_user_session_url %></li>
+      <li><%= link_to "Hallintapaneeli", admin_root_url %></li>
+      <li><%= button_to 'Kirjaudu ulos', destroy_user_session_url, method: :delete %></li>
     </ul>
   </nav>
 <% end %>
