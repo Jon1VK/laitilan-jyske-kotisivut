@@ -28,6 +28,20 @@ fi:
         reset_password_token: Salasanan nollaamistunniste
         created_at: Luotu
         updated_at: Päivitetty
+      record:
+        league: Sarja
+        discipline: Laji
+        athlete: Urheilija
+        result: Tulos
+        location: Paikkakunta
+        achieved_at: Päivämäärä
     models:
-      user: Seurakäyttäjä
-      athlete: Edustusurheilija
+      user:
+        one: Seurakäyttäjä
+        other: Seurakäyttäjät
+      athlete:
+        one: Edustusurheilija
+        other: Edustusurheilijat
+      record:
+        one: Ennätys
+        other: Ennätykset

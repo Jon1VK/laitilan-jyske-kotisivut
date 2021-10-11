@@ -1,0 +1,10 @@
+fi:
+  helpers:
+    label:
+      record:
+        league: Sarja
+        discipline: Laji
+        athlete: Urheilija
+        result: Tulos
+        location: Paikkakunta
+        achieved_at: Päivämäärä
