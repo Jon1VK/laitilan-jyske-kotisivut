@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_04_142742) do
+ActiveRecord::Schema.define(version: 2021_10_11_152445) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -68,6 +68,19 @@ ActiveRecord::Schema.define(version: 2021_10_04_142742) do
     t.index ["email"], name: "index_athletes_on_email", unique: true
     t.index ["reset_password_token"], name: "index_athletes_on_reset_password_token", unique: true
     t.index ["slug"], name: "index_athletes_on_slug", unique: true
+  end
+
+  create_table "records", force: :cascade do |t|
+    t.string "league", null: false
+    t.string "discipline", null: false
+    t.string "athlete", null: false
+    t.string "result", null: false
+    t.string "location", null: false
+    t.date "achieved_at", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["discipline"], name: "index_records_on_discipline"
+    t.index ["league"], name: "index_records_on_league"
   end
 
   create_table "users", force: :cascade do |t|

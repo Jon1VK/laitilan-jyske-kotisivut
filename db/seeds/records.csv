@@ -1,0 +1,264 @@
+league;discipline;result;athlete;location;achieved_at
+Miehet;100m;10,98;Joni Vainio-Kaila;Turku;29.5.2019
+Miehet;200m;21,89;Joni Vainio-Kaila;Turku;10.8.2016
+Miehet;400m;47,72;Joni Vainio-Kaila;Lahti;15.8.2015
+Miehet;800m;1.50,40;Ilpo Haalisto;Mikkeli;30.7.1993
+Miehet;1500m;3.50,80;Jari Terho;Turku;1.8.1991
+Miehet;3000m;8.17,52;Jari Terho;Tuusula/H;14.8.1990
+Miehet;5000m;14.21,13;Jari Terho;Lahti;8.8.1991
+Miehet;10000m;30.18,26;Jari Terho;Helsinki/E;28.5.1991
+Miehet;Puolimaraton;1.15.58;Kari Yli-Pentti;Turku;7.7.1996
+Miehet;Maraton;2.30.05;Aarre Karonen;Turku;7.4.1974
+Miehet;3000m estejuoksu;8.52,85;Mauri Kontu;Turku;3.7.1976
+Miehet;110m aitajuoksu;16,21;Joonas Mäkinen;Kauhava;4.8.2017
+Miehet;400m aitajuoksu;51,09;Joni Vainio-Kaila;Tampere;5.9.2015
+Miehet;Korkeus;194;Heikki Laaksonen;Naantali;4.8.1973
+Miehet;Korkeus;194;Joonas Mäkinen;Kópavogur ISL;7.6.2014
+Miehet;Seiväs;510;Teemu Hyytiä;Raisio;10.7.2014
+Miehet;Pituus;7,16;Jari Taiminen;Rauma;15.8.1981
+Miehet;Kolmiloikka;13,35;Heikki Laaksonen;-;1.1.1968
+Miehet;Kuula;15,16;Jari Pyykkö;Nummi-Pusula;26.6.1988
+Miehet;Kiekko;52,36;Martti Ruoho;Somero;30.5.1979
+Miehet;Moukari;59,22;Antero Eerikkilä;Laitila;19.8.1970
+Miehet;Keihäs;65,56;Aaro Saario;-;1.1.1943
+Miehet;Kymmenottelu;6124;Joonas Mäkinen;Kuopio;3.8.2014
+Miehet;20km kävely;1.34.42;Kari Laiho;Turku;31.3.1997
+Miehet;50km kävely;4.42.57;Kari Laiho;Vantaa;5.5.1996
+Naiset;100m;12,55;Verna Vuorela;Turku;25.7.2020
+Naiset;200m;25,63;Katri Routsalo;Mynämäki;21.7.1993
+Naiset;400m;57,29;Heidi Knuutila;Turku;6.7.2001
+Naiset;800m;2.05,3h;Sinikka Tyynelä;Helsinki;4.9.1976
+Naiset;1500m;4.12,9h;Sinikka Tyynelä;Oslo NOR;30.6.1976
+Naiset;3000m;9.17,8h;Sinikka Tyynelä;Helsinki;17.8.1974
+Naiset;5000m;18.15,0h;Tarja Sainio;Kankaanpää;21.9.1975
+Naiset;10000m;-;-;-;1.1.1911
+Naiset;Puolimaraton;1.30.59;Venla Laiho;Kankaanpää;20.10.2018
+Naiset;Maraton;3.34.31;Senja-Riitta Lukkarinen;Vantaa;11.10.1992
+Naiset;3000m estejuoksu;13.31,60;Jutta Ellä;Turku;9.8.2000
+Naiset;100m aitajuoksu;14,4h;Tiina Varjonen;Raisio;30.5.1987
+Naiset;400m aitajuoksu;62,54;Heidi Knuutila;Lahti;19.8.2000
+Naiset;Korkeus;170;Tiina Varjonen;Raisio;30.5.1987
+Naiset;Seiväs;330;Saara Simola;Somero;29.6.2008
+Naiset;Pituus;5,98;Tiina Varjonen;Salo;19.7.1987
+Naiset;Kolmiloikka;12,26;Heidi Knuutila;Naantali;13.8.2002
+Naiset;Kuula;13,88;Mila Simola;Sollentuna SWE;11.8.1984
+Naiset;Kiekko;53,48;Krista Uusi-Kinnala;Bydgoszcz, POL;14.7.2017
+Naiset;Moukari;54,10;Elina Impilä;Naantali;15.7.2004
+Naiset;Keihäs;54,77;Sini Kiiski;Äänekoski;13.6.2010
+Naiset;Seitsenottelu;5201;Tiina Varjonen;Fredrikstad NOR;28.6.1987
+Naiset;10km kävely;48.18;Venla Laiho;Lappeenranta;1.8.2019
+Naiset;20km kävely;1.43.38;Venla Laiho;Lapua;26.9.2020
+Pojat 9;40m;6,58;Noel Raiskinmäki;Laitila;28.9.2019
+Pojat 9;1000m;3.35,53;Niklas Virtanen;Turku;7.9.2008
+Pojat 9;Korkeus;120;Ilkka Laine;Uusikaupunki;25.6.1992
+Pojat 9;Pituus;4,05;Niklas Virtanen;Turku;21.9.2008
+Pojat 9;Kuula;8,65;Tomi Kylä-Kaila;Mynämäki;14.9.2002
+Pojat 9;Kiekko;23,96;Teemu Lahdenranta;Uusikaupunki;12.8.1986
+Pojat 9;Moukari;14,57;Verner Perkkola;Turku;21.9.2008
+Pojat 9;Keihäs;26,44;Severi Rantatalo;Laitila;15.6.2008
+Pojat 9;Kolmiottelu;825;Niklas Virtanen;Laitila;27.9.2008
+Pojat 9;Neliottelu;770;Onni Salminen;Laitila;24.9.2017
+Pojat 9;600m kävely;3.38,15;Justus Lukkala;Laitila;3.9.2013
+Pojat 10;60m;8,80;Noel Raiskinmäki;Laitila;26.9.2020
+Pojat 10;1000m;3.22,2;Henri Terho;-;1.1.1979
+Pojat 10;60m aitajuoksu;11,47;Erkki Laiho;Turku;21.9.2008
+Pojat 10;60m aitajuoksu;11,47;Niklas Virtanen;Turku;13.9.2009
+Pojat 10;60m aitajuoksu;11,47;Justus Lukkala;Turku;10.8.2014
+Pojat 10;Korkeus;131;Lauri Partanen;-;1.1.1994
+Pojat 10;Seiväs;220;Erkki Laiho;Marttila;24.7.2008
+Pojat 10;Pituus;4,45;Lauri Partanen;-;1.1.1994
+Pojat 10;Kolmiloikka;9,02;Miikka Savolainen;Laitila;11.9.1985
+Pojat 10;Kuula;8,60;Erkki Laiho;Laitila;3.9.2008
+Pojat 10;Kiekko;27,96;Ilkka Laine;-;1.1.1993
+Pojat 10;Moukari;22,31;Verner Perkkola;Harjavalta;8.8.2009
+Pojat 10;Keihäs;35,32;Niklas Virtanen;Turku;9.6.2009
+Pojat 10;Kolmiottelu;1050;Noel Raiskinmäki;Laitila;26.9.2020
+Pojat 10;Neliottelu;922;Akseli Hyytiä;Laitila;21.9.2014
+Pojat 10;1000m kävely;6.02,0h;Erkki Laiho;Raisio;12.8.2008
+Pojat 11;60m;8,80;Noel Raiskinmäki;Laitila;26.9.2020
+Pojat 11;1000m;3.13,0h;Teijo Laaksonen;-;1.1.1974
+Pojat 11;60m aitajuoksu;10,53;Justus Lukkala;Turku;9.8.2015
+Pojat 11;Korkeus;140;Niko Peltola;-;1.1.1987
+Pojat 11;Seiväs;246;Juuso Lukkala;Turku;10.8.2013
+Pojat 11;Pituus;4,73;Niko Peltola;Raisio;5.7.1987
+Pojat 11;Kolmiloikka;9,82;Niko Peltola;Mynämäki;27.8.1987
+Pojat 11;Kuula;10,55;Niko Peltola;-;1.1.1987
+Pojat 11;Kiekko;32,04;Ilkka Laine;Laitila;11.8.1994
+Pojat 11;Moukari;26,82;Peetu Tanhuanpää;Rusko/V;15.6.2021
+Pojat 11;Keihäs;36,59;Juuso Lukkala;Turku;11.8.2013
+Pojat 11;Kolmiottelu;1131;Noel Raiskinmäki;Laitila;25.9.2021
+Pojat 11;Neliottelu;1256;Julius Lukkala;Laitila;23.9.2018
+Pojat 11;1000m kävely;5.27,75;Erkki Laiho;Turku;2.9.2009
+Pojat 12;60m;8,67;Juho Tuominen;Mynämäki;29.6.2005
+Pojat 12;200m;29,87;Onni Salminen;Laitila;26.9.2020
+Pojat 12;1000m;3.13,0h;Teijo Laaksonen;-;1.1.1974
+Pojat 12;1000m;3.13,0h;Hannu Pylkkänen;-;1.1.1976
+Pojat 12;60m aitajuoksu;9,8h;Niko Peltola;Paimio;7.8.1988
+Pojat 12;200m aitajuoksu;43,20;Niklas Antola;Turku;6.8.2016
+Pojat 12;Korkeus;146;Niko Peltola;-;1.1.1988
+Pojat 12;Seiväs;272;Akseli Hyytiä;Turku;11.9.2016
+Pojat 12;Pituus;5,07;Niko Peltola;Raisio;27.8.1988
+Pojat 12;Kolmiloikka;10,00;Niko Peltola;-;1.1.1988
+Pojat 12;Kuula;10,96;Lauri Partanen;Paimio;17.8.1996
+Pojat 12;Kiekko;31,37;Juuso Lukkala;Salo;6.9.2014
+Pojat 12;Moukari;30,61;Valtteri Valtonen;Nousiainen;13.9.2018
+Pojat 12;Keihäs;43,38;Janne Arola;-;1.1.1995
+Pojat 12;Neliottelu;1509;Kimmo Impilä;Paimio;16.7.1997
+Pojat 12;Viisiottelu;1116;Jesse Virtanen;Naantali;26.7.2015
+Pojat 12;2000m kävely;11.11,14;Jaakko Ihanmäki;Kokemäki;1.7.1995
+Pojat 13;60m;8,04;Harri Suominen;Rauma;18.8.2002
+Pojat 13;200m;26,85;Pekka Kuusisto;Loimaa/H;18.8.1996
+Pojat 13;1000m;2.59,9h;Jetro Hilakari;-;1.1.1988
+Pojat 13;60m aitajuoksu;9,80;Kimmo Impilä;Laitila;13.9.1998
+Pojat 13;200m aitajuoksu;34,71;Tero Uusikartano;Turku;10.8.2013
+Pojat 13;Korkeus;157;Joonas Mäkinen;Turku;2.8.2008
+Pojat 13;Seiväs;318;Akseli Hyytiä;Laitila;24.9.2017
+Pojat 13;Pituus;5,17;Harri Suominen;Rauma;18.8.2002
+Pojat 13;Kolmiloikka;10,74;Tero Uusikartano;Kaarina;14.9.2013
+Pojat 13;Kuula;15,60;Ilkka Laine;-;1.1.1996
+Pojat 13;Kiekko;42,59;Valtteri Valtonen;Rusko/V;5.10.2019
+Pojat 13;Moukari;42,83;Valtteri Valtonen;Alaveteli;31.8.2019
+Pojat 13;Keihäs;49,60;Lauri Partanen;Laitila;20.7.1997
+Pojat 13;Neliottelu;2102;Ilkka Laine;-;1.1.1996
+Pojat 13;Viisiottelu;2278;Martin Mäenpää;Uusikaupunki;17.9.2016
+Pojat 13;2000m kävely;10.39,20;Erkki Laiho;Naantali;8.9.2011
+Pojat 14;100m;12,03;Mikko Tätilä;Lieto;5.8.1989
+Pojat 14;300m;38,20;Mikko Tätilä;Lieto;6.8.1989
+Pojat 14;800m;2.07,61;Pekka Kuusisto;Lappajärvi;16.8.1997
+Pojat 14;2000m;6.05,8h;Jari Terho;-;1.1.1979
+Pojat 14;1500m estejuoksu;5.27,02;Niklas Antola;Turku;1.8.2018
+Pojat 14;100m aitajuoksu;15,85;Joni Vainio-Kaila;Kerava;23.8.2008
+Pojat 14;300m aitajuoksu;47,85;Verner Perkkola;Turku;10.8.2013
+Pojat 14;Korkeus;175;Jetro Hilakari;Laitila;14.9.1989
+Pojat 14;Seiväs;365;Akseli Hyytiä;Laitila;8.7.2018
+Pojat 14;Pituus;5,40;Mikko Rinne;-;1.1.1993
+Pojat 14;Kolmiloikka;11,43;Miikka Savolainen;-;1.1.1989
+Pojat 14;Kuula;13,36;Valtteri Valtonen;Eura;16.7.2020
+Pojat 14;Kiekko;49,90;Valtteri Valtonen;Kaarina;23.8.2020
+Pojat 14;Moukari;47,41;Valtteri Valtonen;Turku;26.7.2020
+Pojat 14;Keihäs;51,62;Valtteri Valtonen;Naantali;14.6.2020
+Pojat 14;Viisiottelu;2576;Joonas Mäkinen;Kotka/K;4.9.2009
+Pojat 14;3000m kävely;19.09,70;Erkki Laiho;Mynämäki;24.7.2012
+Pojat 15;100m;11,58;Joni Vainio-Kaila;Somero;12.9.2009
+Pojat 15;300m;37,23;Mikko Tätilä;Laitila;1.9.1990
+Pojat 15;800m;2.04,29;Jetro Hilakari;Ylöjärvi;22.6.1990
+Pojat 15;2000m;5.50,0h;Hannu Pylkkänen;Turku;30.5.1979
+Pojat 15;1500m estejuoksu;4.32,7h;Jari Terho;Laitila;4.6.1980
+Pojat 15;100m aitajuoksu;14,21;Joni Vainio-Kaila;Kouvola/K;6.9.2009
+Pojat 15;300m aitajuoksu;42,1h;Timo Salonen;Tammela/E;1.9.1973
+Pojat 15;Korkeus;180;Joonas Mäkinen;Laitila;1.9.2010
+Pojat 15;Seiväs;410;Akseli Hyytiä;Salo;11.7.2019
+Pojat 15;Pituus;5,96;Akseli Hyytiä;Turku;14.12.2019
+Pojat 15;Kolmiloikka;12,21;Juha Taiminen;-;1.1.1982
+Pojat 15;Kuula;15,34;Valtteri Valtonen;Uusikaupunki;21.7.2021
+Pojat 15;Kiekko;49,90;Valtteri Valtonen;Kaarina;23.8.2020
+Pojat 15;Moukari;51,04;Valtteri Valtonen;Turku;1.8.2021
+Pojat 15;Keihäs;63,03;Verner Perkkola;Raisio;23.8.2014
+Pojat 15;Viisiottelu;3152;Akseli Hyytiä;Lapua;17.8.2019
+Pojat 15;3000m kävely;19.09,70;Erkki Laiho;Mynämäki;24.7.2012
+Tytöt 9;40m;6,54;Suvi Laurila;Turku;4.9.2004
+Tytöt 9;1000m;3.40,20;Alice Reivo;Turku;15.9.2012
+Tytöt 9;Korkeus;125;Veera Kerttula;Laitila;29.9.2002
+Tytöt 9;Pituus;3,96;Jaana Heinonen;-;1.1.1984
+Tytöt 9;Kuula;7,90;Jutta Lukkala;Laitila;27.9.2008
+Tytöt 9;Kiekko;22,20;Krista Uusi-Kinnala;Turku;30.7.2006
+Tytöt 9;Moukari;13,75;Aino Vuoriaho;Lieto/T;21.8.2021
+Tytöt 9;Keihäs;19,74;Lumia Reivo;Laitila;30.5.2016
+Tytöt 9;Kolmiottelu;855;Jutta Lukkala;Laitila;30.6.2008
+Tytöt 9;Neliottelu;743;Kerttu Matikainen;Laitila;27.9.2020
+Tytöt 9;600m kävely;3.07,4h;Susanna Aulin;Raisio;26.9.1998
+Tytöt 10;60m;9,00;Jasmin Vaskelainen;Laitila;26.9.2020
+Tytöt 10;1000m;3.30,03;Neela Ihanmäki;Tuusula/H;5.7.2020
+Tytöt 10;60m aitajuoksu;10,86;Jutta Lukkala;Mynämäki;15.6.2009
+Tytöt 10;Korkeus;133;Heli Airasmäki;Laitila;5.9.1985
+Tytöt 10;Seiväs;190;Carolina Grönroos;Turku;10.8.2014
+Tytöt 10;Pituus;4,32;Jaana Heinonen;-;1.1.1985
+Tytöt 10;Kolmiloikka;8,85;Neela Ihanmäki;Turku;14.7.2020
+Tytöt 10;Kuula;9,75;Anni-Mari Huhtanen;Laitila;23.8.2006
+Tytöt 10;Kiekko;23,32;Jutta Lukkala;Turku;25.7.2009
+Tytöt 10;Moukari;18,68;Henna Laine;Turku;7.9.2003
+Tytöt 10;Keihäs;30,75;Sanni Grönroos;Laitila;27.9.2009
+Tytöt 10;Kolmiottelu;993;Jutta Lukkala;Laitila;9.9.2009
+Tytöt 10;Neliottelu;1080;Sara Honkakangas;Laitila;29.9.2019
+Tytöt 10;1000m kävely;5.11,3h;Susanna Aulin;Raisio;28.7.1999
+Tytöt 11;60m;8,70;Jasmin Vaskelainen;Laitila;8.8.2021
+Tytöt 11;1000m;3.22,47;Neela Ihanmäki;Laitila;4.9.2021
+Tytöt 11;60m aitajuoksu;10,52;Verna Vuorela;Turku;7.8.2016
+Tytöt 11;Korkeus;143;Heli Airasmäki;Loimaa;26.7.1986
+Tytöt 11;Seiväs;205;Sara Honkakangas;Turku;14.7.2020
+Tytöt 11;Pituus;4,38;Sari Järvelä;-;1.1.1978
+Tytöt 11;Kolmiloikka;9,58;Saara Simola;Salo;11.8.2001
+Tytöt 11;Kuula;11,30;Sini Kiiski;Mynämäki;19.9.2001
+Tytöt 11;Kiekko;32,84;Johanna Lahdenpää;Laitila;5.8.1989
+Tytöt 11;Moukari;31,10;Sini Kiiski;Turku;16.9.2001
+Tytöt 11;Keihäs;37,94;Sini Kiiski;Laitila;21.7.2001
+Tytöt 11;Kolmiottelu;1111;Jutta Lukkala;Loimaa/H;14.7.2010
+Tytöt 11;Neliottelu;1425;Sara Honkakangas;Laitila;18.7.2020
+Tytöt 11;1000m kävely;5.11,3h;Susanna Aulin;Raisio;28.7.1999
+Tytöt 12;60m;8,73;Alisa Kaski;Turku;4.8.2012
+Tytöt 12;200m;28,4h;Reetta Laurila;-;1.1.1993
+Tytöt 12;1000m;3.18,96;Annika Laulumaa;Kaarina;18.6.2017
+Tytöt 12;60m aitajuoksu;10,09;Verna Vuorela;Turku;13.8.2017
+Tytöt 12;200m aitajuoksu;33,77;Sara Honkakangas;Turku;31.7.2021
+Tytöt 12;Korkeus;153;Heli Airasmäki;Perniö;1.9.1987
+Tytöt 12;Seiväs;242;Venla Laiho;Turku;23.9.2007
+Tytöt 12;Pituus;4,81;Jaana Heinonen;Tammela;16.8.1987
+Tytöt 12;Kolmiloikka;9,74;Lotta Metsärinta;Turku;10.9.2017
+Tytöt 12;Kuula;12,21;Sini Kiiski;Rauma;18.8.2002
+Tytöt 12;Kiekko;38,48;Johanna Lahdenpää;Turku;11.8.1990
+Tytöt 12;Moukari;34,98;Aada Vuoriaho;Turku;27.9.2018
+Tytöt 12;Keihäs;43,34;Sini Kiiski;Pihtipudas;5.7.2002
+Tytöt 12;Neliottelu;1636;Sini Kiiski;Salo;7.9.2002
+Tytöt 12;Viisiottelu;1985;Sara Honkakangas;Laitila;26.9.2021
+Tytöt 12;2000m kävely;11.05,42;Annika Laulumaa;Naantali;7.9.2017
+Tytöt 13;60m;8,30;Verna Vuorela;Eura;19.7.2018
+Tytöt 13;200m;27,96;Verna Vuorela;Turku;1.8.2018
+Tytöt 13;1000m;3.18,38;Sanna Ranta;Turku;2.9.2012
+Tytöt 13;60m aitajuoksu;9,51;Verna Vuorela;Jämsä/J;28.6.2018
+Tytöt 13;200m aitajuoksu;31,42;Verna Vuorela;Turku;26.8.2018
+Tytöt 13;Korkeus;160;Mari Hämäläinen;Raisio;14.8.1993
+Tytöt 13;Seiväs;286;Venla Laiho;Turku;21.9.2008
+Tytöt 13;Pituus;5,03;Jaana Heinonen;Raisio;2.7.1988
+Tytöt 13;Pituus;5,03;Verna Vuorela;Laitila;23.9.2018
+Tytöt 13;Kolmiloikka;10,44;Verna Vuorela;Turku;2.9.2018
+Tytöt 13;Kuula;13,41;Anni-Mari Huhtanen;Laitila;9.9.2009
+Tytöt 13;Kiekko;43,17;Krista Uusi-Kinnala;Punkalaidun;24.6.2010
+Tytöt 13;Moukari;40,72;Aada Vuoriaho;Lieto;3.8.2019
+Tytöt 13;Keihäs;43,34;Sini Kiiski;Pihtipudas;5.7.2002
+Tytöt 13;Neliottelu;1769;Jutta Lukkala;Laitila;22.7.2012
+Tytöt 13;Viisiottelu;2044;Lotta Metsärinta;Uusikaupunki;25.8.2018
+Tytöt 13;2000m kävely;10.39,72;Susanna Aulin;Rauma;18.8.2002
+Tytöt 14;100m;12,83;Verna Vuorela;Turku;10.6.2019
+Tytöt 14;300m;42,92;Katri Routsalo;Ylöjärvi;22.6.1990
+Tytöt 14;800m;2.17,96;Jaana Simola;Oulainen;25.8.1990
+Tytöt 14;2000m;6.48,47;Kia Minkkinen;Kajaani;3.9.1995
+Tytöt 14;1500m estejuoksu;5.58,09;Alice Reivo;Turku;16.8.2017
+Tytöt 14;80m aitajuoksu;12,33;Verna Vuorela;Laitila;28.9.2019
+Tytöt 14;300m aitajuoksu;48,64;Jutta Lukkala;Turku;10.8.2013
+Tytöt 14;Korkeus;163;Mari Hämäläinen;Turku;2.7.1994
+Tytöt 14;Seiväs;307;Venla Laiho;Turku;5.8.2009
+Tytöt 14;Pituus;5,41;Tiina Varjonen;Mynämäki;8.7.1981
+Tytöt 14;Kolmiloikka;11,01;Saara Simola;Tampere;19.6.2004
+Tytöt 14;Kuula;12,79;Anni-Mari Huhtanen;Turku;8.8.2010
+Tytöt 14;Kiekko;42,72;Sanni Grönroos;Turku;9.7.2013
+Tytöt 14;Moukari;47,23;Aada Vuoriaho;Nousiainen;19.9.2020
+Tytöt 14;Keihäs;47,03;Sini Kiiski;Hyvinkää;4.9.2004
+Tytöt 14;Viisiottelu;2318;Sini Kiiski;Raisio;10.9.2004
+Tytöt 14;3000m kävely;14.54,3h;Kia Minkkinen;Lahti;6.6.1995
+Tytöt 15;100m;12,55;Verna Vuorela;Turku;25.7.2020
+Tytöt 15;300m;42,92;Katri Routsalo;Ylöjärvi;22.6.1990
+Tytöt 15;800m;2.15,00;Kia Minkkinen;Saarijärvi;22.6.1996
+Tytöt 15;2000m;6.47,71;Kia Minkkinen;Loimaa/H;18.8.1996
+Tytöt 15;1500m estejuoksu;5.55,38;Alice Reivo;Raisio;22.5.2018
+Tytöt 15;80m aitajuoksu;11,83;Verna Vuorela;Turku;26.7.2020
+Tytöt 15;300m aitajuoksu;45,32;Lotta Metsärinta;Naantali;7.8.2020
+Tytöt 15;Korkeus;164;Heli Airasmäki;Espoo/Le;9.6.1990
+Tytöt 15;Seiväs;312;Venla Laiho;Turku;7.8.2010
+Tytöt 15;Pituus;5,49;Jutta Lukkala;Raisio;23.8.2014
+Tytöt 15;Kolmiloikka;11,01;Saara Simola;Tampere;19.6.2004
+Tytöt 15;Kuula;13,45;Anni-Mari Huhtanen;Turku;31.7.2011
+Tytöt 15;Kiekko;44,47;Krista Uusi-Kinnala;Turku;16.9.2012
+Tytöt 15;Moukari;53,68;Aada Vuoriaho;Turku;1.8.2021
+Tytöt 15;Keihäs;54,50;Sini Kiiski;Jyväskylä;3.9.2005
+Tytöt 15;Viisiottelu;2394;Jutta Lukkala;Pietarsaari;7.9.2014
+Tytöt 15;3000m kävely;14.54,3h;Kia Minkkinen;Lahti;6.6.1995
