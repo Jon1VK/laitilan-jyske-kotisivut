@@ -39,7 +39,7 @@ gem "administrate", "~> 0.16.0"
 # Use Amazon S3
 gem "aws-sdk-s3", "~> 1.103"
 # Send and receive async updates through html 
-gem "turbo-rails", "~> 0.8.1"
+gem "hotwire-rails", "~> 0.1.3"
 
 
 group :development, :test do
