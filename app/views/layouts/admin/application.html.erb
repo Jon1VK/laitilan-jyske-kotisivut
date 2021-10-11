@@ -22,9 +22,11 @@ By default, it renders:
     <%= content_for(:title) %> - <%= application_title %>
   </title>
   <%= render "stylesheet" %>
+  <%= stylesheet_link_tag 'administrate', media: 'all', data: { turbo_track: 'reload' } %>
   <%= csrf_meta_tags %>
   <%= csp_meta_tag if defined?(csp_meta_tag) %>
-  <%= javascript_pack_tag :administrate %>
+  <%= javascript_pack_tag 'administrate', data: { turbo_track: 'reload' } %>
+  <%= javascript_pack_tag 'trix', data: { turbo_track: 'reload' } %>
 </head>
 <body>
   <%= render "icons" %>

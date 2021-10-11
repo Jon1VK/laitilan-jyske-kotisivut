@@ -11,7 +11,8 @@ class AthleteDashboard < Administrate::BaseDashboard
     firstname: Field::String,
     lastname: Field::String,
     email: Field::String,
-    password: Field::Password,
+    event: Field::String,
+    content: RichTextField,
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -28,19 +29,16 @@ class AthleteDashboard < Administrate::BaseDashboard
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = %i[
-    firstname
-    lastname
-    email
+    event
+    content
   ].freeze
 
   # FORM_ATTRIBUTES
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = %i[
-    firstname
-    lastname
-    email
-    password
+    event
+    content
   ].freeze
 
   # COLLECTION_FILTERS

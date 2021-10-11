@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   # Admin dashboard routes
   namespace :admin do
     resources :users
-    resources :athletes
+    resources :athletes, only: [:index, :show, :edit, :update]
     resources :records do
       collection do
         get :disciplines
