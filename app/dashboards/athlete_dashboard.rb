@@ -12,8 +12,6 @@ class AthleteDashboard < Administrate::BaseDashboard
     lastname: Field::String,
     email: Field::String,
     password: Field::Password,
-    created_at: Field::DateTime,
-    updated_at: Field::DateTime,
   }.freeze
 
   # COLLECTION_ATTRIBUTES
