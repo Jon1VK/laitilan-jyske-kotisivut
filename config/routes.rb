@@ -10,8 +10,13 @@ Rails.application.routes.draw do
 
   # Admin dashboard routes
   namespace :admin do
-    resources :athletes, path: 'edustusurheilijat'
-    resources :users, path: 'seurakäyttäjät'
+    resources :users
+    resources :athletes
+    resources :records do
+      collection do
+        get :disciplines
+      end
+    end
 
     root to: "athletes#index"
   end
@@ -22,7 +27,7 @@ Rails.application.routes.draw do
     sign_out: 'logout'
   }
 
-  # Athlete resource routes
+  # Athlete resources routes
   resources :athletes, path: 'edustusurheilijat', only: [:index, :show, :edit, :update]
 
   # Open mail in browser if dev environment
