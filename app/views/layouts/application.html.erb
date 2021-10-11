@@ -8,6 +8,9 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', data: { turbo_track: 'reload' } %>
     <%= javascript_pack_tag 'application', data: { turbo_track: 'reload'} %>
+    <% if athlete_signed_in? %>
+      <%= javascript_pack_tag 'trix', data: { turbo_track: 'reload'} %>
+    <% end %>
   </head>
 
   <body>

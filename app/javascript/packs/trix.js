@@ -1,5 +1,7 @@
 import * as Trix from 'trix';
+import '@rails/actiontext';
 
+// Cofingure new buttons
 Trix.config.blockAttributes.floatLeft = {
   tagName: 'sub',
   group: false,
@@ -12,7 +14,7 @@ Trix.config.blockAttributes.floatRight = {
   terminal: true,
 };
 
-/* insert the button visual in the default toolbar */
+// insert the button visual in the default toolbar
 document.addEventListener('trix-initialize', function (event) {
   const floatLeftButton =
     '<button class="trix-button trix-button--icon trix-button--icon-float-left" type="button" data-trix-attribute="floatLeft" tabindex="-1"></button>';

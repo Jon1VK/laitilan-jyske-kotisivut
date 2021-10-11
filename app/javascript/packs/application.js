@@ -5,18 +5,16 @@
 
 import * as ActiveStorage from '@rails/activestorage';
 import { Turbo } from '@hotwired/turbo-rails';
-import '@rails/actiontext';
-import '../initializers/trix';
 import * as Hamburgers from '../initializers/hamburgers';
 import * as Dropdowns from '../initializers/dropdowns';
-import * as PreformatConverter from '../initializers/preformat_converter';
+import { convertPreformattedText } from '../preformatted_text/convert_preformatted_text';
 
 ActiveStorage.start();
 
 function init() {
   Hamburgers.init();
   Dropdowns.init();
-  PreformatConverter.convert();
+  convertPreformattedText();
 }
 
 function clean() {
