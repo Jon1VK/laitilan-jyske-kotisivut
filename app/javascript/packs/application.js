@@ -5,25 +5,15 @@
 
 import * as ActiveStorage from '@rails/activestorage';
 import { Turbo } from '@hotwired/turbo-rails';
+import '../controllers/index';
 import * as Hamburgers from '../initializers/hamburgers';
 import * as Dropdowns from '../initializers/dropdowns';
-import { convertPreformattedText } from '../preformatted_text/convert_preformatted_text';
 
 ActiveStorage.start();
 
-function init() {
+document.addEventListener('turbo:load', () => {
   Hamburgers.init();
   Dropdowns.init();
-  convertPreformattedText();
-}
-
-function clean() {
-  Hamburgers.close();
-  Dropdowns.close();
-}
-
-document.addEventListener('turbo:load', () => {
-  init();
 });
 
 document.addEventListener('turbo:submit-end', () => {
@@ -31,5 +21,6 @@ document.addEventListener('turbo:submit-end', () => {
 });
 
 document.addEventListener('turbo:before-cache', () => {
-  clean();
+  Hamburgers.close();
+  Dropdowns.close();
 });
