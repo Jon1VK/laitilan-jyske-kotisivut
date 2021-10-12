@@ -1,4 +1,11 @@
 export function convertToTable(rows) {
+  const div = document.createElement('div');
+  div.classList.add('table-wrapper');
+  div.appendChild(createTable(rows));
+  return div;
+}
+
+function createTable(rows) {
   const [captionText, tableHeadRow, ...tableBodyRows] = rows;
   const table = document.createElement('table');
   table.classList.add('table');

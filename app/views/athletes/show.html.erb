@@ -1,7 +1,8 @@
+<h1>Edustusurheilijat</h1>
 <div class='grid athletes'>
   <aside class='col-1-4 aside'>
-    <h3 id='dropdown-button' class='dropdown-button'>Urheilijasivut</h3>
-    <div id='dropdown' class='dropdown'>
+    <h3 data-dropdown-id='athletes-dropdown' class='dropdown-button'>Urheilijasivut</h3>
+    <div id='athletes-dropdown' class='dropdown'>
       <%= render partial: 'athletes_list', locals: { athletes: Athlete.all } %>
     </div>
   </aside>

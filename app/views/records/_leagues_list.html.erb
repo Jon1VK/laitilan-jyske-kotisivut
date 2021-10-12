@@ -1,0 +1,5 @@
+<ul class='aside-list'>
+  <% leagues.each do |league| %>
+    <li><%= active_link_to league, league_records_path(league.parameterize) %></li>
+  <% end %>
+</ul>

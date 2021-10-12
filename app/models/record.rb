@@ -18,7 +18,12 @@
 #  index_records_on_league      (league)
 #
 class Record < ApplicationRecord
-  LEAGUES = %w[
+  ADULT_LEAGUES = %w[
+    Miehet
+    Naiset
+  ]
+
+  BOY_LEAGUES = %w[
     Pojat\ 9
     Pojat\ 10
     Pojat\ 11
@@ -26,6 +31,9 @@ class Record < ApplicationRecord
     Pojat\ 13
     Pojat\ 14
     Pojat\ 15
+  ]
+
+  GIRL_LEAGUES = %w[
     Tytöt\ 9
     Tytöt\ 10
     Tytöt\ 11
@@ -33,9 +41,9 @@ class Record < ApplicationRecord
     Tytöt\ 13
     Tytöt\ 14
     Tytöt\ 15
-    Miehet
-    Naiset
   ]
+
+  LEAGUES = ADULT_LEAGUES + BOY_LEAGUES + GIRL_LEAGUES
 
   DISCIPLINES_BY_LEAGUE = {
     'Pojat 9' => %w[40m 1000m Korkeus Pituus Kuula Kiekko Moukari Keihäs Kolmiottelu Neliottelu 600m\ kävely],
@@ -68,5 +76,9 @@ class Record < ApplicationRecord
     unless DISCIPLINES_BY_LEAGUE[league].include?(discipline)
       errors.add(:discipline, "ei ole valitsemassasi sarjassa")
     end
+  end
+
+  def self.records_by_league(league)
+    Record.where(league: league)
   end
 end

@@ -1,5 +1,5 @@
 .dropdown-button {
-  text-align: center;
+  text-align: left;
   padding-left: 10px;
 }
 
@@ -10,19 +10,8 @@
   transform-origin: left center;
   content: '';
   display: inline-block;
-  border: 10px solid transparent;
-  border-left: 10px solid var(--on-background);
-}
-
-.dropdown-button::after {
-  position: relative;
-  top: 0;
-  transition: 250ms;
-  transform-origin: right center;
-  content: '';
-  display: inline-block;
-  border: 10px solid transparent;
-  border-right: 10px solid var(--on-background);
+  border: 7px solid transparent;
+  border-left: 7px solid var(--on-background);
 }
 
 .dropdown-button.active::before {
@@ -30,17 +19,13 @@
   transform: rotate(450deg);
 }
 
-.dropdown-button.active::after {
-  top: -4px;
-  transform: rotate(-450deg);
-}
-
 .dropdown {
-  text-align: center;
+  text-align: left;
   transition: 250ms;
   transform-origin: center top;
   transform: scaleY(0);
   max-height: 0;
+  padding-left: 25px;
 }
 
 .dropdown.visible {
@@ -63,6 +48,7 @@
   }
 
   .dropdown {
+    padding-left: 0;
     text-align: left;
     transform: scaleY(1);
     max-height: 9999px;

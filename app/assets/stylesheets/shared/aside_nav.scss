@@ -1,0 +1,36 @@
+.aside {
+  padding-bottom: 1rem;
+}
+
+.aside-list {
+  margin-bottom: 1rem;
+
+  li {
+    display: block;
+  }
+
+  li:first-child a {
+    border-top: 1px solid var(--primary-variant);
+  }
+
+  a {
+    font-family: $cursive;
+    font-size: 0.875rem;
+    display: block;
+    padding: 0.5em;
+    border-bottom: 1px solid var(--primary-variant);
+  }
+
+  a.active {
+    background-color: var(--primary-variant);
+    color: var(--on-primary);
+    text-shadow: var(--on-primary-shadow);
+  }
+}
+
+@media screen and (min-width: $laptop-breakpoint) {
+  .aside {
+    padding-right: 1rem;
+    border-right: 1px solid var(--on-background);
+  }
+}

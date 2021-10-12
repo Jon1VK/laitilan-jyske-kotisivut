@@ -1,0 +1,56 @@
+<h1>Seuraennätykset</h1>
+
+<div class='grid athletes'>
+  <aside class='col-1-4 row-1-4 aside'>
+    <h3 data-dropdown-id='adults-dropdown' class='dropdown-button'>Aikuiset</h3>
+    <div id='adults-dropdown' class='dropdown'>
+      <%= render partial: 'leagues_list', locals: { leagues: Record::ADULT_LEAGUES }  %>
+    </div>
+    <h3 data-dropdown-id='boys-dropdown' class='dropdown-button'>Pojat</h3>
+    <div id='boys-dropdown' class='dropdown'>
+      <%= render partial: 'leagues_list', locals: { leagues: Record::BOY_LEAGUES }  %>
+    </div>
+    <h3 data-dropdown-id='girls-dropdown' class='dropdown-button'>Tytöt</h3>
+    <div id='girls-dropdown' class='dropdown'>
+      <%= render partial: 'leagues_list', locals: { leagues: Record::GIRL_LEAGUES }  %>
+    </div>
+  </aside>
+
+  
+  <section class='col-4-13'>
+    <h2><%= @league %></h2>
+    <div class="table-wrapper">
+      <table class='table'>
+        <thead>
+          <tr>
+            <th>Laji</th>
+            <th>Urheilija</th>
+            <th>Tulos</th>
+            <th>Paikkakunta</th>
+            <th>Päivämäärä</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @records.each do |record| %>
+          <tr>
+            <th><%= record.discipline %></th>
+            <th><%= record.athlete %></th>
+            <th><%= record.result %></th>
+            <th><%= record.location %></th>
+            <th><%= record.achieved_at.day == 1 && record.achieved_at.month == 1 ? record.achieved_at.year : l(record.achieved_at) %></th>
+          </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class='col-4-13 row-2-3'>
+    <h2>Uusi ennätys</h2>
+    <p>
+      Voit ilmoittaa uuden seuraennätyksen tai TOP 10 -tuloksen täyttämällä ja lähettämällä alla olevan lomakkeen. Kun ennätyksen tiedot on
+      tarkistettu ja hyväksytty, se lisätään seuraennätysten tai TOP 10 tulosten luetteloon.
+    </p>
+    <h3>Lomake toteutetaan myöhemmin!</h3>
+  </section>
+</div>

@@ -30,6 +30,11 @@ Rails.application.routes.draw do
   # Athlete resources routes
   resources :athletes, path: 'edustusurheilijat', only: [:index, :show, :edit, :update]
 
+  # Record resources routes
+  resources :records, path: 'seuraennatykset', only: [:index] do
+    get ':league', to: 'records#league', on: :collection, as: :league
+  end
+
   # Open mail in browser if dev environment
   mount LetterOpenerWeb::Engine, at: "/letter_opener" if Rails.env.development?
 end
