@@ -1,0 +1,29 @@
+<%= form_for record, data: { turbo: false, controller: 'record' }, html: { class: 'grid no-row-gap' } do |f| %>
+  <div class="field col-1-5">
+    <%= f.label :league %>
+    <%= f.select :league, Record::LEAGUES, { prompt: 'Valitse sarja' }, data: { record_target: 'leagueSelect', action: 'change->record#change' } %>
+  </div>
+  <div class="field col-5-9">
+    <%= f.label :discipline %>
+    <%= f.select :discipline, Record::DISCIPLINES, { prompt: 'Valitse laji' }, data: { record_target: 'disciplineSelect' } %>
+  </div>
+  <div class="field col-9-13">
+    <%= f.label :result %>
+    <%= f.text_field :result %>
+  </div>
+  <div class="field col-1-13">
+    <%= f.label :athlete %>
+    <%= f.text_field :athlete %>
+  </div>
+  <div class="field col-1-7">
+    <%= f.label :location %>
+    <%= f.text_field :location %>
+  </div>
+  <div class="field col-7-13">
+    <%= f.label :achieved_at %>
+    <%= f.date_field :achieved_at %>
+  </div>
+  <div class='col-1-13'>
+    <%= f.submit 'Lähetä', class: 'btn' %>
+  </div>
+<% end %>

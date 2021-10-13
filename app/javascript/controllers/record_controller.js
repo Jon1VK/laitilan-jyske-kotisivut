@@ -2,19 +2,18 @@ import { Controller } from '@hotwired/stimulus';
 import { get } from '@rails/request.js';
 
 export default class extends Controller {
-  static targets = ['leagueSelect'];
+  static targets = ['leagueSelect', 'disciplineSelect'];
 
   connect() {
-    const league = this.leagueSelectTarget.selectedOptions[0].value;
-    get(`/admin/records/disciplines?league=${league}`, {
-      responseKind: 'turbo-stream',
-    });
+    this.change();
   }
 
   change() {
+    const discipline = this.disciplineSelectTarget.selectedOptions[0].value;
     const league = this.leagueSelectTarget.selectedOptions[0].value;
-    get(`/admin/records/disciplines?league=${league}`, {
+    get(`/seuraennatykset/disciplines`, {
       responseKind: 'turbo-stream',
+      query: { league, discipline },
     });
   }
 }

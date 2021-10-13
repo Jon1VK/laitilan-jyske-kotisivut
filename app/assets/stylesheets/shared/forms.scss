@@ -27,10 +27,28 @@
   }
 
   input {
-    all: unset;
     padding: 0.5em 0.75em;
     border: 1px solid var(--secondary-variant);
     border-radius: 0.25em;
+    font-size: 1rem;
+  }
+
+  select {
+    padding: 0.5em 0.75em;
+    border: 1px solid var(--secondary-variant);
+    border-radius: 0.25em;
+    font-size: 1rem;
+  }
+}
+
+.field_with_errors {
+  color: var(--error);
+  font-weight: bold;
+
+  input,
+  select {
+    box-sizing: border-box;
+    width: 100%;
   }
 }
 

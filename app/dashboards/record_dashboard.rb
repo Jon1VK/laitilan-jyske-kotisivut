@@ -11,13 +11,18 @@ class RecordDashboard < Administrate::BaseDashboard
     league: DynamicSelectField.with_options(
       collection: Record::LEAGUES,
       custom_data: { action: 'change->record#change', record_target: 'leagueSelect' },
-      include_blank: true
+      prompt: 'Valitse sarja'
     ),
-    discipline: Field::Select,
+    discipline: DynamicSelectField.with_options(
+      collection: Record::DISCIPLINES,
+      custom_data: { record_target: 'disciplineSelect' },
+      prompt: 'Valitse laji'
+    ),
     athlete: Field::String,
     result: Field::String,
     location: Field::String,
     achieved_at: Field::Date,
+    reviewed: Field::Boolean,
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -32,6 +37,7 @@ class RecordDashboard < Administrate::BaseDashboard
     result
     location
     achieved_at
+    reviewed
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -43,6 +49,7 @@ class RecordDashboard < Administrate::BaseDashboard
     result
     location
     achieved_at
+    reviewed
   ].freeze
 
   # FORM_ATTRIBUTES
@@ -55,6 +62,7 @@ class RecordDashboard < Administrate::BaseDashboard
     result
     location
     achieved_at
+    reviewed
   ].freeze
 
   # COLLECTION_FILTERS

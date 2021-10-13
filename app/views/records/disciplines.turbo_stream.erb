@@ -1,0 +1,3 @@
+<%= turbo_stream.update 'record_discipline' do %>
+  <%= options_for_select [['Valitse laji', '']].concat(@disciplines), @discipline %>
+<% end %>

@@ -32,8 +32,8 @@
     <h2>Uusi ennätys</h2>
     <p>
       Voit ilmoittaa uuden seuraennätyksen tai TOP 10 -tuloksen täyttämällä ja lähettämällä alla olevan lomakkeen. Kun ennätyksen tiedot on
-      tarkistettu ja hyväksytty, se lisätään seuraennätysten tai TOP 10 tulosten luetteloon.
+      tarkistettu, lisätään se seuraennätysten tai TOP 10 tulosten luetteloon.
     </p>
-    <h3>Lomake toteutetaan myöhemmin!</h3>
+    <%= render partial: 'form', locals: { record: @record } %>
   </section>
 </div>

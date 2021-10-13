@@ -37,12 +37,12 @@
         </thead>
         <tbody>
           <% @records.each do |record| %>
-          <tr>
-            <th><%= record.discipline %></th>
-            <th><%= record.athlete %></th>
-            <th><%= record.result %></th>
-            <th><%= record.location %></th>
-            <th><%= record.achieved_at.day == 1 && record.achieved_at.month == 1 ? record.achieved_at.year : l(record.achieved_at) %></th>
+          <tr class="<%= record.achieved_at > 1.year.ago ? 'recent' : '' %>">
+            <td><%= record.discipline %></td>
+            <td><%= record.athlete %></td>
+            <td><%= record.result %></td>
+            <td><%= record.location %></td>
+            <td><%= record.achieved_at.day == 1 && record.achieved_at.month == 1 ? record.achieved_at.year : l(record.achieved_at) %></td>
           </tr>
           <% end %>
         </tbody>

@@ -6,3 +6,11 @@ fi:
       next: Seuraava
       last: Viimeinen
       truncate: '. . .'
+  fields:
+    boolean:
+      index:
+        true: 🗸
+        false: ❌
+      show:
+        true: 🗸
+        false: ❌

@@ -33,8 +33,9 @@ fi:
         discipline: Laji
         athlete: Urheilija
         result: Tulos
-        location: Paikkakunta
+        location: Kilpailupaikka
         achieved_at: Päivämäärä
+        reviewed: Tarkastettu
     models:
       user:
         one: Seurakäyttäjä

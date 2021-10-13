@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_11_152445) do
+ActiveRecord::Schema.define(version: 2021_10_13_110944) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -79,6 +79,7 @@ ActiveRecord::Schema.define(version: 2021_10_11_152445) do
     t.date "achieved_at", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.boolean "reviewed", default: true
     t.index ["discipline"], name: "index_records_on_discipline"
     t.index ["league"], name: "index_records_on_league"
   end

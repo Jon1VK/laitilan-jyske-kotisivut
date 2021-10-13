@@ -6,5 +6,6 @@ fi:
         discipline: Laji
         athlete: Urheilija
         result: Tulos
-        location: Paikkakunta
-        achieved_at: Päivämäärä
+        location: Kilpailun paikkakunta
+        achieved_at: Kilpailun päivämäärä
+        reviewed: Tarkastettu

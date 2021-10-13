@@ -17,11 +17,7 @@ Rails.application.routes.draw do
   namespace :admin do
     resources :users
     resources :athletes, only: [:index, :show, :edit, :update]
-    resources :records do
-      collection do
-        get :disciplines
-      end
-    end
+    resources :records
 
     root to: "athletes#index"
   end
@@ -36,7 +32,8 @@ Rails.application.routes.draw do
   resources :athletes, path: 'edustusurheilijat', only: [:index, :show, :edit, :update]
 
   # Record resources routes
-  resources :records, path: 'seuraennatykset', only: [:index] do
+  resources :records, path: 'seuraennatykset', only: [:index, :create] do
+    get :disciplines, on: :collection
     get ':league', to: 'records#league', on: :collection, as: :league
   end
 

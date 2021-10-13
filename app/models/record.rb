@@ -9,6 +9,7 @@
 #  league      :string           not null
 #  location    :string           not null
 #  result      :string           not null
+#  reviewed    :boolean          default(TRUE)
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
 #
@@ -64,10 +65,15 @@ class Record < ApplicationRecord
     'Naiset' => %w[100m 200m 400m 800m 1500m 3000m 5000m 10000m Puolimaraton Maraton 3000m\ estejuoksu 100m\ aitajuoksu 400m\ aitajuoksu Korkeus Seiväs Pituus Kolmiloikka Kuula Kiekko Moukari Keihäs Seitsenottelu 10km\ kävely 20km\ kävely],
   }
 
+  DISCIPLINES = DISCIPLINES_BY_LEAGUE.values.reduce(&:|)
+
+  scope :reviewed, -> { where(reviewed: true) }
+
   validates :league, presence: :true, inclusion: { in: LEAGUES }
   validates :discipline, presence: :true
   validate :discipline_must_be_in_league, if: -> { league.present? }
-  validates :athlete, presence: true, uniqueness: { scope: [:league, :discipline] }
+  validates :athlete, presence: true
+  validates :athlete, uniqueness: { scope: [:league, :discipline] }, if: -> { reviewed }
   validates :result, presence: true
   validates :location, presence: true
   validates :achieved_at, presence: true
@@ -79,6 +85,6 @@ class Record < ApplicationRecord
   end
 
   def self.records_by_league(league)
-    Record.where(league: league)
+    Record.reviewed.where(league: league)
   end
 end
