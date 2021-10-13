@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
   # Root page of the app
   root 'static#index'
+  
+  # Static pages
+  get 'tapahtumakalenteri', to: 'static#events', as: :events
+  get 'uutiset', to: 'static#news', as: :news
+  get 'palkitseminen', to: 'static#awards', as: :awards
 
   # Admin login routes
   devise_for :users, path: 'admin', path_names: {

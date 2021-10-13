@@ -5,9 +5,12 @@
 
 .table {
   text-align: left;
+  width: 100%;
   white-space: nowrap;
   border-collapse: collapse;
   box-shadow: var(--box-shadow);
+  border-radius: 0.25rem 0.25rem 0 0;
+  overflow: hidden;
 
   caption {
     font-family: $cursive;
@@ -21,6 +24,12 @@
     text-shadow: var(--on-primary-shadow);
     font-family: $cursive;
     font-weight: normal;
+  }
+
+  tbody {
+    tr:hover {
+      font-weight: 700;
+    }
   }
 
   th,

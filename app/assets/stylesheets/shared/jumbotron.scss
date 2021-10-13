@@ -4,7 +4,7 @@
   margin-top: -40px;
   width: 100%;
   height: calc(50vh - 60px);
-  background: image_url('./frontpage.jpg') center top/cover;
+  background: var(--jumbotron-background);
 
   button {
     position: absolute;
@@ -14,20 +14,13 @@
   }
 }
 
-@media screen and (min-width: $tablet-breakpoint) {
-  .jumbotron {
-    height: calc(100vh - 60px);
-    background-position: center 25%;
-
-    button {
-      bottom: 35%;
-    }
-  }
-}
-
 @media screen and (min-width: $laptop-breakpoint) {
   .jumbotron {
     margin-top: -45px;
     height: calc(100vh - 130px);
+  }
+
+  .jumbotron-small {
+    height: calc(50vh - 60px);
   }
 }
