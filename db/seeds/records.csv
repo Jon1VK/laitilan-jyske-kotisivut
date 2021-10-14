@@ -1,27 +1,219 @@
 league;discipline;result;athlete;location;achieved_at
 Miehet;100m;10,98;Joni Vainio-Kaila;Turku;29.5.2019
+Miehet;100m;11,03;Viachaslau Balitski;Turku;2.6.2016
+Miehet;100m;11,17;Ilmari Vuorela;Kemi;22.8.2020
+Miehet;100m;11,0h;Jari Taiminen;-;1.1.1981
+Miehet;100m;11,2h;Veijo Hyörtti;-;1.1.1966
+Miehet;100m;11,2h;Heikki Wala;Kalanti;31.8.1974
+Miehet;100m;11,50;Teemu Hyytiä;Mynämäki;24.7.2012
+Miehet;100m;11,56;Mikko Tätilä;Kaarina;19.8.1991
+Miehet;100m;11,63;Joonas Mäkinen;Turku;13.8.2014
+Miehet;100m;11,4h;Kauko Simola;-;1.1.1947
+Miehet;100m;11,4h;Tapio Suvanto;-;1.1.1968
+Miehet;100m;11,4h;Olli Kruuna;-;1.1.1974
 Miehet;200m;21,89;Joni Vainio-Kaila;Turku;10.8.2016
+Miehet;200m;22,76;Ilmari Vuorela;Kemi;23.8.2020
+Miehet;200m;22,7h;Jari Taiminen;-;1.1.1981
+Miehet;200m;23,31;Mikko Tätilä;Turku;31.7.1991
+Miehet;200m;23,37;Viachaslau Balitski;Uusikaupunki;29.5.2016
+Miehet;200m;23,42;Ilpo Haalisto;Kaarina;23.8.1993
+Miehet;200m;23,4h;Ilkka Simola;Turku;4.9.1968
+Miehet;200m;23,6h;Heikki Rautalin;-;1.1.1977
+Miehet;200m;23,7h;Dan Karlsson;-;1.1.1975
+Miehet;200m;23,96;Erkki Pirilä;-;1.1.1991
 Miehet;400m;47,72;Joni Vainio-Kaila;Lahti;15.8.2015
+Miehet;400m;48,98;Ilpo Haalisto;Tuusula/H;17.7.1993
+Miehet;400m;49,84;Erkki Pirilä;Lieto;8.7.1990
+Miehet;400m;50,5h;Jari Taiminen;Kuortane;5.9.1981
+Miehet;400m;51,0h;Dan Karlsson;-;1.1.1978
+Miehet;400m;52,2h;Ilkka Simola;-;1.1.1973
+Miehet;400m;52,61;Joonas Mäkinen;Kuopio;2.8.2014
+Miehet;400m;52,69;Ilmari Vuorela;Turku;16.6.2020
+Miehet;400m;52,6h;Veikko Varpula;-;1.1.1975
+Miehet;400m;53,0h;Jorma Sarin;-;1.1.1951
+Miehet;400m;53,0h;Severi Aaltonen;-;1.1.1951
+Miehet;400m;53,0h;Esko Kuusisto;-;1.1.1954
 Miehet;800m;1.50,40;Ilpo Haalisto;Mikkeli;30.7.1993
+Miehet;800m;1.51,21;Erkki Pirilä;Tuusula/H;14.8.1990
+Miehet;800m;1.53,3h;Veikko Varpula;-;1.1.1975
+Miehet;800m;1.55,14;Kari Laiho;Lieto;7.7.1990
+Miehet;800m;1.56,18;Kari Korpelainen;Lieto;27.7.1987
+Miehet;800m;1.56,4h;Aarre Karonen;Turku;30.6.1974
+Miehet;800m;1.56,68;Jari Terho;Turku;31.7.1991
+Miehet;800m;1.58,0h;Pekka Paukku;-;1.1.1958
+Miehet;800m;1.59,40;Ari Vuorela;-;1.1.1985
+Miehet;800m;1.59,5h;Harri Salminen;-;1.1.1975
 Miehet;1500m;3.50,80;Jari Terho;Turku;1.8.1991
+Miehet;1500m;3.51,7h;Veikko Varpula;-;1.1.1975
+Miehet;1500m;3.53,6h;Aarre Karonen;Turku;1.7.1974
+Miehet;1500m;3.57,0h;Erkki Pirilä;Laitila;15.6.1991
+Miehet;1500m;3.58,1h;Mauri Kontu;Turku;25.8.1976
+Miehet;1500m;3.59,00;Ilpo Haalisto;-;1.1.1989
+Miehet;1500m;3.59,05;Kari Korpelainen;Joutsa;18.7.1987
+Miehet;1500m;3.59,54;Kari Laiho;Lieto;8.7.1990
+Miehet;1500m;4.00,62;Pasi Siivonen;-;1.1.1990
+Miehet;1500m;4.00,9h;Pekka Paukku;-;1.1.1964
 Miehet;3000m;8.17,52;Jari Terho;Tuusula/H;14.8.1990
+Miehet;3000m;8.27,6h;Mauri Kontu;Keuruu;25.6.1976
+Miehet;3000m;8.29,20;Pasi Siivonen;Helsinki;29.5.1990
+Miehet;3000m;8.30,4h;Aarre Karonen;Turku/M;3.7.1974
+Miehet;3000m;8.38,0h;Veikko Varpula;-;1.1.1976
+Miehet;3000m;8.45,26;Kari Laiho;-;1.1.1990
+Miehet;3000m;8.46,0h;Aappo Kontu;-;1.1.1975
+Miehet;3000m;8.51,7h;Mika Harkas;Raisio;3.7.1981
+Miehet;3000m;8.53,5h;Tarmo Jalo;-;1.1.1939
+Miehet;3000m;8.54,0h;Ari Vuorela;-;1.1.1985
 Miehet;5000m;14.21,13;Jari Terho;Lahti;8.8.1991
+Miehet;5000m;14.36,2h;Aarre Karonen;Kuortane;22.6.1974
+Miehet;5000m;14.46,8h;Mauri Kontu;Espoo/La;1.10.1976
+Miehet;5000m;14.49,97;Pasi Siivonen;Vantaa/H;24.5.1990
+Miehet;5000m;14.56,8h;Aappo Kontu;Paimio;29.5.1975
+Miehet;5000m;15.21,2h;Voitto Airola;-;1.1.1956
+Miehet;5000m;15.37,4h;Kari Laiho;-;1.1.1982
+Miehet;5000m;15.41,22;Ari Vuorela;Varkaus;27.7.1985
+Miehet;5000m;15.46,3h;Tarmo Jalo;-;1.1.1939
+Miehet;5000m;15.47,16;Esa Paukku;-;1.1.1990
 Miehet;10000m;30.18,26;Jari Terho;Helsinki/E;28.5.1991
-Miehet;Puolimaraton;1.15.58;Kari Yli-Pentti;Turku;7.7.1996
+Miehet;10000m;32.24,6h;Tarmo Jalo;-;1.1.1939
+Miehet;10000m;32.52,71;Esa Paukku;-;1.1.1990
+Miehet;10000m;32.59,6h;Erkki Sillantaka;-;1.1.1938
+Miehet;10000m;33.22,6h;Rauli Helkkula;-;1.1.1974
+Miehet;10000m;33.36,6h;Voitto Airola;-;1.1.1955
+Miehet;10000m;34.46,69;Kari Laiho;-;1.1.1986
+Miehet;10000m;37.58,0h;Seppo Juvala;-;1.1.1953
+Miehet;10000m;38.21,0h;A. Lehtonen;-;1.1.1941
+Miehet;10000m;39.51,0h;Matti Äärilä;-;1.1.1953
+Miehet;Puolimaraton;1.15.58;Kari Yli-Pentti;Tusku;7.7.1996
+Miehet;Puolimaraton;1.28.04;Kari Laiho;Masku;12.4.2015
+Miehet;Puolimaraton;1.31.17;Erkki Pirilä;Eurajoki;21.8.2010
+Miehet;Puolimaraton;1.36.24;Eero Rantala;Säkylä;22.7.2017
 Miehet;Maraton;2.30.05;Aarre Karonen;Turku;7.4.1974
+Miehet;Maraton;2.39.13;Antti Ollila;-;1.1.1975
+Miehet;Maraton;2.41.24;Kari Yli-Pentti;Hämeenlinna;15.7.1995
+Miehet;Maraton;2.52.58;Rauli Helkkula;Turku;31.3.1975
+Miehet;Maraton;2.53.04;Kari Pärkö;-;1.1.1986
+Miehet;Maraton;2.56.04;Jyrki Heinonen;-;1.1.1990
+Miehet;Maraton;2.57.25;Jari Terho;-;1.1.1991
+Miehet;Maraton;3.06.25;Seppo Lehtola;-;1.1.1989
+Miehet;Maraton;3.09.08;Mika Harkas;-;1.1.1981
+Miehet;Maraton;3.18.15;Arto Kaarma;-;1.1.1984
 Miehet;3000m estejuoksu;8.52,85;Mauri Kontu;Turku;3.7.1976
+Miehet;3000m estejuoksu;8.53,88;Jari Terho;Helsinki;28.7.1991
+Miehet;3000m estejuoksu;9.15,9h;Aarre Karonen;-;1.1.1974
+Miehet;3000m estejuoksu;9.43,27;Esa Paukku;Turku;14.8.1991
+Miehet;3000m estejuoksu;9.45,2h;Rauli Helkkula;Laitila;19.8.1974
+Miehet;3000m estejuoksu;9.45,98;Kari Laiho;Turku;25.7.1990
+Miehet;3000m estejuoksu;9.49,0h;Aappo Kontu;Laitila;9.8.1974
+Miehet;3000m estejuoksu;10.09,8h;Tarmo Jalo;-;1.1.1937
+Miehet;3000m estejuoksu;10.15,0h;Esa Kylä-Kaila;-;1.1.1975
+Miehet;3000m estejuoksu;10:41,6h;Erkki Sillantaka;-;1.1.1939
 Miehet;110m aitajuoksu;16,21;Joonas Mäkinen;Kauhava;4.8.2017
+Miehet;110m aitajuoksu;17,00;Jetro Hilakari;Turku;2.7.1997
+Miehet;110m aitajuoksu;16,8h;Jouni Järvinen;-;1.1.1958
+Miehet;110m aitajuoksu;17,0h;Jyrki Heinonen;-;1.1.1981
+Miehet;110m aitajuoksu;17,38;Esa Paukku;Mynämäki;21.7.1998
+Miehet;110m aitajuoksu;17,5h;Jari Taiminen;-;1.1.1981
+Miehet;110m aitajuoksu;17,7h;Viljo Koskinen;-;1.1.1955
+Miehet;110m aitajuoksu;18,3h;Aaro Saario;-;1.1.1945
+Miehet;110m aitajuoksu;19,21;Joni Laiho;Raasepori/K;8.9.2013
+Miehet;110m aitajuoksu;19,2h;Aarto Tala;-;1.1.1945
 Miehet;400m aitajuoksu;51,09;Joni Vainio-Kaila;Tampere;5.9.2015
+Miehet;400m aitajuoksu;58,32;Jetro Hilakari;Hämeenlinna;10.8.1996
+Miehet;400m aitajuoksu;58,7h;Veikko Varpula;-;1.1.1975
+Miehet;400m aitajuoksu;59,25;Joonas Mäkinen;Lappeenranta;7.8.2016
+Miehet;400m aitajuoksu;60,0h;Jorma Sarin;-;1.1.1951
+Miehet;400m aitajuoksu;60,29;Kari Laiho;Naantali;19.8.1992
+Miehet;400m aitajuoksu;61,0h;Esa Kylä-Kaila;-;1.1.1976
+Miehet;400m aitajuoksu;61,7h;Heikki Rautalin;-;1.1.1976
+Miehet;400m aitajuoksu;62,29;Esa Paukku;Mynämäki;21.7.1993
+Miehet;400m aitajuoksu;62,86;Jyrki Heinonen;-;1.1.1983
 Miehet;Korkeus;194;Heikki Laaksonen;Naantali;4.8.1973
 Miehet;Korkeus;194;Joonas Mäkinen;Kópavogur ISL;7.6.2014
+Miehet;Korkeus;188;Jari Taiminen;-;1.1.1980
+Miehet;Korkeus;186;Juha Taiminen;-;1.1.1985
+Miehet;Korkeus;184;Teemu Hyytiä;Oulu;27.8.2011
+Miehet;Korkeus;181;Aaro Saario;-;1.1.1946
+Miehet;Korkeus;181;Esa Paukku;Laitila;21.5.1996
+Miehet;Korkeus;181;Matti Venho;Hämeenlinna;4.8.2003
+Miehet;Korkeus;180;Jetro Hilakari;Lieto;13.9.1990
+Miehet;Korkeus;178;Kari Korpela;-;1.1.1956
+Miehet;Korkeus;178;Heikki Mehtonen;-;1.1.1988
+Miehet;Korkeus;178;Martin Mäenpää;Laitila;22.8.2018
 Miehet;Seiväs;510;Teemu Hyytiä;Raisio;10.7.2014
+Miehet;Seiväs;440;Joni Laiho;Raisio;26.7.2011
+Miehet;Seiväs;430;Joonas Mäkinen;Riihimäki;10.9.2017
+Miehet;Seiväs;425;Akseli Hyytiä;Uusikaupunki;3.7.2020
+Miehet;Seiväs;413;Rami Hyytiä;Laitila;25.7.1999
+Miehet;Seiväs;383;Tomi Hyytiä;Laitila;20.7.1997
+Miehet;Seiväs;380;Urpo Eerola;Turku;16.6.1960
+Miehet;Seiväs;372;Verner Perkkola;Uusikaarlepyy;7.9.2014
+Miehet;Seiväs;370;Esa Paukku;Punkalaidun;5.9.1999
+Miehet;Seiväs;363;Mikko Rinne;Laitila;20.7.1997
 Miehet;Pituus;7,16;Jari Taiminen;Rauma;15.8.1981
+Miehet;Pituus;6,68;Jaakko Rautala;-;1.1.1960
+Miehet;Pituus;6,67;Akseli Hyytiä;Lahti;20.9.2020
+Miehet;Pituus;6,65;Tuure Leinonen;-;1.1.1971
+Miehet;Pituus;6,64;Teemu Hyytiä;Laitila;2.8.2012
+Miehet;Pituus;6,61;Joonas Mäkinen;Laitila;24.5.2014
+Miehet;Pituus;6,60;Kauko Simola;Laitila;30.6.1946
+Miehet;Pituus;6,50;Joni Vainio-Kaila;Naantali;8.9.2011
+Miehet;Pituus;6,47;Ilkka Kylä-Heiko;-;1.1.1959
+Miehet;Pituus;6,36;Pentti Palmunen;-;1.1.1940
 Miehet;Kolmiloikka;13,35;Heikki Laaksonen;-;1.1.1968
+Miehet;Kolmiloikka;13,32;Tapio Suvanto;-;1.1.1968
+Miehet;Kolmiloikka;13,21;Olavi Sainio;-;1.1.1946
+Miehet;Kolmiloikka;13,19;H. Talvio;-;1.1.1950
+Miehet;Kolmiloikka;13,15;Harri Haikama;-;1.1.1968
+Miehet;Kolmiloikka;13,02;Jari Taiminen;Turku;24.8.1977
+Miehet;Kolmiloikka;13,00;Jyrki Heinonen;-;1.1.1981
+Miehet;Kolmiloikka;12,83;Harry Haapanen;-;1.1.1966
+Miehet;Kolmiloikka;12,76;Jaakko Koskela;-;1.1.1960
+Miehet;Kolmiloikka;12,65;Matti Mäkinen;-;1.1.1966
 Miehet;Kuula;15,16;Jari Pyykkö;Nummi-Pusula;26.6.1988
+Miehet;Kuula;14,65;Toni Nurmela;Turku;28.7.2005
+Miehet;Kuula;14,35;Urpo Lipponen;-;1.1.1963
+Miehet;Kuula;14,00;Aaro Saario;-;1.1.1947
+Miehet;Kuula;13,84;Seppo Nousiainen;-;1.1.1979
+Miehet;Kuula;13,69;Aarto Tala;-;1.1.1949
+Miehet;Kuula;13,50;Tapio Mikola;-;1.1.1977
+Miehet;Kuula;13,31;Erkki Hiltunen;-;1.1.1976
+Miehet;Kuula;13,04;Pauli Palmunen;-;1.1.1939
+Miehet;Kuula;12,98;Ilmari Kuoppa;-;1.1.1955
 Miehet;Kiekko;52,36;Martti Ruoho;Somero;30.5.1979
+Miehet;Kiekko;46,42;Jari Pyykkö;Nokia;6.6.1981
+Miehet;Kiekko;43,70;Pentti Aaltonen;-;1.1.1959
+Miehet;Kiekko;42,18;Aaro Saario;-;1.1.1943
+Miehet;Kiekko;41,96;Tapio Mikola;Turku;19.7.1977
+Miehet;Kiekko;41,12;Verner Perkkola;Turku;16.7.2019
+Miehet;Kiekko;40,20;Antero Eerikkilä;-;1.1.1971
+Miehet;Kiekko;39,64;Antti Nurminen;-;1.1.1937
+Miehet;Kiekko;38,98;Seppo Nousiainen;-;1.1.1979
+Miehet;Kiekko;38,78;Hannu Laurila;-;1.1.1974
 Miehet;Moukari;59,22;Antero Eerikkilä;Laitila;19.8.1970
+Miehet;Moukari;49,70;Aki Ranne;Laitila;20.8.1971
+Miehet;Moukari;49,20;Sakari Isolauri;Laitila;12.9.1970
+Miehet;Moukari;45,40;Jari Pyykkö;Raisio;3.7.1981
+Miehet;Moukari;40,90;Aaro Saario;-;1.1.1955
+Miehet;Moukari;40,20;Tapio Mikola;Turku;18.7.1977
+Miehet;Moukari;39,78;Raimo Taiminen;-;1.1.1973
+Miehet;Moukari;36,62;Pentti Aaltonen;-;1.1.1962
+Miehet;Moukari;36,24;Asko Suikkanen;-;1.1.1979
+Miehet;Moukari;34,80;Martti Ruoho;-;1.1.1976
 Miehet;Keihäs;65,56;Aaro Saario;-;1.1.1943
+Miehet;Keihäs;63,28;Heikki Rautalin;-;1.1.1976
+Miehet;Keihäs;60,10;Toni Nurmela;Laitila;21.5.1998
+Miehet;Keihäs;59,93;Verner Perkkola;Laitila;18.7.2020
+Miehet;Keihäs;59,26;Ilkka Lehto;-;1.1.1974
+Miehet;Keihäs;57,97;Erkki Hiltunen;-;1.1.1964
+Miehet;Keihäs;57,25;Kalevi Laine;-;1.1.1951
+Miehet;Keihäs;56,42;Tauno Pietilä;-;1.1.1955
+Miehet;Keihäs;55,20;Reino Laihi;-;1.1.1947
+Miehet;Keihäs;55,06;Pentti Aaltonen;-;1.1.1956
 Miehet;Kymmenottelu;6124;Joonas Mäkinen;Kuopio;3.8.2014
+Miehet;Kymmenottelu;6100;Jari Taiminen;Somero;14.6.1981
+Miehet;Kymmenottelu;5311;Esa Paukku;Turku;8.6.1997
+Miehet;Kymmenottelu;4975;Aaro Saario;Laitila;23.9.1945
+Miehet;Kymmenottelu;4670;Joni Laiho;Raasepori/K;8.9.2013
 Miehet;20km kävely;1.34.42;Kari Laiho;Turku;31.3.1997
 Miehet;50km kävely;4.42.57;Kari Laiho;Vantaa;5.5.1996
 Naiset;100m;12,55;Verna Vuorela;Turku;25.7.2020

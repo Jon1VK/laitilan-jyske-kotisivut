@@ -6,6 +6,8 @@
 <h1>Seuraennätykset</h1>
 
 <div class='grid athletes'>
+  <p class='col-1-13'><%= link_to "Takaisin etusivulle", root_path %></p>
+
   <section class='col-4-13'>
     <p>
       Laitilan Jyskeen yleisurheilujaosto ylläpitää luetteloa miesten ja naisten sekä 9—15-vuotiaiden poikien ja tyttöjen seuraennätyksistä.
@@ -15,21 +17,21 @@
     </p>
   </section>
   
-  <aside class='col-1-4 row-1-5 aside'>
+  <aside class='col-1-4 row-2-6 aside'>
     <% Record::LEAGUES_BY_GENDER.each do |gender, leagues| %>
       <h3><%= gender %></h3>
       <%= render partial: 'leagues_list', locals: { leagues: leagues }  %>
     <% end %>
   </aside>
 
-  <section class='col-4-13 row-2-3'>
+  <section class='col-4-13 row-3-4'>
     <h2>TOP 10 listat</h2>
     <p>
       Aikuisten sarjoissa seuraennätysten lisäksi jokaisessa lajissa ylläpidetään luetteloa kymmenestä kaikkien aikojen parhaasta tuloksesta.
     </p>
   </section>
 
-  <section class='col-4-13 row-3-4'>
+  <section class='col-4-13 row-4-5'>
     <h2>Uusi ennätys</h2>
     <p>
       Voit ilmoittaa uuden seuraennätyksen tai TOP 10 -tuloksen täyttämällä ja lähettämällä alla olevan lomakkeen. Kun ennätyksen tiedot on

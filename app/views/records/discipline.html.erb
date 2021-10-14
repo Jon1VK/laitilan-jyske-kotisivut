@@ -1,0 +1,46 @@
+<% content_for :jumbotron do %>
+  <div class='jumbotron jumbotron-small' style='--jumbotron-background: url("/images/records.jpg") center center/cover'>
+  </div>
+<% end %>
+
+<h1>TOP 10</h1>
+
+<div class='grid athletes'>
+  <p class='col-1-13'><%= link_to "Takaisin sarjan #{@league.downcase} seuraennätyksiin", league_records_path(@league.parameterize) %></p>
+
+  <aside class='col-1-4 aside'>
+    <h3 data-dropdown-id='discipline-dropdown' class='dropdown-button'><%= @league %></h3>
+    <div id='discipline-dropdown' class='dropdown'>
+      <%= render partial: 'disciplines_list', locals: { league: @league }  %>
+    </div>
+  </aside>
+
+  
+  <section class='col-4-13'>
+    <div class="table-wrapper">
+      <table class='table'>
+        <caption><%= "#{@league} #{@discipline}" %></caption>
+        <thead>
+          <tr>
+            <th>Sija</th>
+            <th>Urheilija</th>
+            <th>Tulos</th>
+            <th>Paikkakunta</th>
+            <th>Päivämäärä</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @records.each_with_index do |record, idx| %>
+            <tr class="<%= 'recent' if record.achieved_at > 1.year.ago %>">
+              <td><%= idx + 1 %>.</td>
+              <td><%= record.athlete %></td>
+              <td><%= record.result %></td>
+              <td><%= record.location %></td>
+              <td><%= record.achieved_at.day == 1 && record.achieved_at.month == 1 ? record.achieved_at.year : l(record.achieved_at) %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</div>

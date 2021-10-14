@@ -1,6 +1,7 @@
 .table-wrapper {
-  padding: 0rem 0.25rem 1rem 0.25rem;
   overflow-x: auto;
+  box-shadow: var(--box-shadow);
+  border-radius: 0.25rem 0.25rem 0 0;
 }
 
 .table {
@@ -10,12 +11,21 @@
   border-collapse: collapse;
   box-shadow: var(--box-shadow);
   border-radius: 0.25rem 0.25rem 0 0;
-  overflow: hidden;
 
   caption {
+    background-color: var(--primary-variant);
+    color: var(--on-primary);
+    text-shadow: var(--on-primary-shadow);
     font-family: $cursive;
-    font-size: 1.25rem;
+    font-size: 1rem;
     text-transform: capitalize;
+    padding: 0.5em;
+
+    & + thead {
+      background-color: var(--secondary);
+      color: var(--on-secondary);
+      text-shadow: none;
+    }
   }
 
   thead {
@@ -33,6 +43,10 @@
 
     tr.recent {
       font-weight: 700;
+    }
+
+    tr[onclick] {
+      cursor: pointer;
     }
   }
 

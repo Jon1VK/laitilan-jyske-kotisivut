@@ -35,6 +35,7 @@ Rails.application.routes.draw do
   resources :records, path: 'seuraennatykset', only: [:index, :create] do
     get :disciplines, on: :collection
     get ':league', to: 'records#league', on: :collection, as: :league
+    get ':league/:discipline', to: 'records#discipline', on: :collection, as: :discipline
   end
 
   # Open mail in browser if dev environment

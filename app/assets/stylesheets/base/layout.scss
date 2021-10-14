@@ -17,6 +17,7 @@ main.container {
 .grid {
   display: grid;
   gap: 1rem;
+  grid-template-columns: 100%;
 }
 
 .no-row-gap {
@@ -37,8 +38,8 @@ main.container {
     }
   }
 
-  @for $i from 1 to 5 {
-    @for $j from $i + 1 to 6 {
+  @for $i from 1 to 6 {
+    @for $j from $i + 1 to 7 {
       .row-#{$i}-#{$j} {
         grid-row: #{$i} / #{$j};
       }

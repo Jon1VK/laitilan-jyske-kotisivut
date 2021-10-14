@@ -20,9 +20,9 @@
 #
 class Record < ApplicationRecord
   LEAGUES_BY_GENDER = {
+    'Aikuiset' => %w[Miehet Naiset],
     'Pojat' => %w[Pojat\ 9 Pojat\ 10 Pojat\ 11 Pojat\ 12 Pojat\ 13 Pojat\ 14 Pojat\ 15],
     'Tytöt' => %w[Tytöt\ 9 Tytöt\ 10 Tytöt\ 11 Tytöt\ 12 Tytöt\ 13 Tytöt\ 14 Tytöt\ 15],
-    'Aikuiset' => %w[Miehet Naiset],
   }
 
   LEAGUES = LEAGUES_BY_GENDER.values.reduce(&:+)
@@ -70,37 +70,37 @@ class Record < ApplicationRecord
         SELECT
           discipline,
           CASE
-            WHEN discipline SIMILAR TO '[0-9]%' THEN MIN(result)
-            ELSE MAX(result)
+            WHEN discipline SIMILAR TO '[0-9]%|Puoli%|Maraton%' THEN MIN(LPAD(result, 10, '0'))
+            ELSE MAX(LPAD(result, 10, '0'))
           END AS top_result
         FROM records
         WHERE league=:league AND reviewed
         GROUP BY discipline
       ) AS R2 ON R1.discipline=R2.discipline
-      WHERE league=:league AND reviewed AND R1.result=R2.top_result
+      WHERE league=:league AND reviewed AND LPAD(R1.result, 10, '0')=R2.top_result
       ORDER BY achieved_at
     SQL
   end
 
   def self.top_ten_records_by_league_and_discipline(league, discipline)
-    group_by_discipline(Record.find_by_sql([<<-SQL, league: league, discipline: discipline]))
+    Record.find_by_sql([<<-SQL, league: league, discipline: discipline])
       SELECT *
       FROM records as R1
       JOIN (
         SELECT
           athlete,
           CASE
-            WHEN discipline SIMILAR TO '[0-9]%' THEN MIN(result)
-            ELSE MAX(result)
+            WHEN discipline SIMILAR TO '[0-9]%|Puoli%|Maraton%' THEN MIN(LPAD(result, 10, '0'))
+            ELSE MAX(LPAD(result, 10, '0'))
           END AS top_result
         FROM records
         WHERE league=:league AND discipline=:discipline AND reviewed
         GROUP BY athlete, discipline
       ) AS R2 ON R1.athlete=R2.athlete
-      WHERE league=:league AND discipline=:discipline AND reviewed AND R1.result=R2.top_result
+      WHERE league=:league AND discipline=:discipline AND reviewed AND LPAD(R1.result, 10, '0')=R2.top_result
       ORDER BY
-        CASE WHEN discipline SIMILAR TO '[0-9]%' THEN result END ASC,
-        result DESC,
+        CASE WHEN discipline SIMILAR TO '[0-9]%|Puoli%|Maraton' THEN LPAD(result, 10, '0') END ASC,
+        LPAD(result, 10, '0') DESC,
         achieved_at ASC
       LIMIT 10
     SQL

@@ -1,0 +1,5 @@
+<ul class='aside-list'>
+  <% Record::DISCIPLINES_BY_LEAGUE[league].each do |discipline| %>
+    <li><%= active_link_to discipline, discipline_records_path(league.parameterize, discipline.parameterize) %></li>
+  <% end %>
+</ul>

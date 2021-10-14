@@ -3,6 +3,10 @@ class RecordsController < ApplicationController
     [league.parameterize, league]
   end.to_h
 
+  TITLEIZED_DISCIPLINES = Record::DISCIPLINES.map do |discipline|
+    [discipline.parameterize, discipline]
+  end.to_h
+
   # GET /seuraennatykset
   def index
     @record = Record.new
@@ -25,6 +29,13 @@ class RecordsController < ApplicationController
   def league
     @league = TITLEIZED_LEAGUES[params[:league]]
     @records = Record.club_records_by_league(@league)
+  end
+
+  # GET /seuraennatykset/miehet/100m
+  def discipline
+    @league = TITLEIZED_LEAGUES[params[:league]]
+    @discipline = TITLEIZED_DISCIPLINES[params[:discipline]]
+    @records = Record.top_ten_records_by_league_and_discipline(@league, @discipline)
   end
 
   # GET /seuraennatykset/disciplines?league=Miehet&discipline=100m

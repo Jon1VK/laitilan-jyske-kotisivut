@@ -6,16 +6,18 @@
 <h1>Edustusurheilijat</h1>
 
 <div class='grid athletes'>
+  <p class='col-1-13'><%= link_to "Takaisin etusivulle", root_path %></p>
+
   <section class='col-4-13'>
     <p>Laitilan Jyskettä edustaa joukko 14-vuotiaita ja vanhempia tavoitteellisesti urheilevia edustusurheilijoita. Osa heistä on Suomen kansallisen tason huippuja ja osa vasta urheilu-uraansa aloittelevia nuoria. Voit tutustua Jyskeen edustusurheilijoihin heidän henkilökohtaisten sivujensa kautta.</p>
   </section>
   
-  <aside class='col-1-4 row-1-4 aside'>
+  <aside class='col-1-4 row-2-5 aside'>
     <h3>Urheilijasivut</h3>
     <%= render partial: 'athletes_list', locals: { athletes: Athlete.all } %>
   </aside>
 
-  <section class='col-4-13 row-2-3'>
+  <section class='col-4-13 row-3-4'>
     <h2>Urheilijoiden matkassa mukana</h2>
     <figure class='athletes-sponsor'>
       <a href="https://www.lahitapiola.fi/henkilo" target="_blank">
