@@ -1,7 +1,7 @@
 module Admin
   class RecordsController < Admin::ApplicationController
     def default_sorting_attribute
-      :league
+      :reviewed
     end
   end
 end

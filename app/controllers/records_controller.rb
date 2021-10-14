@@ -3,11 +3,12 @@ class RecordsController < ApplicationController
     [league.parameterize, league]
   end.to_h
 
-  # GET /records
+  # GET /seuraennatykset
   def index
     @record = Record.new
   end
 
+  # POST /seuraennatykset
   def create
     @record = Record.new(record_params)
     @record.reviewed = false
@@ -20,12 +21,13 @@ class RecordsController < ApplicationController
     end
   end
 
-  # GET /records/pojat-9
+  # GET /seuraennatykset/pojat-9
   def league
     @league = TITLEIZED_LEAGUES[params[:league]]
-    @records = Record.records_by_league(@league)
+    @records = Record.club_records_by_league(@league)
   end
 
+  # GET /seuraennatykset/disciplines?league=Miehet&discipline=100m
   def disciplines
     @disciplines = Record::DISCIPLINES_BY_LEAGUE[params[:league]] || []
     @discipline = params[:discipline]

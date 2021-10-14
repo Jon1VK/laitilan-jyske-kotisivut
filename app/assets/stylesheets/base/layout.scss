@@ -14,16 +14,19 @@ main.container {
   margin: 2rem auto;
 }
 
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.no-row-gap {
+  gap: 0;
+  column-gap: 1rem;
+}
+
 @media screen and (min-width: $laptop-breakpoint) {
   .grid {
-    display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 1rem;
-  }
-
-  .no-row-gap {
-    gap: 0;
-    column-gap: 1rem;
   }
 
   @for $i from 1 to 13 {
@@ -34,8 +37,8 @@ main.container {
     }
   }
 
-  @for $i from 1 to 4 {
-    @for $j from $i + 1 to 5 {
+  @for $i from 1 to 5 {
+    @for $j from $i + 1 to 6 {
       .row-#{$i}-#{$j} {
         grid-row: #{$i} / #{$j};
       }

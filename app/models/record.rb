@@ -19,32 +19,13 @@
 #  index_records_on_league      (league)
 #
 class Record < ApplicationRecord
-  ADULT_LEAGUES = %w[
-    Miehet
-    Naiset
-  ]
+  LEAGUES_BY_GENDER = {
+    'Pojat' => %w[Pojat\ 9 Pojat\ 10 Pojat\ 11 Pojat\ 12 Pojat\ 13 Pojat\ 14 Pojat\ 15],
+    'Tytöt' => %w[Tytöt\ 9 Tytöt\ 10 Tytöt\ 11 Tytöt\ 12 Tytöt\ 13 Tytöt\ 14 Tytöt\ 15],
+    'Aikuiset' => %w[Miehet Naiset],
+  }
 
-  BOY_LEAGUES = %w[
-    Pojat\ 9
-    Pojat\ 10
-    Pojat\ 11
-    Pojat\ 12
-    Pojat\ 13
-    Pojat\ 14
-    Pojat\ 15
-  ]
-
-  GIRL_LEAGUES = %w[
-    Tytöt\ 9
-    Tytöt\ 10
-    Tytöt\ 11
-    Tytöt\ 12
-    Tytöt\ 13
-    Tytöt\ 14
-    Tytöt\ 15
-  ]
-
-  LEAGUES = ADULT_LEAGUES + BOY_LEAGUES + GIRL_LEAGUES
+  LEAGUES = LEAGUES_BY_GENDER.values.reduce(&:+)
 
   DISCIPLINES_BY_LEAGUE = {
     'Pojat 9' => %w[40m 1000m Korkeus Pituus Kuula Kiekko Moukari Keihäs Kolmiottelu Neliottelu 600m\ kävely],
@@ -67,13 +48,10 @@ class Record < ApplicationRecord
 
   DISCIPLINES = DISCIPLINES_BY_LEAGUE.values.reduce(&:|)
 
-  scope :reviewed, -> { where(reviewed: true) }
-
   validates :league, presence: :true, inclusion: { in: LEAGUES }
   validates :discipline, presence: :true
   validate :discipline_must_be_in_league, if: -> { league.present? }
   validates :athlete, presence: true
-  validates :athlete, uniqueness: { scope: [:league, :discipline] }, if: -> { reviewed }
   validates :result, presence: true
   validates :location, presence: true
   validates :achieved_at, presence: true
@@ -84,7 +62,54 @@ class Record < ApplicationRecord
     end
   end
 
-  def self.records_by_league(league)
-    Record.reviewed.where(league: league)
+  def self.club_records_by_league(league)
+    group_by_discipline(Record.find_by_sql([<<-SQL, league: league]))
+      SELECT *
+      FROM records AS R1
+      JOIN (
+        SELECT
+          discipline,
+          CASE
+            WHEN discipline SIMILAR TO '[0-9]%' THEN MIN(result)
+            ELSE MAX(result)
+          END AS top_result
+        FROM records
+        WHERE league=:league AND reviewed
+        GROUP BY discipline
+      ) AS R2 ON R1.discipline=R2.discipline
+      WHERE league=:league AND reviewed AND R1.result=R2.top_result
+      ORDER BY achieved_at
+    SQL
+  end
+
+  def self.top_ten_records_by_league_and_discipline(league, discipline)
+    group_by_discipline(Record.find_by_sql([<<-SQL, league: league, discipline: discipline]))
+      SELECT *
+      FROM records as R1
+      JOIN (
+        SELECT
+          athlete,
+          CASE
+            WHEN discipline SIMILAR TO '[0-9]%' THEN MIN(result)
+            ELSE MAX(result)
+          END AS top_result
+        FROM records
+        WHERE league=:league AND discipline=:discipline AND reviewed
+        GROUP BY athlete, discipline
+      ) AS R2 ON R1.athlete=R2.athlete
+      WHERE league=:league AND discipline=:discipline AND reviewed AND R1.result=R2.top_result
+      ORDER BY
+        CASE WHEN discipline SIMILAR TO '[0-9]%' THEN result END ASC,
+        result DESC,
+        achieved_at ASC
+      LIMIT 10
+    SQL
+  end
+
+  def self.group_by_discipline(records)
+    records.reduce(Hash.new { |h, k| h[k] = [] }) do |grouped_records, record|
+      grouped_records[record.discipline] << record
+      grouped_records
+    end
   end
 end

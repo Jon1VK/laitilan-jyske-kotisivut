@@ -1,27 +1,27 @@
 <%= form_for record, data: { turbo: false, controller: 'record' }, html: { class: 'grid no-row-gap' } do |f| %>
   <div class="field col-1-5">
     <%= f.label :league %>
-    <%= f.select :league, Record::LEAGUES, { prompt: 'Valitse sarja' }, data: { record_target: 'leagueSelect', action: 'change->record#change' } %>
+    <%= f.select :league, Record::LEAGUES_BY_GENDER, { prompt: 'Valitse sarja' }, data: { record_target: 'leagueSelect', action: 'change->record#change' }, required: true %>
   </div>
   <div class="field col-5-9">
     <%= f.label :discipline %>
-    <%= f.select :discipline, Record::DISCIPLINES, { prompt: 'Valitse laji' }, data: { record_target: 'disciplineSelect' } %>
+    <%= f.select :discipline, Record::DISCIPLINES, { prompt: 'Valitse laji' }, data: { record_target: 'disciplineSelect' }, required: true %>
   </div>
   <div class="field col-9-13">
     <%= f.label :result %>
-    <%= f.text_field :result %>
+    <%= f.text_field :result, required: true %>
   </div>
   <div class="field col-1-13">
     <%= f.label :athlete %>
-    <%= f.text_field :athlete %>
+    <%= f.text_field :athlete, required: true %>
   </div>
   <div class="field col-1-7">
     <%= f.label :location %>
-    <%= f.text_field :location %>
+    <%= f.text_field :location, required: true %>
   </div>
   <div class="field col-7-13">
     <%= f.label :achieved_at %>
-    <%= f.date_field :achieved_at %>
+    <%= f.date_field :achieved_at, required: true %>
   </div>
   <div class='col-1-13'>
     <%= f.submit 'Lähetä', class: 'btn' %>
