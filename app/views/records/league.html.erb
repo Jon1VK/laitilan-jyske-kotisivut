@@ -3,21 +3,22 @@
   </div>
 <% end %>
 
-<h1>Seuraennätykset</h1>
 
-<div class='grid athletes'>
-  <p class='col-1-13'><%= link_to "Takaisin seuraennätyksiin", records_path %></p>
+<%= turbo_frame_tag 'records', class: 'grid', autoscroll: true, data: { autoscroll_block: 'start' } do %>
+  <section class='col-1-13'>
+    <h1 class='maintitle'>Seuraennätykset - <%= @league %></h1>
+    <p class='subtitle'><%= link_to "Takaisin seuraennätysten pääsivulle", records_path, target: '_top' %></p>
+  </section>
 
   <aside class='col-1-4 aside'>
     <% Record::LEAGUES_BY_GENDER.each do |gender, leagues| %>
       <h3 data-dropdown-id='<%= "#{gender}-dropdown" %>' class='dropdown-button'><%= gender %></h3>
       <div id='<%= "#{gender}-dropdown" %>' class='dropdown'>
-        <%= render partial: 'leagues_list', locals: { leagues: leagues }  %>
+        <%= render partial: 'leagues_list', locals: { leagues: leagues, replace_history: true }  %>
       </div>
     <% end %>
   </aside>
 
-  
   <section class='col-4-13'>
     <p class='small'>Klikkaamalla taulukon riviä, pääset tarkastelemaan kyseisellä rivillä olevan lajin TOP 10 listaa.</p>
     <div class="table-wrapper">
@@ -35,7 +36,7 @@
         <tbody>
           <% Record::DISCIPLINES_BY_LEAGUE[@league].each do |discipline| %>
             <% @records[discipline].each_with_index do |record, idx| %>
-              <tr class="<%= 'recent' if record.achieved_at > 1.year.ago %>" onclick="Turbo.visit('<%= discipline_records_path(@league.parameterize, discipline.parameterize) %>')">
+              <tr class="<%= 'recent' if record.achieved_at > 1.year.ago %>" onclick="Turbo.visit('<%= top_ten_records_path(@league.parameterize, discipline: discipline.parameterize) %>')">
                 <% if idx == 0 %>
                   <td rowspan="<%= @records[discipline].length %>"><%= discipline %></td>
                 <% end %>
@@ -50,4 +51,4 @@
       </table>
     </div>
   </section>
-</div>
+<% end %>

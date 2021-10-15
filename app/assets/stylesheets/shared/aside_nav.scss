@@ -1,5 +1,9 @@
 .aside {
-  padding-bottom: 1rem;
+  display: none;
+}
+
+.aside-mobile {
+  display: block;
 }
 
 .aside-list {
@@ -30,6 +34,7 @@
 
 @media screen and (min-width: $laptop-breakpoint) {
   .aside {
+    display: block;
     padding-right: 1rem;
     border-right: 1px solid var(--on-background);
   }

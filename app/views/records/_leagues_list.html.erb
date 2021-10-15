@@ -1,5 +1,12 @@
+<% replace_history ||= false %>
+
 <ul class='aside-list'>
   <% leagues.each do |league| %>
-    <li><%= active_link_to league, league_records_path(league.parameterize) %></li>
+    <li>
+      <%= active_link_to league,
+        league_records_path(league.parameterize),
+        onclick: "#{replace_history} && window.history.replaceState('', '', '#{league_records_path(league.parameterize)}')"
+      %>
+    </li>
   <% end %>
 </ul>

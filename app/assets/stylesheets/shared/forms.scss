@@ -26,13 +26,7 @@
     margin-bottom: 0.2em;
   }
 
-  input {
-    padding: 0.5em 0.75em;
-    border: 1px solid var(--secondary-variant);
-    border-radius: 0.25em;
-    font-size: 1rem;
-  }
-
+  input,
   select {
     padding: 0.5em 0.75em;
     border: 1px solid var(--secondary-variant);

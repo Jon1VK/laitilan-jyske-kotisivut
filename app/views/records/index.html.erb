@@ -3,26 +3,27 @@
   </div>
 <% end %>
 
-<h1>Seuraennätykset</h1>
-
-<div class='grid athletes'>
-  <p class='col-1-13'><%= link_to "Takaisin etusivulle", root_path %></p>
+<div class='grid'>
+  <section class='col-1-13'>
+    <h1 class='maintitle'>Seuraennätykset</h1>
+    <p class='subtitle'><%= link_to "Takaisin etusivulle", root_path, target: '_top' %></p>
+  </section>
 
   <section class='col-4-13'>
     <p>
       Laitilan Jyskeen yleisurheilujaosto ylläpitää luetteloa miesten ja naisten sekä 9—15-vuotiaiden poikien ja tyttöjen seuraennätyksistä.
       Aikuisten sarjoissa seuraennätykset huomioidaan pääasiassa arvokisojen ohjelmassa olevista henkilökohtaisista lajeista.
       Lasten sarjoissa seuraennätyskelpoisia lajeja ovat
-      <a href="https://www.yleisurheilu.fi/sites/default/files/atoms/files/lasten_lajit_2014_-.xls">P/T15—9 -sarjojen viralliset lajit</a>.
+      <a target='_top' href="https://www.yleisurheilu.fi/sites/default/files/atoms/files/lasten_lajit_2014_-.xls">P/T15—9 -sarjojen viralliset lajit</a>.
     </p>
   </section>
   
-  <aside class='col-1-4 row-2-6 aside'>
+  <section class='col-1-4 row-2-5 aside aside-mobile'>
     <% Record::LEAGUES_BY_GENDER.each do |gender, leagues| %>
       <h3><%= gender %></h3>
       <%= render partial: 'leagues_list', locals: { leagues: leagues }  %>
     <% end %>
-  </aside>
+  </section>
 
   <section class='col-4-13 row-3-4'>
     <h2>TOP 10 listat</h2>

@@ -3,10 +3,11 @@
   </div>
 <% end %>
 
-<h1>TOP 10</h1>
-
-<div class='grid athletes'>
-  <p class='col-1-13'><%= link_to "Takaisin sarjan #{@league.downcase} seuraennätyksiin", league_records_path(@league.parameterize) %></p>
+<%= turbo_frame_tag 'records', class: 'grid', autoscroll: true, data: { autoscroll_block: 'start' } do %>
+  <section class='col-1-13'>
+    <h1 class='maintitle'>TOP 10 - <%= "#{@league} #{@discipline}" %></h1>
+    <p class='subtitle'><%= link_to "Takaisin sarjan #{@league.downcase} seuraennätyksiin", league_records_path(@league.parameterize), target: '_top' %></p>
+  </section>
 
   <aside class='col-1-4 aside'>
     <h3 data-dropdown-id='discipline-dropdown' class='dropdown-button'><%= @league %></h3>
@@ -14,7 +15,6 @@
       <%= render partial: 'disciplines_list', locals: { league: @league }  %>
     </div>
   </aside>
-
   
   <section class='col-4-13'>
     <div class="table-wrapper">
@@ -43,4 +43,4 @@
       </table>
     </div>
   </section>
-</div>
+<% end %>

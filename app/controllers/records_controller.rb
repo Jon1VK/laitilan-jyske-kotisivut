@@ -32,7 +32,7 @@ class RecordsController < ApplicationController
   end
 
   # GET /seuraennatykset/miehet/100m
-  def discipline
+  def top_ten
     @league = TITLEIZED_LEAGUES[params[:league]]
     @discipline = TITLEIZED_DISCIPLINES[params[:discipline]]
     @records = Record.top_ten_records_by_league_and_discipline(@league, @discipline)
