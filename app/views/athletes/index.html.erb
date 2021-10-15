@@ -3,18 +3,19 @@
   </div>
 <% end %>
 
-<h1>Edustusurheilijat</h1>
-
 <div class='grid athletes'>
-  <p class='col-1-13'><%= link_to "Takaisin etusivulle", root_path %></p>
+  <section class='col-1-13'>
+    <h1 class='maintitle'>Edustusurheilijat</h1>
+    <p class='subtitle'><%= link_to "Takaisin etusivulle", root_path, target: '_top' %></p>
+  </section>
 
   <section class='col-4-13'>
     <p>Laitilan Jyskettä edustaa joukko 14-vuotiaita ja vanhempia tavoitteellisesti urheilevia edustusurheilijoita. Osa heistä on Suomen kansallisen tason huippuja ja osa vasta urheilu-uraansa aloittelevia nuoria. Voit tutustua Jyskeen edustusurheilijoihin heidän henkilökohtaisten sivujensa kautta.</p>
   </section>
   
-  <aside class='col-1-4 row-2-5 aside'>
+  <aside class='col-1-4 row-2-5 aside aside-mobile'>
     <h3>Urheilijasivut</h3>
-    <%= render partial: 'athletes_list', locals: { athletes: Athlete.all } %>
+    <%= render partial: 'athletes_list' %>
   </aside>
 
   <section class='col-4-13 row-3-4'>

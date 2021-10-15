@@ -1,5 +1,12 @@
+<% replace_history ||= false %>
+
 <ul class='aside-list'>
-  <% athletes.each do |athlete| %>
-    <li><%= active_link_to athlete.fullname, athlete_path(athlete) %></li>
+  <% Athlete.all.each do |athlete| %>
+    <li>
+      <%= active_link_to athlete.fullname,
+        athlete_path(athlete),
+        onclick: "#{replace_history} && window.history.replaceState('', '', '#{athlete_path(athlete)}')"
+      %>
+    </li>
   <% end %>
 </ul>

@@ -1,15 +1,17 @@
-<h1>Edustusurheilijat</h1>
-<div class='grid athletes'>
-  <p class='col-1-13'><%= link_to "Takaisin edustusurheilijoihin", athletes_path %></p>
-  
+<%= turbo_frame_tag 'athlete', class: 'grid athletes', autoscroll: true, data: { autoscroll_block: 'start' } do %>
+  <div class='col-1-13'>
+    <p class='subtitle'><%= link_to "Takaisin edustusurheilijoiden pääsivulle", athletes_path, target: '_top' %></p>
+  </div>
+
   <aside class='col-1-4 aside'>
-    <h2 id='dropdown-button' class='dropdown-button'>Urheilijat</h2>
-    <div id='dropdown' class='dropdown'>
-      <%= render partial: 'athletes_list', locals: { athletes: Athlete.all } %>
+    <h3 data-dropdown-id='athletes-dropdown' class='dropdown-button'>Urheilijasivut</h3>
+    <div id='athletes-dropdown' class='dropdown'>
+      <%= render partial: 'athletes_list', locals: { replace_history: true } %>
     </div>
   </aside>
 
-  <%= turbo_frame_tag 'athlete', class: 'col-4-13' do %>
+  <article class='col-4-13'>
+    <h2>Edustusurheilija</h2>
     <h1 class='maintitle'><%= @athlete.fullname %></h1>
     <%= form_with model: @athlete do |form| %>
       <%= form.submit 'Tallenna', class: 'btn' %>
@@ -21,5 +23,5 @@
         <%= form.rich_text_area :content %>
       </div>
     <% end %>
-  <% end %>
-</div>
+  </article>
+<% end %>
