@@ -80,14 +80,16 @@ trix-toolbar {
       padding-left: 1.25rem;
     }
 
-    sub::after,
-    sup::after {
+    &::after {
       display: block;
+      clear: both;
+      visibility: hidden;
       content: '';
       height: 0px;
     }
 
     .attachment-gallery {
+      clear: both;
       align-items: center;
 
       > action-text-attachment,
