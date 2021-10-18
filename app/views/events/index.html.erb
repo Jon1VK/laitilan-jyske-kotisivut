@@ -1,17 +1,21 @@
-<h1>Tapahtumakalenteri</h1>
+<h1>Tapahtumat</h1>
 
-<%= render partial: 'calendar_nav', locals: { year: @year, month: @month } %>
+<%= turbo_frame_tag 'calendar-frame' do %>
+  <p class='small'>Klikkaamalla tapahtuman nimeä saat tarkempaa tietoa kyseisestä tapahtumasta.</p>
+  
+  <%= render partial: 'calendar_nav', locals: { year: @year, month: @month } %>
 
-<div class='calendar'>
-  <% t('date.day_names').rotate(1).each do |weekday| %>
-    <span class='dayname'><%= weekday %></span>
-  <% end %>
-  <% @dates.each do |date| %>
-    <div class='wday-<%= date.cwday %><%= ' not-in-month' if date.month != @month %>'>
-      <div class='day<%= ' cday' if date == Date.today %>'><%= date.day %></div>
-      <% @events[date].each do |event| %>
-        <%= render partial: 'calendar_event', locals: { event: event } %>
-      <% end %>
-    </div>
-  <% end %>
-</div>
+  <div class='calendar'>
+    <% t('date.day_names').rotate(1).each do |weekday| %>
+      <div class='dayname'><%= weekday %></div>
+    <% end %>
+    <% @dates.each do |date| %>
+      <div class='wday-<%= date.cwday %><%= ' not-in-month' if date.month != @month %>'>
+        <div class='day<%= ' cday' if date == Date.today %>'><%= date.day %></div>
+        <% @events[date].each do |event| %>
+          <%= render partial: 'calendar_event', locals: { event: event } %>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+<% end %>

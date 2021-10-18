@@ -4,8 +4,11 @@ export default class extends Controller {
   connect() {
     document
       .getElementById('modal-background')
-      .addEventListener('click', (e) => {
-        e.target.parentElement.classList.remove('open');
+      .addEventListener('click', () => {
+        document.getElementById('modal').classList.remove('open');
       });
+    document.getElementById('modal-close').addEventListener('click', () => {
+      document.getElementById('modal').classList.remove('open');
+    });
   }
 }

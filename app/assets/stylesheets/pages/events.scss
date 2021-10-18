@@ -1,32 +1,53 @@
 .calendar-nav {
   margin: 1.5rem 0 1rem 0;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-end;
+  text-align: center;
 
   h2 {
     margin: 0;
+  }
+
+  a {
+    font-family: $cursive;
+    font-size: 0.875rem;
+  }
+
+  a:first-of-type {
+    text-align: left;
+  }
+
+  a:last-of-type {
+    text-align: right;
   }
 }
 
 .calendar {
   display: grid;
   overflow-x: auto;
-  grid-template-columns: repeat(7, minmax(100px, 1fr));
-  border: 1px solid var(--secondary);
+  grid-template-columns: repeat(7, minmax(125px, 1fr));
+  border-bottom: 1px solid var(--secondary-variant);
   font-size: 0.75rem;
 
   .dayname {
     text-transform: capitalize;
     text-align: center;
     padding: 0.2rem 0;
-    border: 1px solid var(--secondary);
+    border-top: 1px solid var(--secondary-variant);
+    border-left: 1px solid var(--secondary-variant);
+  }
+
+  .dayname:nth-of-type(7),
+  [class^='wday']:nth-of-type(7n) {
+    border-right: 1px solid var(--secondary-variant);
   }
 
   [class^='wday'] {
-    min-height: 150px;
+    min-height: 125px;
     padding: 0.1rem;
-    border: 1px solid var(--secondary);
+    border-top: 1px solid var(--secondary-variant);
+    border-left: 1px solid var(--secondary-variant);
   }
 
   .day {
@@ -55,11 +76,11 @@
     display: block;
     text-decoration: none;
     text-align: center;
-    background-color: var(--success);
-    color: var(--on-success);
+    background-color: var(--primary-variant);
+    color: var(--on-primary);
     font-size: 0.8rem;
-    padding: 0.5em 0.25em;
-    margin-top: 0.25em;
+    padding: 0.5em 0.1em;
+    margin: 0.5em 0.1em 0 0.1em;
     border-radius: 0.5em;
     text-shadow: var(--on-primary-shadow);
     cursor: pointer;
@@ -67,5 +88,5 @@
 }
 
 .event-description {
-  white-space: pre;
+  white-space: pre-wrap;
 }

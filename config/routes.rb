@@ -4,7 +4,6 @@ Rails.application.routes.draw do
   
   # Static pages
   get 'uutiset', to: 'static#news', as: :news
-  get 'palkitseminen', to: 'static#awards', as: :awards
   
   # Admin login routes
   devise_for :users, path: 'admin', path_names: {
@@ -28,7 +27,7 @@ Rails.application.routes.draw do
   }
   
   # Event resource routes
-  resources :events, path: 'tapahtumakalenteri', only: [:index, :show]
+  resources :events, path: 'tapahtumat', only: [:index, :show]
   
   # Athlete resources routes
   resources :athletes, path: 'edustusurheilijat', only: [:index, :show, :edit, :update]
