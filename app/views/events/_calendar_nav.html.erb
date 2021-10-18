@@ -1,0 +1,7 @@
+<div class='calendar-nav'>
+  <a href="<%= events_url(year: year - 1, month: month) %>">Edellinen vuosi</a>
+  <a href="<%= events_url(year: (month == 1 ? year - 1 : year), month: (month == 1 ? 12 : month - 1)) %>">Edellinen kuukausi</a>
+  <h2><%= year %> - <%= t('date.month_names')[month] %></h2>
+  <a href="<%= events_url(year: (month == 12 ? year + 1 : year), month: (month == 12 ? 1 : month + 1)) %>">Seuraava kuukausi</a>
+  <a href="<%= events_url(year: year + 1, month: month) %>">Seuraava vuosi</a>
+</div>

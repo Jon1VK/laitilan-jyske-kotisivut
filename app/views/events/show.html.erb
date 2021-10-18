@@ -1,0 +1,18 @@
+<%= turbo_frame_tag 'modal' do %>
+  <div class='modal open' data-controller='modal'>
+    <div id='modal-background' class='modal-background'></div>
+    <article class='modal-content'>
+      <h1 class='maintitle'><%= @event.title %></h1>
+      <h2 class='subtitle'><%= @event.location %> <%= l(@event.start_time.to_date) %></h2>
+
+      <% if @event.start_time == @event.end_time %>
+        <p class='small'></p>
+      <% end %>
+      <p class='event-description'><%= @event.description %></p>
+      <% if @event.registration_due %>
+        <p>Ilmoittautuminen <%= l(@event.registration_due) %> mennessä!</p>
+      <% end %>
+      <p><a target='_blank' href="<%= @event.registration_url %>">Lisätietoa ja Ilmoittautuminen</a></p>
+    </article>
+  </div>
+<% end %>

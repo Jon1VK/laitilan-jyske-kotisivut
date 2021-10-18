@@ -5,3 +5,6 @@ application.register('trix', TrixController);
 
 import RecordController from './record_controller';
 application.register('record', RecordController);
+
+import ModalController from './modal_controller';
+application.register('modal', ModalController);

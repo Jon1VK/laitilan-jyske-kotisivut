@@ -23,4 +23,17 @@ class Event < ApplicationRecord
   validates :start_time, presence: true
   validates :end_time, presence: true
   validates :description, presence: true
+
+  def self.events_by_year_and_month(year, month)
+    group_by_date(Event.where(start_time: DateTime.new(year, month)..DateTime.new(year, month).end_of_month))
+  end
+
+  def self.group_by_date(events)
+    events.reduce(Hash.new { |h, k| h[k] = [] }) do |grouped_events, event|
+      (event.start_time.to_date..event.end_time.to_date).each do |date|
+        grouped_events[date] << event
+      end
+      grouped_events
+    end
+  end
 end

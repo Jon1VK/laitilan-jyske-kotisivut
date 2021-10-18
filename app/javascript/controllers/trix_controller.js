@@ -3,7 +3,6 @@ import { convertPreformattedText } from '../preformatted_text/convert_preformatt
 
 export default class extends Controller {
   connect() {
-    console.log('HELLOOOO');
     convertPreformattedText();
   }
 }

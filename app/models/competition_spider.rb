@@ -26,7 +26,7 @@ class CompetitionSpider < Kimurai::Base
     # Competition queries that we intend to scrape for competitions
     queries = [
       # Competitions in Varsinais-Suomi from current day forward
-      "?cs=21&npa=#{day}&nka=#{month}&nva=#{year}&npl=00&nkl=00&nvl=00&acl%5B%5D=0&ns=0&ni=-1&nd=18&nl=0",
+      "?cs=21&npa=#{day}&nka=#{month}&nva=#{year}&npl=00&nkl=00&nvl=00&acl%5B%5D=0&ns=0&ni=-1&nd=0&nl=0",
       # Finnish Championship competitions from current day forward
       "?cs=21&npa=#{day}&nka=#{month}&nva=#{year}&npl=00&nkl=00&nvl=00&acl%5B%5D=18&ns=0&ni=-1&nd=0&nl=0"
     ]

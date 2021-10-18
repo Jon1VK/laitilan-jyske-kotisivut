@@ -1,0 +1,71 @@
+.calendar-nav {
+  margin: 1.5rem 0 1rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  h2 {
+    margin: 0;
+  }
+}
+
+.calendar {
+  display: grid;
+  overflow-x: auto;
+  grid-template-columns: repeat(7, minmax(100px, 1fr));
+  border: 1px solid var(--secondary);
+  font-size: 0.75rem;
+
+  .dayname {
+    text-transform: capitalize;
+    text-align: center;
+    padding: 0.2rem 0;
+    border: 1px solid var(--secondary);
+  }
+
+  [class^='wday'] {
+    min-height: 150px;
+    padding: 0.1rem;
+    border: 1px solid var(--secondary);
+  }
+
+  .day {
+    text-align: right;
+    font-family: $cursive;
+  }
+
+  .cday {
+    color: var(--primary-variant);
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+
+  .not-in-month {
+    background-color: var(--secondary);
+    color: var(--secondary-variant);
+  }
+
+  @for $i from 1 to 8 {
+    .wday-#{$i} {
+      grid-column: #{$i} / #{$i + 1};
+    }
+  }
+
+  .calendar-event {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--success);
+    color: var(--on-success);
+    font-size: 0.8rem;
+    padding: 0.5em 0.25em;
+    margin-top: 0.25em;
+    border-radius: 0.5em;
+    text-shadow: var(--on-primary-shadow);
+    cursor: pointer;
+  }
+}
+
+.event-description {
+  white-space: pre;
+}
