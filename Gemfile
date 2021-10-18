@@ -40,6 +40,8 @@ gem "administrate", "~> 0.16.0"
 gem "aws-sdk-s3", "~> 1.103"
 # Send and receive async updates through html 
 gem "hotwire-rails", "~> 0.1.3"
+# Scrape web content
+gem "kimurai", "~> 1.4"
 
 
 group :development, :test do
