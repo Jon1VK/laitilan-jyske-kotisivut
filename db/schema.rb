@@ -75,7 +75,7 @@ ActiveRecord::Schema.define(version: 2021_10_16_182334) do
     t.string "location", null: false
     t.datetime "start_time", null: false
     t.datetime "end_time", null: false
-    t.text "description", null: false
+    t.text "description"
     t.string "registration_url"
     t.datetime "registration_due"
     t.datetime "created_at", precision: 6, null: false

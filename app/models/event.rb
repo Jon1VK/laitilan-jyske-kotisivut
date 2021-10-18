@@ -3,7 +3,7 @@
 # Table name: events
 #
 #  id               :bigint           not null, primary key
-#  description      :text             not null
+#  description      :text
 #  end_time         :datetime         not null
 #  location         :string           not null
 #  registration_due :datetime
@@ -22,7 +22,6 @@ class Event < ApplicationRecord
   validates :location, presence: true
   validates :start_time, presence: true
   validates :end_time, presence: true
-  validates :description, presence: true
 
   def self.events_by_year_and_month(year, month)
     group_by_date(Event.where(start_time: DateTime.new(year, month)..DateTime.new(year, month).end_of_month))
