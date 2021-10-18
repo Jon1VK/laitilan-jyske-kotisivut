@@ -32,6 +32,14 @@ trix-toolbar {
     margin-top: 0;
   }
 
+  ul {
+    list-style-type: disc;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+
   sub {
     all: unset;
     display: block;

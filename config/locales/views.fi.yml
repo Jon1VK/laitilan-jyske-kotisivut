@@ -9,8 +9,8 @@ fi:
   fields:
     boolean:
       index:
-        true: 🗸
+        true: ✅
         false: ❌
       show:
-        true: 🗸
+        true: ✅
         false: ❌
