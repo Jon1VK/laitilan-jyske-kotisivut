@@ -55,7 +55,7 @@ class CompetitionSpider < Kimurai::Base
       .at('table.listaus tr.even:nth-of-type(2)')
       .text.split("Sarjat/Lajit")[1]
       .strip.split("\n\n").join("\n")
-    event = Event.find_or_create_by(title: competition[:title], start_time: Time.parse(competition[:start_time]))
+    event = Event.find_or_create_by(title: competition[:title], start_time: Time.zone.parse(competition[:start_time]))
     event.update(**competition)
   end
 

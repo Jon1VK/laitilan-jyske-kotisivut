@@ -42,7 +42,7 @@ class PracticeSpider < Kimurai::Base
     practice[:description] = response.css('.descriptioninner').text
     practice[:start_time], practice[:end_time] = parse_datetimes(response.at('.eventdetailsblock').text)
     practice[:registration_due] = response.at('.additionaldetails span').text
-    event = Event.find_or_create_by(title: practice[:title], start_time: Time.parse(practice[:start_time]))
+    event = Event.find_or_create_by(title: practice[:title], start_time: Time.zone.parse(practice[:start_time]))
     event.update(**practice)
   end
 
