@@ -42,6 +42,8 @@ gem "aws-sdk-s3", "~> 1.103"
 gem "hotwire-rails", "~> 0.1.3"
 # Scrape web content
 gem "kimurai", "~> 1.4"
+# Authorization gem
+gem "pundit", "~> 2.1"
 
 
 group :development, :test do
