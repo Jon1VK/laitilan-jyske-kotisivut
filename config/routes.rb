@@ -2,9 +2,6 @@ Rails.application.routes.draw do
   # Root page of the app
   root 'static#index'
   
-  # Static pages
-  get 'uutiset', to: 'static#news', as: :news
-  
   # Admin login routes
   devise_for :users, path: 'admin', path_names: {
     sign_in: 'login',
@@ -13,11 +10,11 @@ Rails.application.routes.draw do
   
   # Admin dashboard routes
   namespace :admin do
-    resources :users
-    resources :athletes, only: [:index, :show, :edit, :update]
+    root to: "news#index"
+
     resources :records
-    
-    root to: "athletes#index"
+    resources :athletes, only: [:index, :show, :edit, :update]
+    resources :users
   end
   
   # Athlete login routes
@@ -28,6 +25,9 @@ Rails.application.routes.draw do
   
   # Event resource routes
   resources :events, path: 'tapahtumat', only: [:index, :show]
+
+  # News resource routes
+  resources :news, path: 'uutiset', only: [:index, :show]
   
   # Athlete resources routes
   resources :athletes, path: 'edustusurheilijat', only: [:index, :show, :edit, :update]

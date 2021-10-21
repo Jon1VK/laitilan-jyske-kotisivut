@@ -14,6 +14,16 @@
   }
 }
 
+@media screen and (max-height: $tablet-breakpoint) {
+  .jumbotron {
+    height: calc(100vh - 60px);
+  }
+
+  .jumbotron-small {
+    height: calc(66.67vh - 60px);
+  }
+}
+
 @media screen and (min-width: $laptop-breakpoint) {
   .jumbotron {
     margin-top: -45px;

@@ -2,6 +2,10 @@ fi:
   activerecord:
     attributes:
       user:
+        firstname: Etunimi
+        lastname: Sukunimi
+        fullname: Nimi
+        admin: Pääkäyttäjä
         email: Sähköposti
         password: Salasana
         current_password: Nykyinen salasana
@@ -36,6 +40,11 @@ fi:
         location: Kilpailupaikka
         achieved_at: Päivämäärä
         reviewed: Tarkastettu
+      news:
+        user: Kirjoittaja
+        user_id: Kirjoittaja
+        title: Otsikko
+        published_at: Julkaistu
     models:
       user:
         one: Seurakäyttäjä
@@ -46,3 +55,6 @@ fi:
       record:
         one: Ennätys
         other: Ennätykset
+      news:
+        one: Uutinen
+        other: Uutiset
