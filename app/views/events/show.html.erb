@@ -18,7 +18,7 @@
       </header>
       <p class='event-description'><%= @event.description %></p>
       <% if @event.registration_due %>
-        <p class='small'>Ilmoittautuminen <%= l(@event.registration_due, format: :short) %> mennessä!</p>
+        <p class='small'>Ilmoittautuminen <%= l(@event.registration_due.to_date, format: :long) %> mennessä!</p>
       <% end %>
       <a class='btn' target='_blank' href="<%= @event.registration_url %>">Lisätietoa<%= ' ja Ilmoittautuminen' if @event.registration_due %></a>
     </article>

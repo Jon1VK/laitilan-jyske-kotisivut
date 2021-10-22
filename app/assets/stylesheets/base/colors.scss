@@ -13,6 +13,7 @@
   --surface: hsl(0, 0%, 100%);
   --error: hsl(349, 100%, 35%);
   --success: hsl(203, 100%, 28%);
+  --success-variant: hsl(180, 33%, 28%);
 
   --on-primary: hsl(0, 0%, 100%);
   --on-secondary: hsl(0, 0%, 0%);
@@ -23,6 +24,7 @@
 
   --on-primary-shadow: 0.05em 0.05em 0.2em hsl(0, 0%, 15%);
   --box-shadow: 0.1em 0.1em 0.3em hsl(0, 0%, 35%);
+  --box-shadow-small: 0.1em 0.1em 0.15em hsl(0, 0%, 35%);
 }
 
 body {

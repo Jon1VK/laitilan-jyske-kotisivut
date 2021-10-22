@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   namespace :admin do
     root to: "news#index"
 
+    resources :news
     resources :records
     resources :athletes, only: [:index, :show, :edit, :update]
     resources :users

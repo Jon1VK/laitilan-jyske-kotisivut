@@ -76,18 +76,19 @@
     display: block;
     text-decoration: none;
     text-align: center;
-    background-color: var(--success);
+    background-color: var(--primary-variant);
     color: var(--on-primary);
     font-size: 0.8rem;
     padding: 0.5em 0.1em;
-    margin: 0.5em 0.1em 0 0.1em;
+    margin: 0.4em 0.25em;
     border-radius: 0.5em;
     text-shadow: var(--on-primary-shadow);
     cursor: pointer;
+    box-shadow: var(--box-shadow-small);
   }
 
   .calendar-event-alt {
-    background-color: var(--primary-variant);
+    background-color: var(--success-variant);
   }
 }
 

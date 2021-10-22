@@ -19,7 +19,7 @@ class PracticeSpider < Kimurai::Base
       new_count = response.css('.eventcard').count
       if new_count == count
         logger.info "Pagination is done"
-        break;
+        break
       else
         count = new_count
         logger.info "Continue scrolling, current event count is #{count}"
@@ -36,14 +36,36 @@ class PracticeSpider < Kimurai::Base
   end
 
   def parse_additional_info(response, params)
+    button = nil
+    loop do
+      sleep 2
+      response = browser.current_response
+      button = response.at('.eventinstances button')
+      if button
+        browser.click_button button.text
+        logger.info "Loading more event instances"
+      else
+        logger.info "All event instances loaded"
+        break
+      end
+    end
+
     practice = params[:data][:practice]
-    sleep 2
-    response = browser.current_response
-    practice[:description] = response.css('.descriptioninner').text
-    practice[:start_time], practice[:end_time] = parse_datetimes(response.at('.eventdetailsblock').text)
-    practice[:registration_due] = response.at('.registration .additionaldetails span').text
-    event = Event.find_or_create_by(title: practice[:title], start_time: Time.zone.parse(practice[:start_time]))
-    event.update(**practice)
+    practice[:description] = response.at('.descriptioninner').text
+    practice[:registration_due] = response.at('.registration .additionaldetails span')&.text
+    practice_instances = response.css('.eventinstance')
+
+    if practice_instances.empty?
+      practice[:start_time], practice[:end_time] = parse_datetimes(response.at('.eventdetailsblock').text)
+      event = Event.find_or_create_by(title: practice[:title], start_time: Time.zone.parse(practice[:start_time]))
+      event.update(**practice)
+    else
+      practice_instances.each do |practice_instance|
+        practice[:start_time], practice[:end_time] = parse_datetimes(practice_instance.at('span').text)
+        event = Event.find_or_create_by(title: practice[:title], start_time: Time.zone.parse(practice[:start_time]))
+        event.update(**practice)
+      end
+    end
   end
 
   def parse_datetimes(datetimes)

@@ -24,7 +24,7 @@ class Event < ApplicationRecord
   validates :end_time, presence: true
 
   def self.events_by_year_and_month(year, month)
-    group_by_date(Event.where(start_time: DateTime.new(year, month)..DateTime.new(year, month).end_of_month))
+    group_by_date(Event.where(start_time: DateTime.new(year, month)..DateTime.new(year, month).end_of_month).order(:start_time))
   end
 
   def self.group_by_date(events)
