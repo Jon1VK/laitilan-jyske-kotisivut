@@ -106,7 +106,7 @@ Miehet;3000m estejuoksu;9.45,98;Kari Laiho;Turku;25.7.1990
 Miehet;3000m estejuoksu;9.49,0h;Aappo Kontu;Laitila;9.8.1974
 Miehet;3000m estejuoksu;10.09,8h;Tarmo Jalo;-;1.1.1937
 Miehet;3000m estejuoksu;10.15,0h;Esa Kylä-Kaila;-;1.1.1975
-Miehet;3000m estejuoksu;10:41,6h;Erkki Sillantaka;-;1.1.1939
+Miehet;3000m estejuoksu;10.41,6h;Erkki Sillantaka;-;1.1.1939
 Miehet;110m aitajuoksu;16,21;Joonas Mäkinen;Kauhava;4.8.2017
 Miehet;110m aitajuoksu;17,00;Jetro Hilakari;Turku;2.7.1997
 Miehet;110m aitajuoksu;16,8h;Jouni Järvinen;-;1.1.1958
@@ -217,29 +217,198 @@ Miehet;Kymmenottelu;4670;Joni Laiho;Raasepori/K;8.9.2013
 Miehet;20km kävely;1.34.42;Kari Laiho;Turku;31.3.1997
 Miehet;50km kävely;4.42.57;Kari Laiho;Vantaa;5.5.1996
 Naiset;100m;12,55;Verna Vuorela;Turku;25.7.2020
+Naiset;100m;12,70;Heidi Knuutila;Raisio;27.7.2003
+Naiset;100m;12,78;Katri Routsalo;Paimio;14.7.1993
+Naiset;100m;12,81;Carolina Grönroos;Laitila;18.7.2020
+Naiset;100m;12,95;Aamu Airisto;Hyvinkää;6.8.2021
+Naiset;100m;13,10;Lotta Metsärinta;Tampere;23.5.2021
+Naiset;100m;13,0h;Satu Rantanen;-;1.1.1978
+Naiset;100m;13,31;Jutta Lukkala;Laitila;19.7.2014
+Naiset;100m;13,38;Jaana Heinonen;-;1.1.1990
+Naiset;100m;13,41;Laura Lähteenmäki;Turku;5.7.2005
 Naiset;200m;25,63;Katri Routsalo;Mynämäki;21.7.1993
+Naiset;200m;25,86;Heidi Knuutila;Turku;18.8.1999
+Naiset;200m;26,12;Carolina Grönroos;Pedersöre;8.8.2020
+Naiset;200m;26,55;Verna Vuorela;Turku;6.7.2021
+Naiset;200m;26,68;Lotta Metsärinta;Laitila;26.9.2020
+Naiset;200m;26,6h;Tiina Varjonen;-;1.1.1984
+Naiset;200m;27,08;Taisa Bragge;Turku;30.6.1998
+Naiset;200m;27,31;Jaana Heinonen;-;1.1.1990
+Naiset;200m;27,1h;Sinikka Tyynelä;-;1.1.1970
+Naiset;200m;27,43;Jutta Lukkala;Naantali;26.7.2015
 Naiset;400m;57,29;Heidi Knuutila;Turku;6.7.2001
+Naiset;400m;58,29;Katri Routsalo;Mynämäki;22.7.1993
+Naiset;400m;58,90;Taisa Bragge;Kokemäki;25.7.1999
+Naiset;400m;58,9h;Sinikka Tyynelä;Paimio;19.7.1976
+Naiset;400m;59,3h;Kia Minkkinen;Turku;2.7.1997
+Naiset;400m;60,34;Jaana Simola;Kokemäki;9.7.1992
+Naiset;400m;60,43;Sari Kaitila;Mynämäki;22.7.1993
+Naiset;400m;60,85;Carolina Grönroos;Pedersöre;7.8.2020
+Naiset;400m;61,49;Terhi Hynnä;Lieto;27.7.1989
+Naiset;400m;61,50;Henna Anttila;Kokemäki;9.7.1992
 Naiset;800m;2.05,3h;Sinikka Tyynelä;Helsinki;4.9.1976
-Naiset;1500m;4.12,9h;Sinikka Tyynelä;Oslo NOR;30.6.1976
+Naiset;800m;2.12,27;Kia Minkkinen;Turku;1.7.1998
+Naiset;800m;2.14,20;Jaana Simola;Ylöjärvi;25.6.1993
+Naiset;800m;2.16,60;Taisa Bragge;Pori;15.8.1999
+Naiset;800m;2.18,66;Sari Kaitila;Mynämäki;21.7.1993
+Naiset;800m;2.19,54;Henna Anttila;Turku;22.7.1992
+Naiset;800m;2.20,0h;Tiina Varjonen;Salo;29.6.1980
+Naiset;800m;2.20,46;Terhi Hynnä;Nokia;27.8.1988
+Naiset;800m;2.20,6h;Tarja Sainio;Vammala;19.8.1976
+Naiset;800m;2.21,7h;Lea Kylä-Kaila;-;1.1.1976
+Naiset;1500m;4.12,9;Sinikka Tyynelä;Oslo NOR;30.6.1976
+Naiset;1500m;4.34,68;Kia Minkkinen;Eurajoki;11.6.1998
+Naiset;1500m;4.40,0h;Tarja Sainio;Tampere;16.8.1976
+Naiset;1500m;4.46,64;Jaana Simola;Vammala;6.6.1993
+Naiset;1500m;4.47,97;Taisa Bragge;Eurajoki;11.6.1998
+Naiset;1500m;4.48,96;Terhi Hynnä;Turku;27.6.1989
+Naiset;1500m;4.50,17;Henna Anttila;Turku;21.7.1994
+Naiset;1500m;5.01,2h;Päivi Sainio-Ranta;Laitila;16.6.1976
+Naiset;1500m;5.06,0h;Lea Kylä-Kaila;Turku;13.7.1973
+Naiset;1500m;5.07,58;Jutta Ellä;Lieto;11.9.1993
 Naiset;3000m;9.17,8h;Sinikka Tyynelä;Helsinki;17.8.1974
+Naiset;3000m;10.00,4h;Tarja Sainio;Helsinki;20.5.1976
+Naiset;3000m;10.27,98;Kia Minkkinen;Raisio;3.7.1996
+Naiset;3000m;11.06,18;Henna Anttila;Naantali;19.8.1992
+Naiset;3000m;11.06,95;Jutta Ellä;Turku;27.8.1997
+Naiset;3000m;11.17,6h;Taru Karlund;Naantali;25.6.1973
+Naiset;3000m;11.28,91;Sari Kaitila;Salo;1.6.1993
+Naiset;3000m;11.35,30;Taisa Bragge;Turku;31.8.2016
+Naiset;3000m;11.36,94;Jaana Simola;-;1.1.1991
+Naiset;3000m;11.37,0h;Anja Riitta-Laihinen;-;1.1.1973
 Naiset;5000m;18.15,0h;Tarja Sainio;Kankaanpää;21.9.1975
+Naiset;5000m;19.13,1h;Jutta Ellä;Turku;28.5.1997
 Naiset;10000m;-;-;-;1.1.1911
 Naiset;Puolimaraton;1.30.59;Venla Laiho;Kankaanpää;20.10.2018
+Naiset;Puolimaraton;1.41.09;Taisa Bragge;Turku;17.09.2016
+Naiset;Puolimaraton;1.42.41;Kirsi Kuuttila;Turku;22.09.2018
+Naiset;Puolimaraton;1.53.48;Jonna Voronkoff;Turku;3.7.2010
 Naiset;Maraton;3.34.31;Senja-Riitta Lukkarinen;Vantaa;11.10.1992
+Naiset;Maraton;4.01.52;Henna Suvanto;Helsinki;14.8.2010
+Naiset;Maraton;4.04.49;Seija Vilen;-;1.1.1991
+Naiset;Maraton;4.10.00;Kirsi Laine;-;1.1.1995
+Naiset;Maraton;4.16.00;Tarja Salonen;-;1.1.1991
+Naiset;Maraton;4.22.23;Taisa Bragge;Turku;26.9.2013
+Naiset;Maraton;4.26.55;Reija Nurmi;-;1.1.1992
+Naiset;Maraton;4.30.19;Heljä Mustonen;-;1.1.1991
+Naiset;Maraton;4.49.00;Merja-Riitta Palmunen;-;1.1.1988
 Naiset;3000m estejuoksu;13.31,60;Jutta Ellä;Turku;9.8.2000
 Naiset;100m aitajuoksu;14,4h;Tiina Varjonen;Raisio;30.5.1987
+Naiset;100m aitajuoksu;15,53;Jaana Heinonen;Mynämäki;21.7.1993
+Naiset;100m aitajuoksu;15,62;Katri Routsalo;Raisio;1.8.1992
+Naiset;100m aitajuoksu;15,96;Heidi Knuutila;Turku;25.8.1999
+Naiset;100m aitajuoksu;16,32;Sari Myllymäki;Lieto;16.6.1988
+Naiset;100m aitajuoksu;18,53;Saara Simola;Uusikaupunki;24.5.2008
+Naiset;100m aitajuoksu;19,5h;Riitta Valonen;-;1.1.1969
+Naiset;100m aitajuoksu;19,8h;Sirpa Laihonen;-;1.1.1969
+Naiset;100m aitajuoksu;21,4h;Leena Hurme;-;1.1.1969
+Naiset;100m aitajuoksu;23,2h;Sirke Varjo;-;1.1.1970
 Naiset;400m aitajuoksu;62,54;Heidi Knuutila;Lahti;19.8.2000
+Naiset;400m aitajuoksu;66,87;Jaana Simola;Naantali;19.8.1992
+Naiset;400m aitajuoksu;67,04;Lotta Metsärinta;Raisio;20.7.2021
+Naiset;400m aitajuoksu;68,31;Laura Lähteenmäki;Turku;21.7.2004
+Naiset;400m aitajuoksu;68,5h;Tuija Hautakangas;Mynämäki;23.7.1979
+Naiset;400m aitajuoksu;68,74;Sari Myllymäki;Parainen;8.6.1990
+Naiset;400m aitajuoksu;69,80;Taisa Bragge;Kannus;12.8.2001
+Naiset;400m aitajuoksu;71,78;Sari Kaitila;Paimio;14.7.1993
+Naiset;400m aitajuoksu;72,50;Carolina Grönroos;Naantali;2.7.2020
+Naiset;400m aitajuoksu;73,79;Jutta Lukkala;Jämsä/J;25.6.2015
 Naiset;Korkeus;170;Tiina Varjonen;Raisio;30.5.1987
+Naiset;Korkeus;166;Saija Lännistö;Turku;2.7.1994
+Naiset;Korkeus;165;Heli Airasmäki;Lieto;25.6.1991
+Naiset;Korkeus;163;Mari Hämäläinen;Turku;2.7.1994
+Naiset;Korkeus;162;Maarit Rantanen;Vantaa/T;16.8.1992
+Naiset;Korkeus;160;Tuija Hautakangas;Raisio;2.6.1979
+Naiset;Korkeus;156;Kiia Ihanmäki;Laitila;16.7.2021
+Naiset;Korkeus;155;Sari Myllymäki;-;1.1.1986
+Naiset;Korkeus;155;Jaana Myllymäki;-;1.1.1989
+Naiset;Korkeus;155;Taisa Bragge;Laitila;31.8.1997
 Naiset;Seiväs;330;Saara Simola;Somero;29.6.2008
+Naiset;Seiväs;315;Venla Laiho;Tammela/E;20.5.2011
+Naiset;Seiväs;293;Annika Virtanen;Turku;14.7.2008
+Naiset;Seiväs;280;Ida Grönroos;Turku;6.8.2016
+Naiset;Seiväs;276;Jenni Mannermaa;Turku;22.8.2007
+Naiset;Seiväs;276;Jutta Lukkala;Turku;10.8.2013
+Naiset;Seiväs;265;Jenina Luotonen;Uusikaupunki;3.7.2020
+Naiset;Seiväs;252;Saana Sillantaka;Turku;15.8.2005
+Naiset;Seiväs;246;Lotta Metsärinta;Laitila;18.9.2018
+Naiset;Seiväs;240;Maria Antola;Ikaalinen;3.9.2016
 Naiset;Pituus;5,98;Tiina Varjonen;Salo;19.7.1987
+Naiset;Pituus;5,66;Jaana Heinonen;Turku;31.7.1991
+Naiset;Pituus;5,49;Jutta Lukkala;Raisio;23.8.2014
+Naiset;Pituus;5,44;Jaana Taiminen;Salo;22.8.1981
+Naiset;Pituus;5,44;Verna Vuorela;Naantali;19.6.2021
+Naiset;Pituus;5,34;Sari Myllymäki;Eura;20.7.1989
+Naiset;Pituus;5,34;Saara Simola;Somero;26.7.2007
+Naiset;Pituus;5,33;Heidi Knuutila;Turku;18.8.1999
+Naiset;Pituus;5,20;Päivi Salonen;Turku;6.7.2005
+Naiset;Pituus;5,18;Lotta Metsärinta;Raisio;20.7.2021
 Naiset;Kolmiloikka;12,26;Heidi Knuutila;Naantali;13.8.2002
-Naiset;Kuula;13,88;Mila Simola;Sollentuna SWE;11.8.1984
-Naiset;Kiekko;53,48;Krista Uusi-Kinnala;Bydgoszcz, POL;14.7.2017
+Naiset;Kolmiloikka;11,54;Saara Simola;Riihimäki;15.8.2009
+Naiset;Kolmiloikka;11,13;Jutta Lukkala;Naantali;9.7.2015
+Naiset;Kolmiloikka;10,92;Katariina Pilpola;Riihimäki;19.7.2008
+Naiset;Kolmiloikka;10,89;Laura Lähteenmäki;Turku;7.9.2003
+Naiset;Kolmiloikka;10,79;Carolina Grönroos;Turku;28.7.2019
+Naiset;Kolmiloikka;10,75;Jenina Luotonen;Turku;23.6.2021
+Naiset;Kolmiloikka;10,69;Jaana Heinonen;Lieto;25.6.1991
+Naiset;Kolmiloikka;10,67;Verna Vuorela;Turku;26.7.2020
+Naiset;Kolmiloikka;10,64;Kiia Ihanmäki;Turku;23.6.2021
+Naiset;Kuula;13,88;Mila Virtanen;Sollentuna SWE;11.8.1984
+Naiset;Kuula;13,23;Sari Peltonen;Salo;17.7.2006
+Naiset;Kuula;13,01;Raija Simola;Raisio;22.6.1981
+Naiset;Kuula;12,94;Minna Kakkonen;Espoo/E;19.6.1993
+Naiset;Kuula;12,51;Lila Lahdenranta;Varkaus;27.7.1985
+Naiset;Kuula;12,09;Kirsi Varjonen;Tarvasjoki;20.8.1989
+Naiset;Kuula;11,93;Pirjo Koskinen;Heinola/V;28.5.1983
+Naiset;Kuula;11,65;Johanna Ellä;Raisio;22.7.1992
+Naiset;Kuula;11,36;Tiina Varjonen;Fredrikstad NOR;27.6.1987
+Naiset;Kuula;11,31;Anni-Mari Huhtanen;Ikaalinen;22.6.2012
+Naiset;Kiekko;53,48;Krista Uusi-Kinnala;Bydgoszcz POL;14.7.2017
+Naiset;Kiekko;48,08;Pirjo Koskinen;Kankaanpää;13.7.1985
+Naiset;Kiekko;44,38;Lila Lahdenranta;Laitila;29.8.1983
+Naiset;Kiekko;39,30;Kirsi Varjonen;Valkeakoski;15.7.1990
+Naiset;Kiekko;37,14;Raija Simola;Laitila;18.5.1981
+Naiset;Kiekko;36,60;Mila Virtanen;Turku;21.7.1984
+Naiset;Kiekko;35,26;Mari Sonkki;Salo;15.8.1989
+Naiset;Kiekko;34,27;Sini Hentilä;Uusikaupunki;16.8.2006
+Naiset;Kiekko;34,18;Karoliina Haijanen;Helsinki;22.8.1968
+Naiset;Kiekko;33,50;Riina Hyytiä;Laitila;31.8.1994
 Naiset;Moukari;54,10;Elina Impilä;Naantali;15.7.2004
-Naiset;Keihäs;54,77;Sini Kiiski;Äänekoski;13.6.2010
+Naiset;Moukari;43,42;Sari Peltonen;Turku;20.7.2004
+Naiset;Moukari;41,78;Krista Uusi-Kinnala;Nousiainen;29.5.2014
+Naiset;Moukari;39,72;Minna Kakkonen;Espoo/E;9.9.1995
+Naiset;Moukari;34,27;Sini Hentilä;Uusikaupunki;7.8.2007
+Naiset;Moukari;32,64;Anne Lehto;Turku;29.5.1996
+Naiset;Moukari;25,99;Susan Kiiski;Turku;5.8.2009
+Naiset;Keihäs;54,77;Sini Hentilä;Äänekoski;13.6.2010
+Naiset;Keihäs;44,38;Riina Hyytiä;Nokia;19.8.1994
+Naiset;Keihäs;44,16;Birgitta Rantala;Laitila;29.7.1974
+Naiset;Keihäs;41,80;Tatja Hynnä;Salo;28.8.1988
+Naiset;Keihäs;41,78;Johanna Ellä;Noormarkku;29.7.1992
+Naiset;Keihäs;40,46;Jasmin Kiiski;Turku;26.8.2015
+Naiset;Keihäs;39,72;Tiia Taipalus;Somero;26.7.2007
+Naiset;Keihäs;39,52;Liisa Raitio;Pietarsaari;27.7.1975
+Naiset;Keihäs;38,82;Tiina Varjonen;Salo;18.7.1987
+Naiset;Keihäs;37,08;Sisko Järvelä;Laitila;10.7.1977
 Naiset;Seitsenottelu;5201;Tiina Varjonen;Fredrikstad NOR;28.6.1987
+Naiset;Seitsenottelu;3923;Sari Myllymäki;Tampere;12.8.1989
+Naiset;Seitsenottelu;3657;Saara Simola;Uusikaupunki;25.5.2008
 Naiset;10km kävely;48.18;Venla Laiho;Lappeenranta;1.8.2019
+Naiset;10km kävely;50.11;Jonna Voronkoff;Podébrady CZE;20.4.1997
+Naiset;10km kävely;52.12;Mari Sipilä;Kaustinen;6.9.1997
+Naiset;10km kävely;54.38;Jutta Ellä;Köyliö;5.9.1998
+Naiset;10km kävely;57.06;Heidi Oranen;Raisio;17.4.1995
+Naiset;10km kävely;57.11;Susanna Lamminsivu;Pälkäne;17.4.1994
+Naiset;10km kävely;57.32;Kia Minkkinen;Lapua;22.7.1995
+Naiset;10km kävely;58.57;Maria Antola;Lapua;26.9.2020
+Naiset;10km kävely;59.18;Anu-Riikka Järnberg;Tampere;28.9.2013
+Naiset;10km kävely;63.23;Anja Kaitila;Tuusula;4.4.1998
 Naiset;20km kävely;1.43.38;Venla Laiho;Lapua;26.9.2020
+Naiset;20km kävely;1.53.23;Mari Sipilä;Köyliö;5.9.1998
+Naiset;20km kävely;1.54.04;Jonna Voronkoff;Tuusula;7.4.2001
+Naiset;20km kävely;1.55.54;Heidi Oranen;Lahti;17.9.1995
+Naiset;20km kävely;1.56.40;Jutta Ellä;Tuusula;7.4.2001
+Naiset;20km kävely;2.13.58;Anja Kaitila;Köyliö;5.9.1998
 Pojat 9;40m;6,58;Noel Raiskinmäki;Laitila;28.9.2019
 Pojat 9;1000m;3.35,53;Niklas Virtanen;Turku;7.9.2008
 Pojat 9;Korkeus;120;Ilkka Laine;Uusikaupunki;25.6.1992
