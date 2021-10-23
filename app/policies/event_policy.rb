@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class UserPolicy < ApplicationPolicy
+class EventPolicy < ApplicationPolicy
   def index?
     true
   end
@@ -9,7 +9,15 @@ class UserPolicy < ApplicationPolicy
     true
   end
 
+  def create?
+    true
+  end
+
   def update?
-    user.admin?
+    true
+  end
+
+  def destroy?
+    true
   end
 end

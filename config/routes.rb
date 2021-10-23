@@ -13,9 +13,10 @@ Rails.application.routes.draw do
     root to: "news#index"
 
     resources :news
+    resources :events
     resources :records
     resources :athletes, only: [:index, :show, :edit, :update]
-    resources :users
+    resources :users, only: [:index, :show, :edit, :update]
   end
   
   # Athlete login routes

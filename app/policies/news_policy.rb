@@ -6,7 +6,7 @@ class NewsPolicy < ApplicationPolicy
   end
 
   def show?
-    true
+    user.admin? || record.user == user
   end
 
   def create?
@@ -14,11 +14,11 @@ class NewsPolicy < ApplicationPolicy
   end
 
   def update?
-    true
+    user.admin? || record.user == user
   end
 
   def destroy?
-    true
+    user.admin? || record.user == user
   end
 
   class Scope < Scope

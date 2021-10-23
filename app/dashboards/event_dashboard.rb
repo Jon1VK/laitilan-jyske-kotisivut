@@ -1,6 +1,6 @@
 require "administrate/base_dashboard"
 
-class RecordDashboard < Administrate::BaseDashboard
+class EventDashboard < Administrate::BaseDashboard
   # ATTRIBUTE_TYPES
   # a hash that describes the type of each of the model's fields.
   #
@@ -8,21 +8,19 @@ class RecordDashboard < Administrate::BaseDashboard
   # which determines how the attribute is displayed
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
-    league: DynamicSelectField.with_options(
-      collection: Record::LEAGUES,
-      custom_data: { action: 'change->record#change', record_target: 'leagueSelect' },
-      prompt: 'Valitse sarja'
-    ),
-    discipline: DynamicSelectField.with_options(
-      collection: Record::DISCIPLINES,
-      custom_data: { record_target: 'disciplineSelect' },
-      prompt: 'Valitse laji'
-    ),
-    athlete: Field::String,
-    result: Field::String,
+    title: Field::String,
     location: Field::String,
-    achieved_at: Field::Date,
-    reviewed: Field::Boolean,
+    start_time: Field::DateTime.with_options(
+      format: :long
+    ),
+    end_time: Field::DateTime.with_options(
+      format: :long
+    ),
+    description: Field::Text,
+    registration_url: Field::String,
+    registration_due: Field::DateTime.with_options(
+      format: :long
+    ),
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -31,36 +29,33 @@ class RecordDashboard < Administrate::BaseDashboard
   # By default, it's limited to four items to reduce clutter on index pages.
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = %i[
-    league
-    discipline
-    athlete
-    result
-    reviewed
+    title
+    start_time
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = %i[
-    league
-    discipline
-    athlete
-    result
+    title
+    start_time
+    end_time
     location
-    achieved_at
-    reviewed
+    registration_url
+    registration_due
+    description
   ].freeze
 
   # FORM_ATTRIBUTES
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = %i[
-    league
-    discipline
-    athlete
-    result
+    title
+    start_time
+    end_time
     location
-    achieved_at
-    reviewed
+    registration_url
+    registration_due
+    description
   ].freeze
 
   # COLLECTION_FILTERS
@@ -75,10 +70,10 @@ class RecordDashboard < Administrate::BaseDashboard
   #   }.freeze
   COLLECTION_FILTERS = {}.freeze
 
-  # Overwrite this method to customize how records are displayed
+  # Overwrite this method to customize how events are displayed
   # across all pages of the admin dashboard.
   #
-  def display_resource(record)
-    "#{record.league} - #{record.discipline}: #{record.athlete}"
+  def display_resource(event)
+    "#{event.title}"
   end
 end

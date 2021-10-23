@@ -16,6 +16,6 @@
       <%= link_to "Muokkaa", edit_athlete_path(@athlete), class: 'btn' %>
     <% end %>
     <span class='subtitle'><%= @athlete.event %></span>
-    <div data-controller='trix'><%= @athlete.content %></div>
+    <div data-controller='trix' data-turbo="false"><%= @athlete.content %></div>
   </article>
 <% end %>

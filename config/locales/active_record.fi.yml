@@ -44,7 +44,16 @@ fi:
         user: Kirjoittaja
         user_id: Kirjoittaja
         title: Otsikko
-        published_at: Julkaistu
+        published_at: Päivämäärä
+        content: Sisältö
+      event:
+        start_time: Alkamisaika
+        end_time: Loppumisaika
+        title: Otsikko
+        location: Paikkakunta
+        description: Kuvaus
+        registration_url: Ilmoittautumislinkki
+        registration_due: Ilmoittautuminen
     models:
       user:
         one: Seurakäyttäjä
@@ -58,3 +67,6 @@ fi:
       news:
         one: Uutinen
         other: Uutiset
+      event:
+        one: Tapahtuma
+        other: Tapahtumat
