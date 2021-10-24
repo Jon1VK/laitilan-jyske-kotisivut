@@ -1,4 +1,14 @@
 <% content_for :jumbotron do %>
-  <div class='jumbotron' style='--jumbotron-background: url("/images/frontpage.jpg") center 25%/cover'>
-  </div>
+  <div class='jumbotron' style='--jumbotron-background: url("/images/frontpage.jpg") center 25%/cover'></div>
+  <section class='marketing-section'>
+    <div class='container'>
+      <p>Etsitkö monipuolista, innostavaa ja liikunnallista harrastusta lapselle?</p>
+      <a class='btn' href="<%= events_path %>">Osallistu harjoituksiin</a>
+    </div>
+  </section>
 <% end %>
+
+<section>
+  <h2>Tulevat tapahtumat</h2>
+  <%= render @events %>
+</section>

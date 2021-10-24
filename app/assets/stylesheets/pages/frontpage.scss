@@ -1,0 +1,57 @@
+.marketing-section {
+  width: 100%;
+  padding: 2.5rem 0;
+  background-color: var(--success);
+  box-shadow: var(--box-shadow);
+  color: var(--on-success);
+  text-align: center;
+
+  p {
+    font-family: $cursive;
+    margin-bottom: 2em;
+  }
+}
+
+.list-event:first-of-type {
+  border-top: 1px solid var(--secondary-variant);
+}
+
+.list-event {
+  border-bottom: 1px solid var(--secondary-variant);
+  padding: 1rem 0;
+
+  .btn {
+    display: none;
+  }
+}
+
+.list-event-details {
+  display: flex;
+  flex-direction: column;
+
+  .event-title {
+    font-family: $cursive;
+    margin-bottom: 0.25em;
+  }
+
+  time {
+    margin-bottom: 0.25em;
+
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media screen and (min-width: $tablet-breakpoint) {
+  .list-event {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .btn {
+      display: block;
+      margin: 0;
+    }
+  }
+}

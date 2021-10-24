@@ -5,20 +5,14 @@
       <header class='modal-header'>
         <hgroup>
           <h2 class='maintitle'><%= @event.title %></h2>
-          <% if @event.start_time == @event.end_time %>
-            <h3 class='subtitle'><%= l(@event.start_time.to_date, format: :long) %></h3>
-          <% elsif @event.start_time.to_date == @event.end_time.to_date %>
-            <h3 class='subtitle'><%= l(@event.start_time, format: :long) %> - <%= @event.end_time.strftime('%H.%M') %></h3>
-          <% else %>
-            <h3 class='subtitle'><%= l(@event.start_time, format: :short) %> - <%= l(@event.end_time, format: :short) %></h3>
-          <% end %>
+          <h3 class='subtitle'><%= @event.formatted_datetimes %></h3>
           <p class='subtitle'><%= @event.location %></p>
         </hgroup>
         <svg id='modal-close' aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
       </header>
       <p class='event-description'><%= @event.description %></p>
       <% if @event.registration_due %>
-        <p class='small'>Ilmoittautuminen <%= l(@event.registration_due.to_date, format: :long) %> mennessä!</p>
+        <p class='small'>Ilmoittautuminen <%= l(@event.registration_due, format: :short) %> mennessä.</p>
       <% end %>
       <a class='btn' target='_blank' href="<%= @event.registration_url %>">Lisätietoa<%= ' ja Ilmoittautuminen' if @event.registration_due %></a>
     </article>

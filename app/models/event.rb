@@ -23,8 +23,30 @@ class Event < ApplicationRecord
   validates :start_time, presence: true
   validates :end_time, presence: true
 
+  def formatted_datetimes
+    if start_time == end_time
+      I18n.l(start_time.to_date, format: :long)
+    elsif start_time.to_date == end_time.to_date
+      "#{I18n.l(start_time, format: :long)} - #{end_time.strftime('%H.%M')}"
+    else
+      "#{I18n.l(start_time, format: :short)} - #{I18n.l(end_time, format: :short)}"
+    end
+  end
+
+  def formatted_dates
+    if start_time.to_date == end_time.to_date
+      I18n.l(start_time.to_date, format: :long)
+    else
+      "#{I18n.l(start_time.to_date, format: :long)} - #{I18n.l(end_time, format: :long)}"
+    end
+  end
+
   def self.events_by_year_and_month(year, month)
     group_by_date(Event.where(start_time: DateTime.new(year, month)..DateTime.new(year, month).end_of_month).order(:start_time))
+  end
+
+  def self.upcoming_events
+    Event.where(start_time: Time.now..2.weeks.from_now).order(:start_time)
   end
 
   def self.group_by_date(events)

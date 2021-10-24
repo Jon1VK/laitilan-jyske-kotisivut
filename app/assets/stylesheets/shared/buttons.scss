@@ -6,7 +6,8 @@ input[type='submit'].btn {
   box-shadow: var(--box-shadow);
   color: var(--on-primary);
   font-weight: 700;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
+  text-shadow: var(--on-primary-shadow);
   letter-spacing: 0.1em;
   text-align: center;
   border-radius: 0.25em;
@@ -24,5 +25,5 @@ input[type='submit'].btn:hover {
 
 .btn:active,
 input[type='submit'].btn:active {
-  background-color: var(--primary-variant);
+  background-color: var(--primary);
 }

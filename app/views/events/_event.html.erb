@@ -1,0 +1,10 @@
+<div class='list-event'>
+  <div class='list-event-details'>
+    <span class='event-title'><%= link_to event.title, event_path(event), data: { turbo_frame: 'modal-frame' } %></span>
+    <time class='small'><%= event.formatted_dates %></time>
+    <% if event.registration_due %>
+      <time class='small'>Ilmoittautuminen <%= l(event.registration_due, format: :short) %> mennessä.</time>
+    <% end %>
+  </div>
+  <a class='btn' target='_blank' href="<%= event.registration_url %>">Lisätietoa</a>
+</div>

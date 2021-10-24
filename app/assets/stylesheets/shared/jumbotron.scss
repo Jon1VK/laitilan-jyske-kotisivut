@@ -5,18 +5,11 @@
   width: 100%;
   height: calc(50vh - 60px);
   background: var(--jumbotron-background);
-
-  button {
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
 }
 
 @media screen and (max-height: $tablet-breakpoint) {
   .jumbotron {
-    height: calc(100vh - 60px);
+    height: calc(80vh - 60px);
   }
 
   .jumbotron-small {
@@ -27,7 +20,7 @@
 @media screen and (min-width: $laptop-breakpoint) {
   .jumbotron {
     margin-top: -45px;
-    height: calc(100vh - 130px);
+    height: calc(80vh - 130px);
   }
 
   .jumbotron-small {
