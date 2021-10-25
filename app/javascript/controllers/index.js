@@ -8,3 +8,6 @@ application.register('record', RecordController);
 
 import ModalController from './modal_controller';
 application.register('modal', ModalController);
+
+import EventController from './event_controller';
+application.register('event', EventController);

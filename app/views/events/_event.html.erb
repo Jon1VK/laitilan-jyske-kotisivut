@@ -1,6 +1,6 @@
 <div class='list-event'>
-  <div class='list-event-details'>
-    <span class='event-title'><%= link_to event.title, event_path(event), data: { turbo_frame: 'modal-frame' } %></span>
+  <div class='list-event-details' data-action='click->event#get' data-event-id="<%= event.id %>">
+    <a class='event-title'><%= event.title %></a>
     <time class='small'><%= event.formatted_dates %></time>
     <% if event.registration_due %>
       <time class='small'>Ilmoittautuminen <%= l(event.registration_due, format: :short) %> mennessä.</time>

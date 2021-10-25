@@ -10,7 +10,7 @@
   
   <%= render partial: 'calendar_nav', locals: { year: @year, month: @month } %>
 
-  <div class='calendar'>
+  <div class='calendar' data-controller='event'>
     <% t('date.day_names').rotate(1).each do |weekday| %>
       <div class='dayname'><%= weekday %></div>
     <% end %>

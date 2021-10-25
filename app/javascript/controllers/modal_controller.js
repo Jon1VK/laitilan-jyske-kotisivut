@@ -1,14 +1,25 @@
 import { Controller } from '@hotwired/stimulus';
 
+window.addEventListener('hashchange', () => {
+  const modal = document.getElementById('modal');
+
+  if (location.hash != '#modal') {
+    modal.classList.remove('open');
+  }
+});
+
 export default class extends Controller {
+  static targets = ['closeBtn', 'background'];
+
   connect() {
-    document
-      .getElementById('modal-background')
-      .addEventListener('click', () => {
-        document.getElementById('modal').classList.remove('open');
-      });
-    document.getElementById('modal-close').addEventListener('click', () => {
-      document.getElementById('modal').classList.remove('open');
+    location.hash = 'modal';
+
+    this.backgroundTarget.addEventListener('click', () => {
+      history.back();
+    });
+
+    this.closeBtnTarget.addEventListener('click', () => {
+      history.back();
     });
   }
 }

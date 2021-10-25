@@ -1,5 +1,5 @@
 class EventsController < ApplicationController
-  # GET /tapahtumakalenteri?year=2021&month=10
+  # GET /tapahtumat?year=2021&month=10
   def index
     @month = params[:month]&.to_i || Date.today.month
     @year = params[:year]&.to_i || Date.today.year
@@ -7,8 +7,9 @@ class EventsController < ApplicationController
     @events = Event.events_by_year_and_month(@year, @month)
   end
 
-  # GET /tapahtumakalenteri/1
+  # GET /tapahtumat/1
   def show
     @event = Event.find(params[:id])
+    respond_to :turbo_stream
   end
 end

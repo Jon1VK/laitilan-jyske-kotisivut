@@ -1,1 +1,4 @@
-<a class='calendar-event<%= ' calendar-event-alt' if event.registration_url.start_with?('https://www.suomisport.fi/') %>' href='<%= event_path(event) %>' data-turbo-frame='modal-frame'><%= event.title %></a>
+<a
+  class='calendar-event <%= ' calendar-event-alt' if event.registration_url.start_with?('https://www.suomisport.fi/') %>'
+  data-action='click->event#get' data-event-id="<%= event.id %>"
+><%= event.title %></a>
