@@ -2,7 +2,6 @@
   "name": "laitilan-jyske-kotisivut",
   "private": true,
   "dependencies": {
-    "@babel/preset-react": "^7.14.5",
     "@hotwired/stimulus": "^3.0.1",
     "@hotwired/turbo-rails": "^7.0.1",
     "@rails/actioncable": "^6.0.0",
@@ -10,10 +9,6 @@
     "@rails/activestorage": "^6.0.0",
     "@rails/request.js": "^0.0.5",
     "@rails/webpacker": "5.4.3",
-    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
-    "prop-types": "^15.7.2",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
     "trix": "^1.2.0",
     "webpack": "^4.46.0",
     "webpack-cli": "^3.3.12"
