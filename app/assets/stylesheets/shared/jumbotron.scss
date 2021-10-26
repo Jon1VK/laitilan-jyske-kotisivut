@@ -7,7 +7,7 @@
   background: var(--jumbotron-background);
 }
 
-@media screen and (max-height: $tablet-breakpoint) {
+@media screen and (orientation: landscape) {
   .jumbotron {
     height: calc(80vh - 60px);
   }
