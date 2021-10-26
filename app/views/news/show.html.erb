@@ -1,0 +1,8 @@
+<article class='news-article'>
+  <h1 class='maintitle'><%= @news.title %></h1>
+  <a class='subtitle' onclick="history.back()">Takaisin</a>
+  <p class='overline'><%= @news.user.fullname %> - <%= l(@news.published_at, format: :long) %></p>
+  <div class='news-content'>
+    <%= @news.content %>
+  </div>
+</section>

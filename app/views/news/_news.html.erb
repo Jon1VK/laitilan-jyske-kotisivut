@@ -1,0 +1,15 @@
+<section class='card'>
+  <div class='card-header'>
+    <h2 class='card-title'><%= news.title %></h2>
+    <% unless news.content.embeds.empty? %>
+      <div class='card-image' style="--card-image: url(<%= polymorphic_url(news.content.embeds.find{ |embeds| embeds.image? }.variant(resize_to_limit: [500, 500])) %>)"></div>
+    <% else %>
+      <div class='card-image' style="--card-image: url(<%= image_path('/images/logo.svg')%>); background-size: contain"></div>
+    <% end %>
+  </div>
+  <div class='card-content'>
+    <p class='overline'><%= news.user.fullname %> - <%= l(news.published_at, format: :long) %></p>
+    <p><%= news.content.to_plain_text.truncate(150) %></p>
+    <a href='<%= news_path(news) %>' class='btn'>Lue lisää</a>
+  </div>
+</section>

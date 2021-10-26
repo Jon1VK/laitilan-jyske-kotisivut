@@ -19,11 +19,13 @@ input[type='submit'].btn {
 }
 
 .btn:hover,
-input[type='submit'].btn:hover {
+.btn:focus,
+input[type='submit'].btn:hover,
+input[type='submit'].btn:focus {
   background-color: var(--primary);
 }
 
 .btn:active,
 input[type='submit'].btn:active {
-  background-color: var(--primary);
+  background-color: var(--primary-variant);
 }

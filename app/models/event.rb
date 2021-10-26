@@ -46,7 +46,7 @@ class Event < ApplicationRecord
   end
 
   def self.upcoming_events
-    Event.where(start_time: Time.now..2.weeks.from_now).order(:start_time)
+    Event.where(start_time: Time.now..1.weeks.from_now).order(:start_time)
   end
 
   def self.group_by_date(events)

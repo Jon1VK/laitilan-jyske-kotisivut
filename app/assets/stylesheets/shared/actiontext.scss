@@ -77,13 +77,15 @@ trix-toolbar {
 @media screen and (min-width: $tablet-breakpoint) {
   .trix-content {
     sub {
-      width: 50%;
+      clear: both;
+      max-width: 40%;
       float: left;
       padding-right: 1.25rem;
     }
 
     sup {
-      width: 50%;
+      clear: both;
+      max-width: 40%;
       float: right;
       padding-left: 1.25rem;
     }
@@ -98,7 +100,7 @@ trix-toolbar {
 
     .attachment-gallery {
       clear: both;
-      align-items: center;
+      align-items: flex-start;
 
       > action-text-attachment,
       > .attachment {

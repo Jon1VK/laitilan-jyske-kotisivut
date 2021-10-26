@@ -8,7 +8,14 @@
   </section>
 <% end %>
 
-<section>
+<section class='section'>
+  <h2>Uusimmat uutiset</h2>
+  <div class='grid grid-m'>
+    <%= render @news %>
+  </div>
+</section>
+
+<section class='section'>
   <h2>Tulevat tapahtumat</h2>
   <div data-controller='event'>
     <%= render @events %>

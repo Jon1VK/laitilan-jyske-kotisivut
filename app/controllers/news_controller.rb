@@ -1,11 +1,11 @@
 class NewsController < ApplicationController
   # GET /uutiset
   def index
-    @news = News.all
+    @news = News.order(published_at: :desc).page(params[:page]).per(10)
   end
 
   # GET /uutiset/1
   def show
-    @news = News.find(params[:id])
+    @news = News.friendly.find(params[:id])
   end
 end

@@ -3,6 +3,9 @@
   </div>
 <% end %>
 
-<h1>Uutiset</h1>
+<h1 class='maintitle'>Uutiset</h1>
+<p class='subtitle'><%= link_to "Takaisin etusivulle", root_path, target: '_top' %></p>
 
-<p>Toteutetaan piakkoin!</p>
+<div class='grid-m grid'>
+  <%= render @news %>
+</div>

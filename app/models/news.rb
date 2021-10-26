@@ -36,4 +36,8 @@ class News < ApplicationRecord
   def to_slug
     "#{published_at} #{title}"
   end
+
+  def self.most_recent_news
+    News.order(published_at: :desc).limit(2)
+  end
 end
