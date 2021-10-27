@@ -3,7 +3,8 @@
   </div>
 <% end %>
 
-<h1>Tapahtumat</h1>
+<h1 class='maintitle'>Tapahtumat</h1>
+<p class='subtitle'><%= link_to "Takaisin etusivulle", root_path, target: '_top' %></p>
 
 <%= turbo_frame_tag 'calendar-frame' do %>
   <p class='small'>Klikkaamalla tapahtuman nimeä saat tarkempaa tietoa kyseisestä tapahtumasta.</p>

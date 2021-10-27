@@ -67,6 +67,10 @@ p {
   text-transform: uppercase;
 }
 
+.center {
+  text-align: center;
+}
+
 @media screen and (min-width: $tablet-breakpoint) {
   html {
     font-size: 17px;

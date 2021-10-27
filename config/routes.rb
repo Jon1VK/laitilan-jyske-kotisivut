@@ -29,7 +29,9 @@ Rails.application.routes.draw do
   resources :events, path: 'tapahtumat', only: [:index, :show]
 
   # News resource routes
-  resources :news, path: 'uutiset', only: [:index, :show]
+  resources :news, path: 'uutiset', only: [:index, :show] do
+    get 'page/:id', action: :page, on: :collection, as: :page
+  end
   
   # Athlete resources routes
   resources :athletes, path: 'edustusurheilijat', only: [:index, :show, :edit, :update]

@@ -1,11 +1,22 @@
 <% content_for :jumbotron do %>
-  <div class='jumbotron jumbotron-small' style='--jumbotron-background: url("/images/news.jpg") center 75%/cover'>
+  <div class='jumbotron jumbotron-small' style='--jumbotron-background: url("/images/news.jpg") center 20%/cover'>
   </div>
 <% end %>
 
 <h1 class='maintitle'>Uutiset</h1>
 <p class='subtitle'><%= link_to "Takaisin etusivulle", root_path, target: '_top' %></p>
+<p>
+  Lue tuoreimmat uutiset yleisurheiluun liittyen urheilujournalistimme Ilkka Simolan kirjoittamina.
+  Voit myös muistella kuluvan urheilukauden tapahtumia tai luoda katsauksen edellisten vuosien saavutuksiin
+  kuvitettujen artikkelien johdattamana.
+</p>
 
-<div class='grid-m grid'>
+<div id='news-container' class='grid-m grid'>
   <%= render @news %>
 </div>
+
+<% if path_to_next_page @news %>
+  <div id='more-news' class='more-news' data-controller='news'>
+    <button class='btn' type='button' data-action='click->news#load_page' data-page='<%= @news.next_page %>'>Lataa lisää uutisia</button>
+  </div>
+<% end %>

@@ -8,7 +8,7 @@
   </nav>
 <% elsif user_signed_in? %>
   <nav id='user-nav' class='navbar user-navbar'>  
-    <h3>Hei <%= current_user.email %></h3>
+    <h3>Hei <%= current_user.fullname %></h3>
     <ul class='navbar-links user-navbar-links'>
       <li><%= link_to "Hallintapaneeli", admin_root_url %></li>
       <li><%= button_to 'Kirjaudu ulos', destroy_user_session_url, method: :delete %></li>

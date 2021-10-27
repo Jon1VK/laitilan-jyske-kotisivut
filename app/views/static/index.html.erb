@@ -3,20 +3,20 @@
   <section class='marketing-section'>
     <div class='container'>
       <p>Etsitkö monipuolista, innostavaa ja liikunnallista harrastusta lapselle?</p>
-      <a class='btn' href="<%= events_path %>">Osallistu harjoituksiin</a>
+      <a class='btn' href="<%= events_path %>">Osallistu tapahtumiin</a>
     </div>
   </section>
 <% end %>
 
 <section class='section'>
-  <h2>Uusimmat uutiset</h2>
+  <h2 class='center'>Uusimmat uutiset</h2>
   <div class='grid grid-m'>
     <%= render @news %>
   </div>
 </section>
 
 <section class='section'>
-  <h2>Tulevat tapahtumat</h2>
+  <h2 class='center'>Tulevat tapahtumat</h2>
   <div data-controller='event'>
     <%= render @events %>
   </div>

@@ -7,6 +7,7 @@
 }
 
 .card-title {
+  text-align: center;
   font-size: 0.9rem;
   line-height: 1.5;
   padding: 1rem 1.5rem;
@@ -24,6 +25,15 @@
   .btn {
     background-color: var(--success);
   }
+
+  .btn:hover,
+  .btn:focus {
+    background-color: var(--success-variant);
+  }
+
+  .btn:active {
+    background-color: var(--success);
+  }
 }
 
 .card-content {
@@ -39,6 +49,19 @@
   height: 250px;
   width: 100%;
   background: var(--card-image) center center/cover no-repeat;
+}
+
+#news-container {
+  margin-top: 2rem;
+}
+
+.more-news {
+  display: flex;
+  justify-content: center;
+
+  .btn {
+    margin-top: 2rem;
+  }
 }
 
 @media screen and (min-width: $tablet-breakpoint) {

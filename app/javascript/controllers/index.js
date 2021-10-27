@@ -11,3 +11,6 @@ application.register('modal', ModalController);
 
 import EventController from './event_controller';
 application.register('event', EventController);
+
+import NewsController from './news_controller';
+application.register('news', NewsController);

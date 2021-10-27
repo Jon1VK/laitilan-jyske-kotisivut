@@ -1,0 +1,9 @@
+<%= turbo_stream.append 'news-container' do %>
+  <%= render @news %>
+<% end %>
+
+<%= turbo_stream.update 'more-news' do %>
+  <% if path_to_next_page @news %>
+    <button class='btn' type='button' data-action='click->news#load_page' data-page='<%= @news.next_page %>'>Lataa lisää uutisia</button>
+  <% end %>
+<% end %>
