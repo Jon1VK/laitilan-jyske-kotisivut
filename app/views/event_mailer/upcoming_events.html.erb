@@ -1,0 +1,11 @@
+<h1>Alla yleisurheilutiedotteet huomiseen lehteen.</h1>
+
+<% @events.each do |event| %>
+  <%= render 'events/mailer/event', event: event %>
+<% end %>
+
+<p>
+  <b>Ystävällisin terveisin</b><br/>
+  Laitilan Jyske - Yleisurheilu<br/>
+  Joni Vainio-Kaila
+</p>

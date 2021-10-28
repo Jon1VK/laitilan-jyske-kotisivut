@@ -1,7 +1,6 @@
 namespace :scheduler do
-  desc "Send whatsapp info"
   task :send_whatsapp_info => :environment do
-    return if Date.today.wday != 1
+    return unless Date.today.wday == 1
 
     phone = Rails.application.credentials.dig(:call_me_bot, :phone)
     apikey = Rails.application.credentials.dig(:call_me_bot, :apikey)
@@ -33,5 +32,10 @@ namespace :scheduler do
         text: 'Kaikki tapahtumat löydät osoitteesta%0Awww.laitilanjyskeyleisurheilu.fi/tapahtumat'
       }
     )
+  end
+
+  task :send_email_info => :environment do
+    return unless [1, 4].include?(Date.today.wday)
+    EventMailer.upcoming_events.deliver_now
   end
 end

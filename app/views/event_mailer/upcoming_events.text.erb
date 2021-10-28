@@ -1,0 +1,10 @@
+Alla yleisurheilutiedotteet huomiseen lehteen.
+
+<% @events.each do |event| %>
+<%= render 'events/mailer/event', event: event %>
+
+<% end %>
+
+Ystävällisin terveisin
+Laitilan Jyske - Yleisurheilu
+Joni Vainio-Kaila
