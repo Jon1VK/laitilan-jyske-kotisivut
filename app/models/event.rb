@@ -23,11 +23,11 @@ class Event < ApplicationRecord
   validates :start_time, presence: true
   validates :end_time, presence: true
 
-  def formatted_datetimes
+  def formatted_datetimes(format = :long)
     if start_time == end_time
-      I18n.l(start_time.to_date, format: :long)
+      I18n.l(start_time.to_date, format: format)
     elsif start_time.to_date == end_time.to_date
-      "#{I18n.l(start_time, format: :long)} - #{end_time.strftime('%H.%M')}"
+      "#{I18n.l(start_time, format: format)} - #{end_time.strftime('%H.%M')}"
     else
       "#{I18n.l(start_time, format: :short)} - #{I18n.l(end_time, format: :short)}"
     end
