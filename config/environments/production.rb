@@ -63,7 +63,19 @@ Rails.application.configure do
   # config.active_job.queue_name_prefix = "laitilan_jyske_kotisivut_production"
   
   # Configure default url
-  config.action_mailer.default_url_options = { host: 'laitilan-jyske-kotisivut.herokuapp.com', port: 5000 }
+  config.action_mailer.default_url_options = { host: 'laitilanjyskeyleisurheilu.fi' }
+
+  config.action_mailer.delivery_method = :smtp
+
+  config.action_mailer.smtp_settings = {
+    :user_name => 'apikey', # This is the string literal 'apikey', NOT the ID of your API key
+    :password => ENV['SENDGRID_API_KEY'], # This is the secret sendgrid API key which was issued during API key creation
+    :domain => 'laitilanjyskeyleisurheilu.fi',
+    :address => 'smtp.sendgrid.net',
+    :port => 587,
+    :authentication => :plain,
+    :enable_starttls_auto => true
+  }
   
   config.action_mailer.perform_caching = false
 
