@@ -1,17 +1,16 @@
 class NewsController < ApplicationController
-  # GET /uutiset
+  # GET /uutiset?page=1
   def index
-    @news = News.order(published_at: :desc).page(params[:page]).per(8)
+    @news = News.with_rich_text_content_and_embeds.order(published_at: :desc).page(params[:page]).per(8)
+
+    respond_to do |format|
+      format.html
+      format.turbo_stream { render :page }
+    end
   end
 
   # GET /uutiset/1
   def show
     @news = News.friendly.find(params[:id])
-  end
-
-  # GET /uutiset/page/1
-  def page
-    @news = News.order(published_at: :desc).page(params[:id]).per(8)
-    respond_to :turbo_stream
   end
 end
