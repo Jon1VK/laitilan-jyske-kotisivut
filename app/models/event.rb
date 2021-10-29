@@ -25,7 +25,7 @@ class Event < ApplicationRecord
 
   def formatted_datetimes(format = :long)
     if start_time == end_time
-      I18n.l(start_time.to_date, format: format)
+      format == :short ? start_time.strftime('%-d.%-m.') : I18n.l(start_time.to_date, format: format)
     elsif start_time.to_date == end_time.to_date
       "#{I18n.l(start_time, format: format)} - #{end_time.strftime('%H.%M')}"
     else
@@ -45,8 +45,10 @@ class Event < ApplicationRecord
     group_by_date(Event.where(start_time: DateTime.new(year, month)..DateTime.new(year, month).end_of_month).order(:start_time))
   end
 
-  def self.upcoming_events
-    Event.where(start_time: Time.now..1.weeks.from_now).order(:start_time)
+  def self.upcoming_events(offset = 0)
+    Event.where(start_time: offset.days.from_now..(offset + 7).days.from_now)
+      .or(Event.where(start_time: offset.days.from_now.., registration_due: offset.days.from_now..(offset + 7).days.from_now))
+      .order(:start_time)
   end
 
   def self.group_by_date(events)
