@@ -20,6 +20,8 @@
 #  fk_rails_...  (user_id => users.id)
 #
 class News < ApplicationRecord
+  default_scope { order(published_at: :desc) }
+
   # Associations
   belongs_to :user
   has_rich_text :content

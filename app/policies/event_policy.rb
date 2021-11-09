@@ -20,4 +20,10 @@ class EventPolicy < ApplicationPolicy
   def destroy?
     true
   end
+
+  class Scope < Scope
+    def resolve
+      scope.where(start_time: DateTime.now..)
+    end
+  end
 end
