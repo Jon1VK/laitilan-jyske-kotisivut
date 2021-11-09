@@ -7,7 +7,11 @@
 <p class='subtitle'><%= link_to "Takaisin etusivulle", root_path, target: '_top' %></p>
 
 <%= turbo_frame_tag 'calendar-frame' do %>
-  <p class='small'>Klikkaamalla tapahtuman nimeä saat tarkempaa tietoa kyseisestä tapahtumasta.</p>
+  <p>
+    Oheiseen kalenteriin on merkattu sinisellä värillä kaikki yleisurheilujaoston järjestämät harjoitukset ja
+    yleisurheilijoille varatut harjoitusvuorot. Lisäksi kalenteriin on merkattu punaisella värillä Varsinais-Suomessa
+    järjestettäviä kilpailuja, joihin kannattaa osallistua. Klikkaamalla tietyn tapahtuman nimeä saat tarkempaa tietoa kyseisestä tapahtumasta.
+  </p>
   
   <%= render partial: 'calendar_nav', locals: { year: @year, month: @month } %>
 

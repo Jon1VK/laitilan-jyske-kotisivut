@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Laitilan Jyske - Yleisurheilu</title>
+    <%= display_meta_tags site: 'Laitilan Jyske Yleisurheilu' %>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= render 'application/favicon' %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', data: { turbo_track: 'reload' } %>
-    <%= javascript_pack_tag 'application', data: { turbo_track: 'reload'} %>
+    <%= javascript_pack_tag 'application', data: { turbo_track: 'reload'}, defer: true %>
     <% if athlete_signed_in? %>
       <%= javascript_pack_tag 'trix', data: { turbo_track: 'reload'} %>
     <% end %>

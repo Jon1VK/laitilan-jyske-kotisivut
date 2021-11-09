@@ -1,3 +1,16 @@
+<% set_meta_tags title: @news.title,
+  description: @news.content.to_plain_text.truncate(150),
+  index: true,
+  og: {
+    type: 'article',
+    title: :title,
+    description: :description,
+    image: @news.content.embeds.empty? ? image_url('/images/logo.svg') : polymorphic_url(@news.content.embeds.find{ |embeds| embeds.image? }),
+    url: news_url(@news),
+    site_name: :site
+  }
+%>
+
 <div class='news-article'>
   <a class='subtitle' onclick="history.back()">Takaisin</a>
 </div>

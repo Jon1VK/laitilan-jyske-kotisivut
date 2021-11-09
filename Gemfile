@@ -44,6 +44,12 @@ gem "hotwire-rails", "~> 0.1.3"
 gem "kimurai", "~> 1.4"
 # Authorization gem
 gem "pundit", "~> 2.1"
+# Pagination
+gem "kaminari", "~> 1.2"
+# Simple HTTP requests
+gem "http", "~> 5.0"
+# Meta tag helpers
+gem "meta-tags", "~> 2.16"
 
 
 group :development, :test do
@@ -81,7 +87,3 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
-gem "kaminari", "~> 1.2"
-
-gem "http", "~> 5.0"

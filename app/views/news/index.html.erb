@@ -1,3 +1,12 @@
+<% set_meta_tags title: 'Uutiset',
+  description: 'Lue tuoreimmat yleisurheilu-uutiset tai tutustu edellisten vuosien saavutuksiin Ilkka Simolan kirjoittamien artikkelien johdattamana.',
+  keywords: %w(laitila jyske laitilan\ jyske yleisurheilu uutiset yleisurheilu-uutiset),
+  index: true,
+  follow: true,
+  prev: "#{path_to_prev_page @news}",
+  next: "#{path_to_next_page @news}"
+%>
+
 <% content_for :jumbotron do %>
   <div class='jumbotron jumbotron-small' style='--jumbotron-background: url("/images/news.jpg") center 20%/cover'>
   </div>
@@ -6,7 +15,7 @@
 <h1 class='maintitle'>Uutiset</h1>
 <p class='subtitle'><%= link_to "Takaisin etusivulle", root_path, target: '_top' %></p>
 <p>
-  Lue tuoreimmat uutiset yleisurheiluun liittyen urheilujournalistimme Ilkka Simolan kirjoittamina.
+  Lue tuoreimmat yleisurheilu-uutiset urheilujournalistimme Ilkka Simolan kirjoittamina.
   Voit myös muistella kuluvan urheilukauden tapahtumia tai luoda katsauksen edellisten vuosien saavutuksiin
   kuvitettujen artikkelien johdattamana.
 </p>
