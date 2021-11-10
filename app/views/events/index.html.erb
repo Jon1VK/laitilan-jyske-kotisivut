@@ -1,3 +1,18 @@
+<% set_meta_tags title: 'Tapahtumat',
+  description: 'Osallistu Laitilan Jyskeen yleisurheilujaoston järjestämiin harjoituksiin tai Varsinais-Suomessa järjestettäviin kilpailuihin.',
+  keywords: %w(laitila jyske laitilan\ jyske yleisurheilu harjoitukset yleisurheiluharjoitukset kilpailut Varsinais-Suomi),
+  index: true,
+  follow: true,
+  og: {
+    type: 'website',
+    title: :title,
+    description: :description,
+    image: image_url('/images/events.jpg'),
+    url: events_url,
+    site_name: :site
+  }
+%>
+
 <% content_for :jumbotron do %>
   <div class='jumbotron jumbotron-small' style='--jumbotron-background: url("/images/events.jpg") center 40%/cover'>
   </div>

@@ -1,3 +1,18 @@
+<% set_meta_tags title: ['Edustusurheilija', @athlete.fullname],
+  description: "Edustusurheilijan #{@athlete.fullname} henkilökohtaiset kotisivut",
+  keywords: %w(laitila jyske laitilan\ jyske yleisurheilu edustusurheilijat urheilija) + [@athlete.fullname],
+  index: true,
+  follow: true,
+  og: {
+    type: 'article',
+    title: :title,
+    description: :description,
+    image: @athlete.content.embeds.empty? ? image_url('/images/logo.svg') : polymorphic_url(@athlete.content.embeds.find{ |embeds| embeds.image? }),
+    url: athlete_url(@athlete),
+    site_name: :site
+  }
+%>
+
 <%= turbo_frame_tag 'athlete', class: 'grid athletes', autoscroll: true, data: { autoscroll_block: 'start' } do %>
   <div class='col-1-13'>
     <p class='subtitle'><%= link_to "Takaisin edustusurheilijoiden pääsivulle", athletes_path, target: '_top' %></p>

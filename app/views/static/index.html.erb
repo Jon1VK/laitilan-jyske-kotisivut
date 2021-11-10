@@ -1,3 +1,18 @@
+<% set_meta_tags title: 'Etusivu',
+  description: 'Tutustu Laitilan Jyskeen yleisurheilujaoston kotisivuihin.',
+  keywords: %w(laitila jyske laitilan\ jyske yleisurheilu),
+  index: true,
+  follow: true,
+  og: {
+    type: 'website',
+    title: :title,
+    description: :description,
+    image: image_url('/images/frontpage.jpg'),
+    url: root_url,
+    site_name: :site
+  }
+%>
+
 <% content_for :jumbotron do %>
   <div class='jumbotron' style='--jumbotron-background: url("/images/frontpage.jpg") center 25%/cover'></div>
   <section class='marketing-section'>

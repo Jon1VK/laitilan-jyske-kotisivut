@@ -1,3 +1,18 @@
+<% set_meta_tags title: 'Edustusurheilijat',
+  description: 'Tutustu Laitilan Jyskeen edustusurheilijoihin heidän henkilökohtaisten sivujensa avulla.',
+  keywords: %w(laitila jyske laitilan\ jyske yleisurheilu edustusurheilijat urheilija),
+  index: true,
+  follow: true,
+  og: {
+    type: 'website',
+    title: :title,
+    description: :description,
+    image: image_url('/images/athletes.jpg'),
+    url: athletes_url,
+    site_name: :site
+  }
+%>
+
 <% content_for :jumbotron do %>
   <div class='jumbotron jumbotron-small' style='--jumbotron-background: url("/images/athletes.jpg") center 25%/cover'>
   </div>

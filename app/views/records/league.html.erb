@@ -1,3 +1,18 @@
+<% set_meta_tags title: ['Seuraennätykset', @league],
+  description: "Selaa sarjan #{@league} seuraennätyksiä.",
+  keywords: %w(laitila jyske laitilan\ jyske yleisurheilu seuraennätykset ennätykset) + [@league],
+  index: true,
+  follow: true,
+  og: {
+    type: 'website',
+    title: :title,
+    description: :description,
+    image: image_url('/images/records.jpg'),
+    url: league_records_url(@league.parameterize),
+    site_name: :site
+  }
+%>
+
 <% content_for :jumbotron do %>
   <div class='jumbotron jumbotron-small' style='--jumbotron-background: url("/images/records.jpg") center center/cover'>
   </div>

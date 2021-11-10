@@ -4,7 +4,15 @@
   index: true,
   follow: true,
   prev: "#{path_to_prev_page @news}",
-  next: "#{path_to_next_page @news}"
+  next: "#{path_to_next_page @news}",
+  og: {
+    type: 'website',
+    title: :title,
+    description: :description,
+    image: image_url('/images/logo.svg'),
+    url: news_index_url,
+    site_name: :site
+  }
 %>
 
 <% content_for :jumbotron do %>

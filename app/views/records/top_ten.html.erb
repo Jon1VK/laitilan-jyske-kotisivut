@@ -1,3 +1,18 @@
+<% set_meta_tags title: ['TOP 10', "#{@league} #{@discipline}"],
+  description: "Selaa #{@league} #{@discipline} TOP 10 listan tuloksia.",
+  keywords: %w(laitila jyske laitilan\ jyske yleisurheilu top\ 10) + [@league, @discipline],
+  index: true,
+  follow: true,
+  og: {
+    type: 'website',
+    title: :title,
+    description: :description,
+    image: image_url('/images/records.jpg'),
+    url: top_ten_records_url(@league.parameterize, discipline: @discipline.parameterize),
+    site_name: :site
+  }
+%>
+
 <% content_for :jumbotron do %>
   <div class='jumbotron jumbotron-small' style='--jumbotron-background: url("/images/records.jpg") center center/cover'>
   </div>
