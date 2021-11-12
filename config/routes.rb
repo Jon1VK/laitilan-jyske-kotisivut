@@ -40,6 +40,8 @@ Rails.application.routes.draw do
     get ':league', to: 'records#league', on: :collection, as: :league
     get ':league/top-10', to: 'records#top_ten', on: :collection, as: :top_ten
   end
+
+  resource :contact, path: 'yhteystiedot', only: [:show, :create]
   
   # Open mail in browser if dev environment
   mount LetterOpenerWeb::Engine, at: "/letter_opener" if Rails.env.development?

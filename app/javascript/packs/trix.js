@@ -14,6 +14,8 @@ Trix.config.blockAttributes.floatRight = {
   terminal: true,
 };
 
+Trix.config.blockAttributes.heading1.tagName = 'h2';
+
 // insert the button visual in the default toolbar
 document.addEventListener('trix-initialize', function (event) {
   const floatLeftButton =

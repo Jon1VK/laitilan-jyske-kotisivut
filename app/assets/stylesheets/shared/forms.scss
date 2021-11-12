@@ -27,7 +27,8 @@
   }
 
   input,
-  select {
+  select,
+  textarea {
     padding: 0.5em 0.75em;
     border: 1px solid var(--secondary-variant);
     background-color: var(--background);
@@ -41,7 +42,8 @@
   font-weight: bold;
 
   input,
-  select {
+  select,
+  textarea {
     box-sizing: border-box;
     width: 100%;
   }

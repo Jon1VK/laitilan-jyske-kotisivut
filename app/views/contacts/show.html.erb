@@ -1,0 +1,118 @@
+<% set_meta_tags title: 'Yhteystiedot',
+  description: 'Ota yhteyttä yhteystietojen tai lomakkeen avulla.',
+  keywords: %w(laitila jyske laitilan\ jyske yleisurheilu yhteystiedot),
+  index: true,
+  follow: true,
+  og: {
+    type: 'website',
+    title: :title,
+    description: :description,
+    image: image_url('/images/contacts.jpg'),
+    url: contact_url,
+    site_name: :site
+  }
+%>
+
+<% content_for :jumbotron do %>
+  <div class='jumbotron jumbotron-small' style='--jumbotron-background: url("/images/contacts.jpg") center 30%/cover'>
+  </div>
+<% end %>
+
+<section class='section'>
+  <h1 class='center'>Yhteystiedot</h1>
+
+  <div class="table-wrapper">
+    <table class='table'>
+    <caption>Yleisurheilujaosto</caption>
+      <thead>
+        <tr>
+          <th>Nimi</th>
+          <th>Puhelinnumero</th>
+          <th>Sähköposti</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Pekka Kuusisto (Puheenjohtaja)</td>
+          <td>040 744 3663</td>
+          <td><a href="mailto:pekka.kuusisto@lahitapiola.fi">pekka.kuusisto@lahitapiola.fi</a></td>
+        </tr>
+        <tr>
+          <td>Riikka Matikainen (Varapuheenjohtaja)</td>
+          <td>044 591 3019</td>
+          <td><a href="mailto:matikainen.riikka@gmail.com">matikainen.riikka@gmail.com</a></td>
+        </tr>
+        <tr>
+          <td>Marja Heikkilä (Sihteeri)</td>
+          <td>040 084 4070</td>
+          <td><a href="mailto:marjaheikkila25@gmail.com">marjaheikkila25@gmail.com</a></td>
+        </tr>
+        <tr>
+          <td>Mia Grönroos (Nuorisopäällikkö)</td>
+          <td>040 595 9519</td>
+          <td><a href="mailto:gronroos.mia@gmail.com">gronroos.mia@gmail.com</a></td>
+        </tr>
+        <tr>
+          <td>Evastina Hurme-Vuorela (Valmennuspäällikkö)</td>
+          <td>044 786 5801</td>
+          <td><a href="mailto:vuorela@lailanet.fi">vuorela@lailanet.fi</a></td>
+        </tr>
+        <tr>
+          <td>Rami Hyytiä</td>
+          <td>040 099 9636</td>
+          <td><a href="mailto:rami.hyytia@lailanet.fi">rami.hyytia@lailanet.fi</a></td>
+        </tr>
+        <tr>
+          <td>Unto Kokkala</td>
+          <td>040 520 9975</td>
+          <td><a href="mailto:unto.kokkala@lailanet.fi">unto.kokkala@lailanet.fi</a></td>
+        </tr>
+        <tr>
+          <td>Hannele Lahtonen</td>
+          <td>045 859 8832</td>
+          <td><a href="mailto:hannele.lahtonen@gmail.com">hannele.lahtonen@gmail.com</a></td>
+        </tr>
+        <tr>
+          <td>Ilkka Simola</td>
+          <td>044 986 6800</td>
+          <td><a href="mailto:ilkkak.simola@gmail.com">ilkkak.simola@gmail.com</a></td>
+        </tr>
+        <tr>
+          <td>Joni Vainio-Kaila</td>
+          <td>040 056 1167</td>
+          <td><a href="mailto:jonivainiokaila@gmail.com">jonivainiokaila@gmail.com</a></td>
+        </tr>
+        <tr>
+          <td>Ilmari Vuorela</td>
+          <td>044 317 6304</td>
+          <td><a href="mailto:ilmari55@icloud.com">ilmari55@icloud.com</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class='section'>
+  <h2 class='center'>Ota yhteyttä</h2>
+  <%= form_with url: contact_url, data: { turbo: false }, html: { class: 'grid no-row-gap' } do |f| %>
+    <div class="field col-1-7">
+      <%= f.label :name, 'Nimi' %>
+      <%= f.text_field :name, required: true %>
+    </div>
+    <div class="field col-7-13">
+      <%= f.label :email, 'Sähköposti' %>
+      <%= f.email_field :email, required: true %>
+    </div>
+    <div class="field col-1-13">
+      <%= f.label :subject, 'Aihe' %>
+      <%= f.text_field :subject, required: true %>
+    </div>
+    <div class="field col-1-13">
+      <%= f.label :message, 'Viesti' %>
+      <%= f.text_area :message, required: true %>
+    </div>
+    <div class='col-1-13'>
+      <%= f.submit 'Lähetä', class: 'btn' %>
+    </div>
+  <% end %>
+</section>
