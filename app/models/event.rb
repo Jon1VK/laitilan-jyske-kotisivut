@@ -25,7 +25,7 @@ class Event < ApplicationRecord
 
   def formatted_datetimes(format = :long)
     if start_time == end_time 
-      format == :short ? start_time.strftime('-d.%-m.') : I18n.l(start_time.to_date, format: format)
+      format == :short ? start_time.strftime('%-d.%-m.') : I18n.l(start_time.to_date, format: format)
     elsif start_time.hour == 0
       "#{I18n.l(start_time, format: '%A %-d.%-m.')} - #{I18n.l(end_time, format: '%A %-d.%-m. %Y')}"
     elsif start_time.to_date == end_time.to_date
