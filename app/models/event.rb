@@ -44,13 +44,17 @@ class Event < ApplicationRecord
   end
 
   def self.events_by_year_and_month(year, month)
-    group_by_date(Event.where(start_time: DateTime.new(year, month)..DateTime.new(year, month).end_of_month).order(:start_time))
+    group_by_date(
+      Event.where(start_time: DateTime.new(year, month).in_time_zone.beginning_of_month..DateTime.new(year, month).in_time_zone.end_of_month)
+        .or(Event.where(end_time: DateTime.new(year, month).in_time_zone.beginning_of_month..DateTime.new(year, month).in_time_zone.end_of_month))
+        .order(:start_time, :title)
+    )
   end
 
   def self.upcoming_events(offset = 0)
     Event.where(start_time: offset.days.from_now..(offset + 7).days.from_now)
       .or(Event.where(start_time: offset.days.from_now.., registration_due: offset.days.from_now..(offset + 7).days.from_now))
-      .order(:start_time)
+      .order(:start_time, :title)
   end
 
   def self.group_by_date(events)
